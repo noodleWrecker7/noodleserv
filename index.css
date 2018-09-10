@@ -1,0 +1,130 @@
+
+header, footer {
+    background-color: rgb(49, 49, 49);
+    color: rgb(216, 137, 0);
+    text-align: center;
+    padding: .5em;
+    width: 100%
+}
+header >h1 {
+    padding: 2px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+header >h2 {
+    font-size: 15px;
+    text-align: center;
+}
+
+body {
+    background-color: white;
+}
+
+#gameCanvas {
+    float: left;
+    margin-left: 00px;
+    background-color: red;
+    width: 800px;
+}
+
+div.page {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div.sections {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    margin-right: 70px;
+    max-width: 1600px;
+}
+div.sections>.article {
+    font-family: sans-serif;
+    margin: 10px;
+    margin-bottom: 20px;
+    order: 0;
+    padding: 5px;
+    border-width: 1px;
+    border-bottom-style: dashed;
+    border-color: black;
+}
+
+div.sections>.game {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 10px;
+    width: 810px;
+    
+}
+
+div.sections>.game >p {
+    font-family: sans-serif;
+}
+
+div.ad {
+    background-color: blue;
+    float: right;
+    float: top;
+    width: 300px;
+}
+
+div.side {
+    width: 160px;
+    background-color: rgb(49, 49, 49);
+    border-style: solid;
+    border-color: rgb(49, 49, 49);
+    border-width: 1px;
+    border-radius: 20px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+div.side >.header {
+    background-color: rgb(216, 137, 0);
+    font-size: 25px;
+    width: 152px;
+    margin: auto;
+    margin-top: -1px;
+    text-align: center;
+    padding: 2px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+}
+div.side >.links {
+    padding: 10px;
+}
+
+
+div.links a:link, a:visited {
+    background-color: rgb(216, 137, 0);
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(49, 49, 49);
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: verdana;
+}
+div.links a:hover, a:active {
+    background-color: #e98d86;
+}
