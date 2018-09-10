@@ -1,0 +1,127 @@
+<html>
+	<canvas id="myCanvas" height=600 width=800></canvas>
+	    <body><p> Time in JS, V1.2.1s</p></body>
+	<script>
+		var cps = 30; //checks per second
+		var start = {};
+		var stop = {};
+		var canvas;
+		var ctx;
+		var fps = 10;
+		var paused = false;
+		var startstop = { status: 'pause', x: 5, y: 40, width: 40, height: 20, tX: 10, tY: 50};
+		var reset = { status: 'reset', x: 5, y: 70, width: 40, height: 20, tX: 10, tY: 80};
+		var mp = { x: 0, y: 0};
+		var timeElapsed = 0;
+		var but;
+		var lapDist = 20;
+		var lapXOffset = 200;
+		var lapYOffset = 20;
+		var lap = [];
+
+		window.onload = function(){
+			canvas = document.getElementById('myCanvas');
+			ctx = canvas.getContext('2d');
+
+			document.onmousemove = function(evt){
+				mp.x = evt.pageX;
+				mp.y = evt.pageY;
+			}
+			setInterval(function(){
+				drawRect(0, 0, canvas.width, canvas.height, 'black');
+				checkButtons();
+				updateTimer();
+				drawButtons();
+				drawLaps();
+			}, 1000/fps)
+		}
+
+		function startButton(){
+			but = startstop;
+			if(!paused){
+				paused = true;
+				but.status = 'play';
+			} else {
+				paused = false;
+				but.status = 'pause';
+			}
+		}
+		function addLaps(){
+			total = 0
+			for (l=0; l<lap.length; l++){
+				total += lap[l];
+			}
+			return{t: total}
+		}
+
+		function resetButton(){
+			if(paused){
+				paused = true;
+				timeElapsed = 0;
+				startstop.status = 'play';
+				lap = [];
+			} else {
+				lap[lap.length] = timeElapsed - addLaps().t;
+				console.log(lap);
+			}
+		}
+
+		function drawLaps(){
+			ctx.fillStyle = 'white';
+			for (l=0; l<lap.length; l++){
+				ctx.fillText(lap[l], lapXOffset, lapYOffset+(lapDist*l));
+			}
+		}
+
+		function checkClick(){
+			but = startstop;
+			if(mp.x > but.x && mp.x < but.x + but.width + 10 && mp.y > but.y && mp.y < but.y + but.height + 10){
+				startButton();			for (l=0; l<lap.length; l++){
+				total += lap[l];
+			}
+			}
+
+			but = reset;
+			if(mp.x > but.x && mp.x < but.x + but.width + 10 && mp.y > but.y && mp.y < but.y + but.height + 10){
+				resetButton();
+			}
+		}
+
+		function checkButtons(){
+			canvas.addEventListener('mousedown', checkClick)
+		}
+
+		function drawButtons(){
+			but = startstop;
+			drawRect(but.x, but.y, but.width, but.height, 'white');
+			drawText(but.status, but.tX, but.tY, 'black');
+			but = reset;
+			if(!paused){
+				but.status = 'lap';
+			} else {
+				but.status = 'reset';
+			}
+			drawRect(but.x, but.y, but.width, but.height, 'white');
+			drawText(but.status, but.tX, but.tY, 'black');
+		}
+
+		function updateTimer(){
+			if(!paused){
+				timeElapsed += 1000/fps;
+				drawText((timeElapsed/1000).toFixed(1), 10, 15, 'red');
+			} else {
+				drawText((timeElapsed/1000).toFixed(1), 10, 15, 'red');
+			}
+		}
+
+		function drawText(text, leftX, topY, colour){
+			ctx.fillStyle = colour;
+			ctx.fillText(text, leftX, topY);
+		}
+
+		function drawRect(leftX, topY, width, height, colour){
+			ctx.fillStyle = colour;
+			ctx.fillRect(leftX, topY, width, height);
+		}
+	</script>
+</html>
