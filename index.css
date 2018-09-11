@@ -18,6 +18,7 @@ header {
 
 footer {
     background-color: #FFFFEA;
+    padding: 10px;
     bottom: 0;
 }
 
@@ -46,18 +47,29 @@ footer {
 }
 
 .column.side {
-    width: 24%;
+    width: 18%;
+    border: black solid;
+    border-radius: 15px;
 }
 .column.main {
-    width: 74%;
+    width: 80%;
+}
+
+.links p {
+    border: black;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .row {
     padding-left: 1%;
     padding-right: 1%;
+    padding-top: 2%;
 }
 
-
+.column h2 {
+    margin: 0px;
+}
 
 
 .row:after {
@@ -71,4 +83,11 @@ footer {
     .column.side, .column.middle {
         width: 100%;
     }
+}
+
+
+.side.links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
