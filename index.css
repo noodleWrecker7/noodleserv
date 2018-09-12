@@ -57,9 +57,7 @@ footer {
 }
 
 .links p {
-    border: grey;
-    border-style: solid;
-    border-width: 1px;
+    border: none;
 }
 
 .row {
