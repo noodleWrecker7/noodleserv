@@ -1,0 +1,99 @@
+.title-box {
+    background-color: #f44336;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    border-bottom: 1px #b72930 solid;
+    margin-right: auto;
+    width: 100%;
+}
+.nav-button {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 12px 24px;
+    display: block;
+    float: left;
+
+}
+.nav-home {
+    background-color: white;
+    color: black;
+    text-shadow: 2px 1px lightgrey;
+}
+.nav-link {
+    background-color: #f44336;
+    color: white;
+    text-shadow: 2px 1px darkred;
+}
+.nav-button:hover{
+    text-shadow: none;
+}
+.nav-home:hover {
+    background-color: lightgray;
+}
+.nav-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.sub-heading {
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.media-bar {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.media-link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 2px;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 5px;
+    border-left: 4px solid;
+    border-radius: 2px;
+}
+
+.media-link.twitter {
+    border-color: deepskyblue;
+}
+.media-link.github {
+    border-color: black;
+}
+.media-link.instagram {
+    border-color: purple;
+}
+.media-link.discord {
+    border-color: #36393f;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+
+}
