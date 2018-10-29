@@ -1,27 +1,40 @@
 .grid {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    margin-left: 400px;
-    margin-right: 400px;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    transition: margin-left .4s;
 }
 
 .row {
+    box-sizing: inherit;
     display: flex;
-    flex-flow: row nowrap;
+    flex-wrap: nowrap;
+    content: "";
     margin-top: 50px;
     margin-bottom: 30px;
+    width: 100%;
+    clear: both;
+}
+.row::before, .row::after {
+    display: table;
+    clear: both;
+    content: "";
 }
 
 .item {
-    display: flex;
-    flex-flow: column nowrap;
+    box-sizing: inherit;
+    display: block;
+    box-sizing: padding-box;
     padding-left: 10px;
     padding-right: 10px;
-    width: 25%;
+    width: 24%;
+    float: left;
 }
 
 .picture {
+    width: 100%;
+}
+img {
     width: 100%;
 }
 
