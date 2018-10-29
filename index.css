@@ -128,7 +128,6 @@
 .content {
     flex-shrink: 1;
     width: 35%;
-    clear: both;
 }
 
 .content-header {
