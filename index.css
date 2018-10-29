@@ -104,6 +104,7 @@
 .social-link.discord {
     border-color: #36393f;
 }
+
 .main {
     display: flex;
     flex-flow: column nowrap;
@@ -111,6 +112,7 @@
     justify-items: center;
     height: auto;
 }
+
 .content-chunk {
     flex-grow: 1;
     width: 100%;
@@ -143,7 +145,7 @@
 
 .subtext {
     font-size: 13px;
-    color: darkgray;
+    color: gray;
     font-weight: 400;
 }
 
@@ -173,6 +175,18 @@
     background-color: whitesmoke;
 }
 
+.dark-grey {
+    background-color: grey;
+}
+.bottom-text {
+    font-size: 20px;
+    color: black;
+    word-break: break-word;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0px;
+}
 body {
     display: flex;
     flex-direction: column;
