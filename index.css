@@ -118,7 +118,7 @@
     width: 100%;
     display: inherit;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     font-family: "Montserrat", sans-serif;
     flex-flow: row nowrap;
     align-items: flex-start;
@@ -157,10 +157,6 @@
     width: 240px;
     font-size: 200px;
     color: #f44336;
-}
-
-.content-side.java {
-    font-size: 275px;
 }
 
 .left {
