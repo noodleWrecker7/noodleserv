@@ -1,5 +1,5 @@
 .title-box {
-    background-color: #f44336;
+    background-color: var(--weird-red);
     float: left;
     width: 100%;
     display: flex;
@@ -80,30 +80,7 @@
 }
 
 .social-link {
-    color: white;
     font-size: 20px;
-    text-decoration: none;
-    padding: 2px;
-    font-family: "Montserrat", sans-serif;
-    margin: 10px 5px;
-    border-left: 4px solid;
-    border-radius: 2px;
-}
-
-.social-link.twitter {
-    border-color: deepskyblue;
-}
-
-.social-link.github {
-    border-color: black;
-}
-
-.social-link.instagram {
-    border-color: purple;
-}
-
-.social-link.discord {
-    border-color: #36393f;
 }
 
 .main {
@@ -158,7 +135,7 @@
     padding: 40px 20px 20px 0px;
     width: 240px;
     font-size: 200px;
-    color: #f44336;
+    color: var(--weird-red);
 }
 
 .left {
@@ -176,6 +153,7 @@
 .dark-grey {
     background-color: grey;
 }
+
 .bottom-text {
     font-size: 20px;
     color: black;
@@ -183,12 +161,6 @@
     font-weight: 400;
     text-align: center;
     padding-bottom: 0px;
-    margin: 0px;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     margin: 0px;
 }
 
@@ -203,4 +175,27 @@ body {
 
 .foot.credit {
     text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 14px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+.pagination a:hover {
+    background-color: var(--weird-red);
+    border: 1px solid var(--weird-red);
+    border-radius: 1px;
 }

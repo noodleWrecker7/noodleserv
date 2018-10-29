@@ -1,0 +1,37 @@
+:root {
+    --weird-red: #f44336
+}
+
+.social-link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 2px;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 5px;
+    border-left: 4px solid;
+    border-radius: 2px;
+}
+
+.social-link.twitter {
+    border-color: deepskyblue;
+}
+
+.social-link.github {
+    border-color: black;
+}
+
+.social-link.instagram {
+    border-color: purple;
+}
+
+.social-link.discord {
+    border-color: #36393f;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0px;
+}
