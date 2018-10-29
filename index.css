@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
 }
 
 .nav-bar {
@@ -183,7 +183,7 @@ body {
 .foot {
     display: flex;
     color: grey;
-    margin-top: 20px;
+    margin-top: 10px;
     float: left;
     justify-content: center;
     width: 100%;
