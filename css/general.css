@@ -29,6 +29,21 @@
     border-color: #36393f;
 }
 
+.main-text {
+    font-size: 18px;
+    color: black;
+    word-break: break-word;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.subtext {
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+    padding-bottom: 0px;
+}
+
 body {
     display: flex;
     flex-direction: column;

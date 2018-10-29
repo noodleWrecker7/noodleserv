@@ -106,26 +106,12 @@
 .content {
     flex-shrink: 1;
     width: 35%;
+    padding-bottom: 20px;
 }
 
 .content-header {
     font-size: 40px;
     font-weight: 200;
-}
-
-.main-text {
-    font-size: 18px;
-    color: black;
-    word-break: break-word;
-    font-weight: 400;
-    padding-bottom: 30px;
-}
-
-.subtext {
-    font-size: 14px;
-    color: gray;
-    font-weight: 400;
-    padding-bottom: 20px;
 }
 
 .content-side {
