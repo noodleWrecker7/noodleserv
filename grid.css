@@ -1,0 +1,34 @@
+.grid {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 25%;
+}
+
+.picture {
+    width: 100%;
+}
+
+.item-head {
+
+}
+
+.item-text {
+
+}

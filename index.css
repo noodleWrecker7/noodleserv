@@ -11,7 +11,7 @@
     margin-right: auto;
     width: 100%;
     position: fixed;
-    background-color: #e34336;
+    background-color: #e14336;
 }
 
 .nav-button {
@@ -33,7 +33,7 @@
 }
 
 .nav-link {
-    background-color: #f44336;
+    background-color: inherit;
     color: white;
     text-shadow: 2px 1px darkred;
 }
@@ -52,6 +52,7 @@
 }
 
 .title {
+    padding-top: 50px;
     color: white;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -118,7 +119,7 @@
     width: 100%;
     display: inherit;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-family: "Montserrat", sans-serif;
     flex-flow: row nowrap;
     align-items: flex-start;
@@ -128,7 +129,6 @@
 .content {
     flex-shrink: 1;
     width: 35%;
-    clear: both;
 }
 
 .content-header {
@@ -137,16 +137,18 @@
 }
 
 .main-text {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     word-break: break-word;
     font-weight: 400;
+    padding-bottom: 30px;
 }
 
 .subtext {
-    font-size: 13px;
+    font-size: 14px;
     color: gray;
     font-weight: 400;
+    padding-bottom: 20px;
 }
 
 .content-side {
@@ -180,7 +182,7 @@
     word-break: break-word;
     font-weight: 400;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     margin: 0px;
 }
 body {
