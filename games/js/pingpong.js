@@ -1,7 +1,7 @@
-var canvas; //cvs variables
+var canvas; //canvas variables
 var canvasContext;
-var ballX = document.getElementById('gameCanvas').width / 2; //ball pos
-var ballY = document.getElementById('gameCanvas').height / 2; //
+var ballX = document.getElementById('pongCanvas').width / 2; //ball pos
+var ballY = document.getElementById('pongCanvas').height / 2; //
 var ballXSpeed = -150; //ball speeds
 var ballYSpeed = 150; //speed is calculated at pixels per second
 var fps = 60; //fps update rate
