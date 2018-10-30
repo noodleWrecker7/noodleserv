@@ -1,0 +1,55 @@
+.grid {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    transition: margin-left .4s;
+}
+
+.row {
+    box-sizing: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    content: "";
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+    clear: both;
+}
+
+.row::before, .row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.item {
+    box-sizing: inherit;
+    display: block;
+    box-sizing: padding-box;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 24%;
+    float: left;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+.item:hover {
+    background-color: gainsboro;
+}
+.picture {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.item-head {
+    font-size: 20px;
+}
+
+.item-text {
+    font-family: "Montserrat", sans-serif;
+}
