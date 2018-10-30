@@ -1,4 +1,4 @@
-var canvas; //canvas variables
+var canvas; //cvs variables
 var canvasContext;
 var ballX = document.getElementById('gameCanvas').width / 2; //ball pos
 var ballY = document.getElementById('gameCanvas').height / 2; //
@@ -33,7 +33,7 @@ function calculateMousePos(evt) {
 }
 
 window.onload = function () {
-    canvas = document.getElementById('gameCanvas');
+    canvas = document.getElementById('pongCanvas');
     canvasContext = canvas.getContext('2d');
     paddle1Y = canvas.height / 2 - PADDLE_HEIGHT / 2;
     setInterval(function () {
