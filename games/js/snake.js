@@ -19,7 +19,6 @@ let apple = {x: 0, y: 0};
 var left, up, down, right, acLeft, acUp, acDown, acRight;
 var endScreenBufferMax = 10;
 var endBufferTicked = 0;
-//
 
 window.onload = function () {
     cvs = document.getElementById('snakeCanvas');
@@ -45,16 +44,6 @@ window.onload = function () {
 
 function reset() {
     showingEnd = true;
-    score = tailLength - 2;
-    trailCoords = [];
-    head = {x: 14, y: 0};
-    apple = {x: 0, y: 0};
-    tailLength = 2;
-    endBufferTicked = 0;
-    generateApple();
-    xv = 0;
-    yv = 1;
-    setCookie("highScore", topScore, 7);
 }
 
 function showEnd() {
@@ -64,6 +53,16 @@ function showEnd() {
 
     document.addEventListener("mousedown", function () {
         if (endBufferTicked > endScreenBufferMax) {
+            score = tailLength - 2;
+            trailCoords = [];
+            head = {x: 14, y: 0};
+            apple = {x: 0, y: 0};
+            tailLength = 2;
+            endBufferTicked = 0;
+            generateApple();
+            xv = 0;
+            yv = 1;
+            setCookie("highScore", topScore, 7);
             reset()
             showingEnd = false;
         }
