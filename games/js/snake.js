@@ -9,7 +9,7 @@ let xv = 0; // velocity
 let yv = 1;
 let trailCoords = []; // map of current position
 var grid = []; // grid squares
-let gridEdgePadding = 0;
+let gridEdgePadding = 2;
 let gridGap = 2;
 let gridSize = 18;
 let gridRows = 28;
@@ -158,8 +158,8 @@ function initialiseGrid() {
         grid[c] = [];
         for (let r = 0; r <= gridRows; r++) {
             grid[c][r] = {
-                x: c * (gridSize + gridGap) + gridEdgePadding,
-                y: r * (gridSize + gridGap) + gridEdgePadding
+                x: c * (gridSize + gridGap) + gridEdgePadding/2,
+                y: r * (gridSize + gridGap) + gridEdgePadding/2
             };
         }
     }
