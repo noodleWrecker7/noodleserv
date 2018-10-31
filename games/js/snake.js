@@ -43,6 +43,7 @@ window.onload = function () {
 };
 
 function reset() {
+    score = tailLength -2;
     showingEnd = true;
 }
 
