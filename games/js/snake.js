@@ -1,7 +1,7 @@
 let cvs; //cvs variables
 let ctx;
 const fps = 10; //fps update rate
-let topScore = getCookie("topScore");
+let topScore;
 let score;
 let showingEnd = false;
 let tailLength = 2;
@@ -29,7 +29,7 @@ window.onload = function () {
     document.addEventListener("keydown", keyPush);
     initialiseGrid();
     generateApple();
-
+    topScore = getCookie("topScore");
     setInterval(function () {
         if (!showingEnd) {
             moveEverything();
@@ -138,7 +138,7 @@ function drawEverything() {
 
         // top score
         if (topScore < tailLength) {
-            topScore = tailLength -2;
+            topScore = tailLength - 2;
         }
     }
 
@@ -207,8 +207,8 @@ function keyPush(e) {
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
@@ -216,7 +216,7 @@ function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
+    for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
