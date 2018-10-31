@@ -34,6 +34,7 @@ window.onload = function () {
         if (!showingEnd) {
             moveEverything();
             drawEverything();
+            topScore = getCookie("topScore");
             scoreHTMl.innerText = "Score: " + (tailLength - 2);
             topScoreHTML.innerHTML = "High score: " + (topScore);
         } else {
