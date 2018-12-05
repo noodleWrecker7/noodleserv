@@ -8,7 +8,7 @@ function string2Gin(form) {
     let gingerString = "";
     const stringArray = string.split(" ");
     for (let i = 0; i < stringArray.length; i++) {
-        let s = stringArray[i];
+        let s = stringArray[i].toLowerCase();
         let w = word2Gin(s);
         if (w != null) {
             gingerString += w;
@@ -18,7 +18,7 @@ function string2Gin(form) {
         }
         gingerString += " ";
     }
-    document.getElementById("gingerIn").innerHTML = gingerString;
+    document.getElementById("gingerIn").value = gingerString;
     return gingerString;
 }
 
@@ -27,7 +27,7 @@ function string2Eng(form) {
     let englishString = "";
     const stringArray = string.split(" ");
     for (let i = 0; i < stringArray.length; i++) {
-        let s = stringArray[i];
+        let s = stringArray[i].toLowerCase();
         let w = word2Eng(s);
         if (w != null) {
             englishString += w;
@@ -37,7 +37,7 @@ function string2Eng(form) {
         }
         englishString += " ";
     }
-    document.getElementById("englishIn").innerHTML = englishString;
+    document.getElementById("englishIn").value = englishString;
     return englishString;
 }
 
