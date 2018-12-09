@@ -11,8 +11,14 @@
     width: 100%;
     position: fixed;
     background-color: #e14336;
-}
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 
+}
+.links-bar {
+    float: left;
+}
 .nav-button {
     text-decoration: none;
     text-align: center;

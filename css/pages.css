@@ -78,6 +78,7 @@
     flex-wrap: wrap;
     justify-content: center;
     float: right;
+    flex-shrink: 1;
 }
 
 .social-link {
