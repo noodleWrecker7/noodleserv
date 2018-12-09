@@ -10,6 +10,6 @@ function getUser() {
     request.onload = function () {
         console.log(JSON.parse(this.response));
     };
-
+    console.log(origin);
     request.send();
 }
