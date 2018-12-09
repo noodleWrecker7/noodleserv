@@ -51,8 +51,13 @@ window.onload = function () {
 
     document.addEventListener('keydown',
         function (evt) {
-            id = evt.which || evt.keyCode || evt.keyPressed || evt.key;
-            totalMove = 0;
+            let id = evt.which || evt.keyCode || evt.key;
+
+            if (['ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown'].indexOf(id) > -1) { // if id is in list
+                evt.preventDefault(); // stop scroll
+            }
+
+            let totalMove = 0;
             if (id == 87) {
                 totalMove ++;
             }
