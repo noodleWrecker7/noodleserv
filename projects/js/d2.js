@@ -11,7 +11,7 @@ function getUser(form) {
     request.onload = function () {
         var data = JSON.parse(this.response);
         console.log(request.status);
-        console.log(data);
+        console.log(data.Response);
     };
     request.send();
 }
