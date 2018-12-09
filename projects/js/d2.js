@@ -5,6 +5,7 @@ class Player {
         this._displayName = displayName;
         this._membershipId = membershipId;
         this._membershipType = membershipType;
+        this.characterIds = {};
     }
 
     get displayName() {
@@ -32,33 +33,55 @@ class Player {
     }
 }
 
-let player;
+function refresh(form) {
 
-function getUser(form) {
-    const request = new XMLHttpRequest();
     let userName = htmlEscape(form.user.value);
+    let player = getUser(userName);
+    document.getElementById("playerName").innerText = player.displayName;
+    //getPlayerPlaytime(player.membershipId);
+}
 
-    request.open('GET', 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/' + userName + '/', true);
+function getUser(user) {
+    const request = new XMLHttpRequest();
+    let userName = user;
+    let player = null;
+
+    request.open('GET', 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/' + userName + '/', false);
     request.setRequestHeader('X-API-KEY', '60028b4c249b4c59ab7c95411a196711');
     request.onload = function () {
-        const data = JSON.parse(this.response);
-        let responded = data.Response[0];
-
+        let responded = parseReturn(this);
 
         player = new Player(responded.displayName, responded.membershipId, responded.membershipType);
-        console.log("Accessing player: " +player.displayName + " with id: " + player.membershipId);
+        console.log("Accessing player: " + player.displayName + " with id: " + player.membershipId);
     };
     request.send();
-    request.abort();
+    return player;
 }
 
-function refresh() {
-    getPlayerPlaytime(player.membershipId);
+function getProfile (membershipType, membershipId) {
+    const requst = new XMLHttpRequest();
 }
 
-function getPlayerPlaytime (membershipId) {
 
+
+function getPlayerPlaytime(membershipType, membershipId, characterId) {
+    const request = new XMLHttpRequest();
+    request.open('GET', 'https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Profile/' + membershipId + '/Character/' + characterId + '/?components=200', false);
+    request.setRequestHeader('X-API-KEY', '60028b4c249b4c59ab7c95411a196711');
+
+    request.onload = function () {
+        let responded = parseReturn(this);
+
+    };
+
+    request.send();
 }
+
+function parseReturn(something) {
+    const data = JSON.parse(something.response);
+    return data.Response[0];
+}
+
 
 function htmlEscape(str) {
     return String(str)

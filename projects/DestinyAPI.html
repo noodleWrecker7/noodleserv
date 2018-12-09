@@ -38,10 +38,11 @@
 
 <body>
 <div class="page-chunk" style="background-color: whitesmoke">
-    <form action="javascript:;" onsubmit="getUser(this)">
+    <form action="javascript:;" onsubmit="refresh(this)">
         <input type="text" name="user" autocomplete="on">
-        <input type="submit">
+        <button type="submit"><i class="fas fa-sync-alt"></i></button>
     </form>
+    <p id="playerName"></p>
 </div>
 </body>
 </html>
