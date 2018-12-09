@@ -9,7 +9,9 @@ function getUser(form) {
     request.open('GET', 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/4/' +userName + '/', true);
     request.setRequestHeader('X-API-KEY', '60028b4c249b4c59ab7c95411a196711');
     request.onload = function () {
-        console.log(JSON.parse(this.response));
+        var data = JSON.parse(this.response);
+        console.log(request.status);
+        console.log(data);
     };
     request.send();
 }
