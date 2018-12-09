@@ -168,6 +168,10 @@ function initialiseGrid() {
 function keyPush(e) {
     id = e.key;
 
+    if(['ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown'].indexOf(id) > -1) { // if id is in list
+        e.preventDefault(); // stop scroll
+    }
+
     // left
     if ((id === 'a' || id === 'ArrowLeft') && !acRight) {
         xv = -1;
