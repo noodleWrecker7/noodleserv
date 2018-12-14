@@ -315,7 +315,7 @@ function parseHTML(html) {
 		  html = html.replace(parser[0],''); // Remove from document since we don't want the unproxied URL
 	 }
 	 
-	 // Meta refresh
+	 // Meta refreshAll
 	 if ( parser = /content=(["'])?([0-9]+)\s*;\s*url=(['"]?)([^"'>]+)\3\1(.*?)(>|\/>)/i.exec(html) )
 		  html = html.replace(parser[0],parser[0].replace(parser[4],parseURL(parser[4])));
 

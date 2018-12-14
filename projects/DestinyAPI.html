@@ -5,8 +5,11 @@
     <link rel="stylesheet" href="../css/general.css">
     <!--<link rel="stylesheet" href="../css/index.css">-->
     <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/api.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
           integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <!--Used from https://fontawesome.com under license https://fontawesome.com/license-->
     <title>Destiny 2</title>
     <script src="js/d2.js"></script>
 
@@ -21,7 +24,8 @@
         <a href="" class="nav-link nav-button">Contact</a>
 
         <div class="social-bar">
-            <a href="https://twitter.com/AdamH0461" class="social-link twitter"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://twitter.com/AdamH0461" class="social-link twitter"><i class="fab fa-twitter"></i>
+                Twitter</a>
             <a href="https://github.com/noodleWrecker7" class="social-link github"><i class="fab fa-github"></i> Github</a>
             <a href="" class="social-link instagram"><i class="fab fa-instagram"></i> Instagram</a>
             <a href="" class="social-link discord"><i class="fab fa-discord"></i> Discord</a>
@@ -37,12 +41,87 @@
 </header>
 
 <body>
-<div class="page-chunk" style="background-color: whitesmoke">
-    <form action="javascript:;" onsubmit="refresh(this)">
+<div class="page-chunk"
+     style="background-color: whitesmoke; display: flex; flex-flow: column nowrap; align-items: center;">
+    <form action="javascript:;" onsubmit="refreshAll(this)" style="clear:right;">
         <input type="text" name="user" autocomplete="on">
         <button type="submit"><i class="fas fa-sync-alt"></i></button>
     </form>
-    <p id="playerName"></p>
+    <p id="playerName" style="clear:left;"></p>
+</div>
+<div class="grid-container">
+    <div class="characters">
+        <div class="character-box" id="character-0">
+            <img class="emblem" src="" id="0-emblem" alt="">
+            <div class="character-top-stats">
+                <div class="character-top-stats-column">
+                    <p class="character-stat-label">Class: </p><p class="character-stat class" id="0-char-class">Titan</p>
+                    <p class="character-stat-label">Race: </p><p class="character-stat race" id="0-char-race">Human</p>
+                    <p class="character-stat-label">Gender: </p><p class="character-stat gender" id="0-char-gender">Male</p>
+                </div>
+                <div class="character-top-stats-column">
+                    <p class="character-stat-label">Power: </p><p class="character-stat light" id="0-char-power">583</p>
+                    <p class="character-stat-label">Level: </p><p class="character-stat level" id="0-char-level">50</p>
+                    <p class="character-stat-label">Legend: </p><p class="character-stat legend" id="0-char-legend"></p>
+                    <!--for formatting in flex box, might be useful as a stat later-->
+                </div>
+                <div class="character-top-stats-column">
+                    <p class="character-stat-label">Mobility: </p><p class="character-stat mobility" id="0-char-mobility">1</p>
+                    <p class="character-stat-label">Resilience: </p><p class="character-stat resilience" id="0-char-resilience">8</p>
+                    <p class="character-stat-label">Recovery: </p><p class="character-stat recovery" id="0-char-recovery">6</p>
+                </div>
+            </div>
+            <div class="character-bottom-stats">
+
+            </div>
+        </div>
+
+        <div class="character-box">
+            <img class="emblem" src="" id="1-emblem">
+            <div class="character-top-stats">
+                <div class="character-top-stats-column">
+                    <p class="character-stat-label">Class: </p><p class="character-stat class" id="1-char-class"></p>
+                    <p class="character-stat-label">Race: </p><p class="character-stat race" id="1-char-race"></p>
+                    <p class="character-stat-label">Gender: </p><p class="character-stat gender" id="1-char-gender"></p>
+                </div>
+                <div class="character-top-stats-column">
+                    <p class="character-stat-label">Light: </p><p class="character-stat light" id="1-char-power"></p>
+                    <p class="character-stat-label">Level: </p><p class="character-stat level" id="1-char-level"></p>
+                    <p class="character-stat-label">Legend: </p><p class="character-stat legend" id="1-char-legend"></p>
+                </div>
+                <div class="character-top-stats-column">
+                    <p class="character-stat-label">Mobility: </p><p class="character-stat mobility" id="1-char-mobility"></p>
+                    <p class="character-stat-label">Resilience: </p><p class="character-stat resilience" id="1-char-resilience"></p>
+                    <p class="character-stat-label">Recovery: </p><p class="character-stat recovery" id="1-char-recovery"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="character-box">
+            <img class="emblem" src="" id="2-emblem">
+            <div class="character-top-stats">
+                <div class="character-top-stats-column">
+                    <p class="character-stat-label">Class: </p><p class="character-stat class" id="2-char-class"></p>
+                    <p class="character-stat-label">Race: </p><p class="character-stat race" id="2-char-race"></p>
+                    <p class="character-stat-label">Gender: </p><p class="character-stat gender" id="2-char-gender"></p>
+                </div>
+                <div class="character-top-stats-column">
+                    <p class="character-stat-label">Light: </p><p class="character-stat light" id="2-char-power"></p>
+                    <p class="character-stat-label">Level: </p><p class="character-stat level" id="2-char-level"></p>
+                    <p class="character-stat-label">Legend: </p><p class="character-stat legend" id="2-char-legend"></p>
+                    <!--for formatting in flex box, might be useful as a stat later-->
+                </div>
+                <div class="character-top-stats-column">
+                    <p class="character-stat-label">Mobility: </p><p class="character-stat mobility" id="2-char-mobility"></p>
+                    <p class="character-stat-label">Resilience: </p><p class="character-stat resilience" id="2-char-resilience"></p>
+                    <p class="character-stat-label">Recovery: </p><p class="character-stat recovery" id="2-char-recovery"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="account-stats">
+        <p id="total-hours">test</p>
+    </div>
 </div>
 </body>
 </html>
