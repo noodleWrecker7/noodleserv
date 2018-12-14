@@ -8,7 +8,7 @@ let tailLength = 2;
 let xv = 0; // velocity
 let yv = 1;
 let trailCoords = []; // map of current position
-var grid = []; // grid squares
+var gridArray = []; // gridArray squares
 let gridEdgePadding = 2;
 let gridGap = 2;
 let gridSize = 18;
@@ -122,8 +122,8 @@ function drawEverything() {
     // draw snake
     for (i = 0; i < trailCoords.length; i++) {
         ctx.fillStyle = "lime";
-        let gC = trailCoords[i]; // grid co-ord
-        ctx.fillRect(grid[gC.x][gC.y].x, grid[gC.x][gC.y].y, gridSize, gridSize);
+        let gC = trailCoords[i]; // gridArray co-ord
+        ctx.fillRect(gridArray[gC.x][gC.y].x, gridArray[gC.x][gC.y].y, gridSize, gridSize);
 
         // collide self
         if (gC.x === head.x && gC.y === head.y && i !== trailCoords.length - 1) {
@@ -144,7 +144,7 @@ function drawEverything() {
     }
 
     ctx.fillStyle = "red";
-    aPos = grid[apple.x][apple.y];
+    aPos = gridArray[apple.x][apple.y];
     ctx.fillRect(aPos.x, aPos.y, gridSize, gridSize);
 }
 
@@ -155,9 +155,9 @@ function generateApple() {
 
 function initialiseGrid() {
     for (let c = 0; c <= gridColumns; c++) {
-        grid[c] = [];
+        gridArray[c] = [];
         for (let r = 0; r <= gridRows; r++) {
-            grid[c][r] = {
+            gridArray[c][r] = {
                 x: c * (gridSize + gridGap) + gridEdgePadding/2,
                 y: r * (gridSize + gridGap) + gridEdgePadding/2
             };
