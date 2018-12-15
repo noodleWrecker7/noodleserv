@@ -32,13 +32,14 @@ function calculateMousePos(evt) {
     }
 }
 
+
 window.onload = function () {
     canvas = document.getElementById('pongCanvas');
     canvasContext = canvas.getContext('2d');
     paddle1Y = canvas.height / 2 - PADDLE_HEIGHT / 2;
     setInterval(function () {
-        moveEverything()
-        drawEverything()
+        moveEverything();
+        drawEverything();
     }, 1000 / fps);
 
     function handleMouse() {
@@ -133,8 +134,6 @@ function paddle2Ai() {
     if (paddle2YCenter > ballY + 20) {
         paddle2Y -= SPEED / fps
     }
-
-
 }
 
 function moveEverything() {
