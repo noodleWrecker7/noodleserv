@@ -8,7 +8,7 @@ let tailLength = 2;
 let xv = 0; // velocity
 let yv = 1;
 let trailCoords = []; // map of current position
-var gridArray = []; // gridArray squares
+var gridArray = []; // trueArray squares
 let gridEdgePadding = 2;
 let gridGap = 2;
 let gridSize = 18;
@@ -122,7 +122,7 @@ function drawEverything() {
     // draw snake
     for (i = 0; i < trailCoords.length; i++) {
         ctx.fillStyle = "lime";
-        let gC = trailCoords[i]; // gridArray co-ord
+        let gC = trailCoords[i]; // trueArray co-ord
         ctx.fillRect(gridArray[gC.x][gC.y].x, gridArray[gC.x][gC.y].y, gridSize, gridSize);
 
         // collide self

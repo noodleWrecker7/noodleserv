@@ -4,29 +4,38 @@ const tileGap = 2;
 const tileWidth = 40;
 const columns = 10;
 const rows = 20;
-const fps = 25;
+const fps = 5;
+let grid;
+let test;
 
 window.onload = function () {
     ctx.fillStyle = 'red';
     ctx.fillRect(0, 0, cvs.width, cvs.height);
-    const grid = new Grid(columns, rows, tileWidth, tileGap);
+    grid = new Grid(columns, rows, tileWidth, tileGap);
     grid.generate();
     grid.draw();
 
     //let testShape = [{x:}]
 
-    let test = new Cyan();
+    test = new Cyan();
+    drawShape(test);
 
     document.addEventListener("keydown", keyPush);
 
     setInterval(function () {
-
+        grid.draw();
+        drawShape(test);
     }, 1000 / fps);
 };
 
 function drawShape(shape) {
+    ctx.fillStyle = shape.colour;
     for (let i = 0; i < 4; i++) {
-
+        let gX = shape.trueArray[i].gridX;
+        let gY = shape.trueArray[i].gridY;
+        let gA = grid.gridArray[gX][gY];
+        console.log(gA);
+        ctx.fillRect(gA.realX, gA.realY, tileWidth, tileWidth);
     }
 }
 
@@ -68,12 +77,9 @@ class Grid {
 
 class TetrisShape {
 
-    states = []; // so it cant be like 'yo states ain't exist'
-    relArray = [];
     //blockArray;
     constructor() {
-        this.root = {gridX: 4, gridY: 0};
-        this.currentState = 0;
+        this.root = {gridX: 4, gridY: 4};
     }
 
     /*rotate(dir) {
@@ -92,36 +98,47 @@ class TetrisShape {
             this.currentState = 3;
         }
 
-        this.gridArray = this.setState(this.currentState);
+        this.trueArray = this.setState(this.currentState);
     }*/
 
-    rotateCw(){
+
+    rotate(dir) { // 1 for cw -1 for ccw, 0 just screws it up
         for (let i = 0; i < 4; i++) {
-            let x = this.relArray[i].gridX;
-            this.relArray[i].gridX = -this.relArray[i].gridY;
-            this.relArray[i].gridY = x;
+            let x = this.relArray[i].relX;
+            this.relArray[i].relX = -dir * this.relArray[i].relY;
+            this.relArray[i].relY = dir * x;
         }
+        this.trueArray = this.setTrueArray();
     }
 
-
-
-    setTrueArray(s) {
+    setTrueArray() {
         let arr = [];
         for (let i = 0; i < 4; i++) {
-            let x = this.root.gridX += this.states[s][i].relX;
-            let y = this.root.gridY += this.states[s][i].relY;
+            let x = this.root.gridX + this.relArray[i].relX;
+            let y = this.root.gridY + this.relArray[i].relY;
             arr.push({gridX: x, gridY: y});
         }
         return arr;
+    }
+
+    move(x, y){
+        this.root.gridX += x;
+        this.root.gridY += y;
     }
 }
 
 class Cyan extends TetrisShape {
 
-    colour = 'cyan';
     // Relative arrays, relative to root block
 
-    relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: +1, relY: 0}, {relX: +2, relY: 0}];
+
+    constructor() {
+        super();
+        this.relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: 1, relY: 0}, {relX: 2, relY: 0}];
+        this.trueArray = this.setTrueArray();
+        this.colour = 'cyan';
+    }
+
 
     /*states = [[{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: +1, relY: 0}, {relX: +2, relY: 0}], // currentState 0
         [{relX: 0, relY: 0}, {relX: 0, relY: -1}, {relX: 0, relY: +1}, {relX: 0, relY: +2}], // 1
@@ -135,5 +152,7 @@ function keyPush(e) {
 
     if (['ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown'].indexOf(id) > -1) { // if id is in list
         e.preventDefault(); // stop scroll
+        test.rotate(1);
     }
+
 }
