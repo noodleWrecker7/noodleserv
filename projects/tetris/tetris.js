@@ -1,13 +1,13 @@
 const cvs = document.getElementById("tetrisCanvas");
 const ctx = cvs.getContext("2d");
-const tileGap = 2;
+const tileGap = 1;
 const tileWidth = 40;
 const columns = 10;
 const rows = 20;
 const fps = 10;
 let grid;
 let currentShape;
-let ticksUntilDrop = 1;
+let ticksUntilDrop = 20;
 let ticksSinceLastDrop = 0;
 // const shapesArray = []; defined after specific shape definitions just above keyPush method at bottom
 
@@ -20,6 +20,13 @@ window.onload = function () {
     grid.generate();
     grid.draw();
 
+
+    let list = [0, 0, 0, 0, 0, 0, 0];
+    for (let i = 0; i < 10000; i++) {
+        let n = Math.floor(Math.random() * 7);
+        list[n]++;
+    }
+    console.log(list);
 
     currentShape = new Cyan();
 
@@ -44,8 +51,8 @@ window.onload = function () {
 
 function getNewShape() {
     let s;
-    let n = Math.floor(Math.random() *7);
-    switch(n) {
+    let n = Math.floor(Math.random() * 7);
+    switch (n) {
         case 0:
             s = new Cyan();
             break;
@@ -82,11 +89,12 @@ function fail() {
 
 function checkFailAbove() {
     for (let i = 0; i < columns; i++) {
-        if(grid.gridArray[i][-1].colour != "black"){
+        if (grid.gridArray[i][-1].colour != "black") {
             fail();
         }
     }
 }
+
 
 function drawShape(shape) {
     shape.setTrueArray();
@@ -202,6 +210,30 @@ class TetrisShape {
         this.root.gridY++;
         this.setTrueArray();
     }
+
+    moveX(dir) { // dir either -1 or 1 for left or right respective
+
+        this.setTrueArray();
+        let reverse, outOfBounds = false;
+        for (let i = 0; i < 4; i++) {
+            let coord = this.trueArray[i];
+            if (coord.gridX + dir < 0 || coord.gridX + dir >= columns) {
+                outOfBounds = true;
+            }
+            if (!outOfBounds) {
+                let gridSquare = grid.gridArray[coord.gridX + dir][coord.gridY];
+                if (gridSquare == null || gridSquare.colour != "black") {
+                    reverse = true;
+                }
+            }
+
+        }
+        if (!reverse && !outOfBounds) {
+            this.root.gridX += dir;
+        }
+
+        this.setTrueArray();
+    }
 }
 
 class Cyan extends TetrisShape {
@@ -217,7 +249,7 @@ class Cyan extends TetrisShape {
 
 class Blue extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: 1, relY: 0}, {relX: 1, relY: 1}];
         this.setTrueArray();
@@ -227,7 +259,7 @@ class Blue extends TetrisShape {
 
 class Orange extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: 1, relY: 0}, {relX: -1, relY: 1}];
         this.setTrueArray();
@@ -237,7 +269,7 @@ class Orange extends TetrisShape {
 
 class Yellow extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: 0, relY: 1}, {relX: 1, relY: 0}, {relX: 1, relY: 1}];
         this.setTrueArray();
@@ -247,7 +279,7 @@ class Yellow extends TetrisShape {
 
 class Green extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: 1, relY: 0}, {relX: 0, relY: 1}, {relX: -1, relY: 1}];
         this.setTrueArray();
@@ -257,7 +289,7 @@ class Green extends TetrisShape {
 
 class Purple extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: 1, relY: 0}, {relX: 0, relY: 1}];
         this.setTrueArray();
@@ -267,7 +299,7 @@ class Purple extends TetrisShape {
 
 class Red extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: 0, relY: 1}, {relX: 1, relY: 1}];
         this.setTrueArray();
@@ -280,9 +312,22 @@ const shapesArray = [new Cyan(), new Blue(), new Orange(), new Yellow(), new Gre
 function keyPush(e) {
     let id = e.key;
 
-    if (['ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown'].indexOf(id) > -1) { // if id is in list
+    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].indexOf(id) > -1) { // if id is in list
         e.preventDefault(); // stop scroll
+    }
+    console.log(id);
+    if (id == 'ArrowUp') {
         currentShape.rotate(1);
+    }
+    if (id == 'ArrowDown') {
+        currentShape.rotate(-1);
+    }
+
+    if (id == 'ArrowLeft') {
+        currentShape.moveX(-1)
+    }
+    if (id == 'ArrowRight') {
+        currentShape.moveX(1)
     }
 
 }
