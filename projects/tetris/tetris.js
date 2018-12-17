@@ -9,7 +9,7 @@ let grid;
 let currentShape;
 let ticksUntilDrop = 1;
 let ticksSinceLastDrop = 0;
-// const shapesArray = []; defined after specific shape defintions just above keyPush method at bottom
+// const shapesArray = []; defined after specific shape definitions just above keyPush method at bottom
 
 // TODO move shapes left & right
 
@@ -251,7 +251,7 @@ class Green extends TetrisShape {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: 1, relY: 0}, {relX: 0, relY: 1}, {relX: -1, relY: 1}];
         this.setTrueArray();
-        this.colour = 'green';
+        this.colour = 'lime';
     }
 }
 
