@@ -1,6 +1,6 @@
 const cvs = document.getElementById("tetrisCanvas");
 const ctx = cvs.getContext("2d");
-const tileGap = 2;
+const tileGap = 1;
 const tileWidth = 40;
 const columns = 10;
 const rows = 20;
@@ -20,6 +20,13 @@ window.onload = function () {
     grid.generate();
     grid.draw();
 
+
+    let list = [0, 0,0,0,0,0,0];
+    for (let i = 0; i < 10000; i++) {
+        let n = Math.floor(Math.random()*7);
+        list[n]++;
+    }
+    console.log(list);
 
     currentShape = new Cyan();
 
@@ -44,8 +51,8 @@ window.onload = function () {
 
 function getNewShape() {
     let s;
-    let n = Math.floor(Math.random() *7);
-    switch(n) {
+    let n = Math.floor(Math.random() * 7);
+    switch (n) {
         case 0:
             s = new Cyan();
             break;
@@ -82,10 +89,19 @@ function fail() {
 
 function checkFailAbove() {
     for (let i = 0; i < columns; i++) {
-        if(grid.gridArray[i][-1].colour != "black"){
+        if (grid.gridArray[i][-1].colour != "black") {
             fail();
         }
     }
+}
+
+function moveX(shape, dir) { // dir either -1 or 1 for left or right respective
+    if (dir == (-1 || 1)) {
+        for (let i = 0; i < 4; i++) {
+            shape.trueArray[i].gridX += dir;
+        }
+    }
+
 }
 
 function drawShape(shape) {
@@ -217,7 +233,7 @@ class Cyan extends TetrisShape {
 
 class Blue extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: 1, relY: 0}, {relX: 1, relY: 1}];
         this.setTrueArray();
@@ -227,7 +243,7 @@ class Blue extends TetrisShape {
 
 class Orange extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: 1, relY: 0}, {relX: -1, relY: 1}];
         this.setTrueArray();
@@ -237,7 +253,7 @@ class Orange extends TetrisShape {
 
 class Yellow extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: 0, relY: 1}, {relX: 1, relY: 0}, {relX: 1, relY: 1}];
         this.setTrueArray();
@@ -247,7 +263,7 @@ class Yellow extends TetrisShape {
 
 class Green extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: 1, relY: 0}, {relX: 0, relY: 1}, {relX: -1, relY: 1}];
         this.setTrueArray();
@@ -257,7 +273,7 @@ class Green extends TetrisShape {
 
 class Purple extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: 1, relY: 0}, {relX: 0, relY: 1}];
         this.setTrueArray();
@@ -267,7 +283,7 @@ class Purple extends TetrisShape {
 
 class Red extends TetrisShape {
 
-    constructor(){
+    constructor() {
         super();
         this.relArray = [{relX: 0, relY: 0}, {relX: -1, relY: 0}, {relX: 0, relY: 1}, {relX: 1, relY: 1}];
         this.setTrueArray();
