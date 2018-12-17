@@ -7,7 +7,7 @@ const rows = 20;
 const fps = 10;
 let grid;
 let currentShape;
-let ticksUntilDrop = 1;
+let ticksUntilDrop = 20;
 let ticksSinceLastDrop = 0;
 // const shapesArray = []; defined after specific shape defintions just above keyPush method at bottom
 
@@ -21,9 +21,9 @@ window.onload = function () {
     grid.draw();
 
 
-    let list = [0, 0,0,0,0,0,0];
+    let list = [0, 0, 0, 0, 0, 0, 0];
     for (let i = 0; i < 10000; i++) {
-        let n = Math.floor(Math.random()*7);
+        let n = Math.floor(Math.random() * 7);
         list[n]++;
     }
     console.log(list);
@@ -95,14 +95,6 @@ function checkFailAbove() {
     }
 }
 
-function moveX(shape, dir) { // dir either -1 or 1 for left or right respective
-    if (dir == (-1 || 1)) {
-        for (let i = 0; i < 4; i++) {
-            shape.trueArray[i].gridX += dir;
-        }
-    }
-
-}
 
 function drawShape(shape) {
     shape.setTrueArray();
@@ -218,6 +210,30 @@ class TetrisShape {
         this.root.gridY++;
         this.setTrueArray();
     }
+
+    moveX(dir) { // dir either -1 or 1 for left or right respective
+
+        this.setTrueArray();
+        let reverse, outOfBounds = false;
+        for (let i = 0; i < 4; i++) {
+            let coord = this.trueArray[i];
+            if (coord.gridX + dir < 0 || coord.gridX + dir >= columns) {
+                outOfBounds = true;
+            }
+            if (!outOfBounds) {
+                let gridSquare = grid.gridArray[coord.gridX + dir][coord.gridY];
+                if (gridSquare == null || gridSquare.colour != "black") {
+                    reverse = true;
+                }
+            }
+
+        }
+        if (!reverse && !outOfBounds) {
+            this.root.gridX += dir;
+        }
+
+        this.setTrueArray();
+    }
 }
 
 class Cyan extends TetrisShape {
@@ -296,9 +312,22 @@ const shapesArray = [new Cyan(), new Blue(), new Orange(), new Yellow(), new Gre
 function keyPush(e) {
     let id = e.key;
 
-    if (['ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown'].indexOf(id) > -1) { // if id is in list
+    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].indexOf(id) > -1) { // if id is in list
         e.preventDefault(); // stop scroll
+    }
+    console.log(id);
+    if (id == 'ArrowUp') {
         currentShape.rotate(1);
+    }
+    if (id == 'ArrowDown') {
+        currentShape.rotate(-1);
+    }
+
+    if (id == 'ArrowLeft') {
+        currentShape.moveX(-1)
+    }
+    if (id == 'ArrowRight') {
+        currentShape.moveX(1)
     }
 
 }
