@@ -1,3 +1,5 @@
+<!--COPYING ANY CONTENT FROM THIS PAGE WILL REQUIRE PERMISSION FROM ITS ORIGINAL CREATOR-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,8 @@
     <link rel="stylesheet" href="../../css/pages.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
           integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" /> <!--Used from https://fontawesome.com under license https://fontawesome.com/license-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
+    <!--Used from https://fontawesome.com under license https://fontawesome.com/license-->
     <title>Games - Tetris</title>
 </head>
 
@@ -20,7 +23,8 @@
         <a href="" class="nav-link nav-button">Contact</a>
 
         <div class="social-bar">
-            <a href="https://twitter.com/AdamH0461" class="social-link twitter"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://twitter.com/AdamH0461" class="social-link twitter"><i class="fab fa-twitter"></i>
+                Twitter</a>
             <a href="https://github.com/noodleWrecker7" class="social-link github"><i class="fab fa-github"></i> Github</a>
             <a href="" class="social-link instagram"><i class="fab fa-instagram"></i> Instagram</a>
             <a href="" class="social-link discord"><i class="fab fa-discord"></i> Discord</a>
@@ -31,18 +35,23 @@
         Tetris
     </h1>
     <h2 class="sub-heading">
-        v1.0.2
+        Alpha v1.3.17
     </h2>
 </header>
 
 <body>
 <div class="page-chunk" style="background-color: whitesmoke">
-    <!--<p class="score" id="currentScore"></p>
-    <p class="high-score" id="topScore"></p>-->
+    <p class="score" id="linesCleared"></p>
+    <!--<p class="high-score" id="topScore"></p>-->
 </div>
 <div class="page-chunk">
-    <canvas id="tetrisCanvas" width="411" height="821" class="canv"></canvas>
-    <script src="tetris.js"></script>
+    <div class="row">
+        <div class="scores-tab" id="scores-tab">
+            <p class="score" id="totalScore"></p>
+        </div>
+        <canvas id="tetrisCanvas" width="411" height="821" class="canv"></canvas>
+        <script src="tetris.js"></script>
+    </div>
 </div>
 </body>
 </html>

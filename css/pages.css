@@ -88,15 +88,34 @@
 .page-chunk {
     flex-grow: 1;
     width: 100%;
-    display: inherit;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /*display: inherit;*/
+    display: flex;
     font-family: "Montserrat", sans-serif;
     flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: center;
+    /*padding: 20px 250px;*/
+    justify-content: space-between;
+}
+
+.row {
+    margin-left: 300px;
+    margin-right: 300px;
+    width: 100%;
 }
 
 .canv {
+    float: right;
+    justify-self: center;
+    margin-right: 33%;
+    padding-bottom: 20px;
+}
 
+.scores-tab {
+    float: left;
+}
+
+#linesCleared {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }

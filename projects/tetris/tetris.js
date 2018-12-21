@@ -11,9 +11,19 @@ let ticksUntilDrop = 20;
 let ticksSinceLastDrop = 0;
 let tickDropIncrease = 1;
 let spaceDown = false;
+let lockWait = 0;
+let lockWaitIncrease = 1;
+let lockWaitWarning = 25;
+let lockWaitMax = 35; // ticks waited before lock
+let whiteTicks = 0; // for cycling the shape being white when at bottom
 // const shapesArray = []; defined after specific shape definitions just above keyPush method at bottom
-
+let linesCleared = 0;
+let linesInOneGo; // for combos
+let distance; // for hard drop points
+let score = 0;
+let htmlScore = document.getElementById('totalScore');
 // TODO move shapes left & right
+
 
 window.onload = function () {
     ctx.fillStyle = 'black';
@@ -22,15 +32,8 @@ window.onload = function () {
     grid.generate();
     grid.draw();
 
-
-    let list = [0, 0, 0, 0, 0, 0, 0];
-    for (let i = 0; i < 10000; i++) {
-        let n = Math.floor(Math.random() * 7);
-        list[n]++;
-    }
-    console.log(list);
-
     currentShape = getNewShape();
+    currentShape.calculateGhostPiece();
     // currentShape = new Cyan();
 
     document.addEventListener("keydown", keyPush);
@@ -39,7 +42,8 @@ window.onload = function () {
     setInterval(function () {
         progressBoard();
         if (currentShape.root.gridY < 0) {
-            tickDropIncrease = 10;
+            tickDropIncrease = 15;
+            currentShape.calculateGhostPiece();
         }
         if (spaceDown) {
             tickDropIncrease = 25;
@@ -47,21 +51,26 @@ window.onload = function () {
             tickDropIncrease = 2;
         }
 
-        if (ticksSinceLastDrop > ticksUntilDrop) {
+        if (ticksSinceLastDrop > ticksUntilDrop && !checkCollisionBelow(currentShape)) {
             currentShape.drop();
             ticksSinceLastDrop = 0;
-
         }
         if (checkCollisionBelow(currentShape)) {
-            lockInPlace(currentShape);
-            checkFailAbove();
-            currentShape = getNewShape();
-            // currentShape = new Cyan();
+            lockWait += lockWaitIncrease;
+            if (lockWait >= lockWaitMax + 2) {
+                lockInPlace(currentShape);
+                currentShape = getNewShape();
+                currentShape.calculateGhostPiece();
+            }
+        } else {
+            lockWait = 0;
         }
-
+        checkFailAbove();
         ticksSinceLastDrop += tickDropIncrease;
         grid.draw();
-        drawShape(currentShape);
+        drawGhostOnGrid(currentShape);
+        drawShapeOnGrid(currentShape);
+        htmlScore.innerText = score;
     }, 1000 / fps);
 };
 
@@ -114,9 +123,27 @@ function checkFailAbove() {
 }
 
 function progressBoard() {
+    linesInOneGo = 0;
     for (let i = 0; i < rows; i++) {
         checkLine(i);
     }
+    switch(linesInOneGo) {
+        case 1:
+            score += Math.floor(100 * tickDropIncrease);
+            break;
+        case 2:
+            score += Math.floor(300 * tickDropIncrease);
+            break;
+        case 3:
+            score += Math.floor(500 * tickDropIncrease);
+            break;
+        case 4:
+            score += Math.floor(800 * tickDropIncrease);
+            break;
+    }
+
+
+    document.getElementById('linesCleared').innerText = linesCleared;
     // findSegments();
 
 }
@@ -133,34 +160,55 @@ function checkLine(line) {
 
     if (fullSoFar) {
         for (let i = 0; i < columns; i++) {
-            grid.gridArray[i][line].colour = "black"
+            grid.gridArray[i][line].colour = "black";
             grid.gridArray[i].splice(line, 1);
             grid.gridArray[i].unshift({realX: null, realY: null, colour: 'black'});
         }
+        ticksUntilDrop -= 0.3; // increasing game speed
+        lockWaitIncrease += 0.075; //
+        linesCleared ++;
+        linesInOneGo ++;
     }
     grid.reGen();
-
-
 }
 
-function drawShape(shape) {
+function drawShapeOnGrid(shape) {
     shape.setTrueArray();
-    ctx.fillStyle = shape.colour;
+    whiteTicks++;
     for (let i = 0; i < 4; i++) {
         let gX = shape.trueArray[i].gridX;
         let gY = shape.trueArray[i].gridY;
         let gA = grid.gridArray[gX][gY];
         if (gA != null) {
 
-            if (shape.relArray[i].relX == 0 && shape.relArray[i].relY == 0) {
-                ctx.fillStyle = "orange";
-            } else {
+            ctx.fillStyle = shape.colour;
+            if (lockWait >= lockWaitWarning || (whiteTicks % 4 == 1 && lockWait > 0)) {
+                ctx.fillStyle = "white";
+            }
+            if (lockWait >= lockWaitMax) {
                 ctx.fillStyle = shape.colour;
             }
+            if (shape.relArray[i].relX == 0 && shape.relArray[i].relY == 0) {
+                ctx.fillStyle = "orange";
+            }
+
             ctx.fillRect(gA.realX, gA.realY, tileWidth, tileWidth);
         }
     }
 }
+function drawGhostOnGrid(shape) {
+    ctx.fillStyle = 'grey';
+    for (let i = 0; i < 4; i++) {
+        console.log(shape.ghostTrueArray);
+        let gX = shape.ghostTrueArray[i].gridX;
+        let gY = shape.ghostTrueArray[i].gridY;
+        let gA = grid.gridArray[gX][gY];
+        if (gA != null) {
+            ctx.fillRect(gA.realX, gA.realY, tileWidth, tileWidth);
+        }
+    }
+}
+
 
 function checkCollisionBelow(shape) {
     let collide = false;
@@ -179,10 +227,8 @@ function checkCollisionBelow(shape) {
 function lockInPlace(shape) {
     for (let i = 0; i < 4; i++) {
         let coord = shape.trueArray[i];
-        console.log(coord);
         grid.gridArray[coord.gridX][coord.gridY].colour = shape.colour;
     }
-    ticksUntilDrop -= 0.3;
 }
 
 
@@ -236,6 +282,8 @@ class TetrisShape {
     //blockArray;
     constructor() {
         this.root = {gridX: 4, gridY: -3};
+        this.ghostRoot = {gridX: 4, gridY: -3};
+        this.ghostTrueArray;
     }
 
     rotate(dir) { // 1 for cw -1 for ccw, 0 just screws it up
@@ -258,6 +306,7 @@ class TetrisShape {
             }
         }
         this.setTrueArray(); // updates true position
+        this.calculateGhostPiece()
     }
 
     setTrueArray() {
@@ -274,11 +323,6 @@ class TetrisShape {
     drop() {
         this.root.gridY++;
         this.setTrueArray();
-        if (checkCollisionBelow(this)) {
-            lockInPlace(this);
-            checkFailAbove();
-            // currentShape = getNewShape();
-        }
     }
 
     moveX(dir) { // dir either -1 or 1 for left or right respective
@@ -303,6 +347,33 @@ class TetrisShape {
         }
 
         this.setTrueArray();
+        this.calculateGhostPiece();
+    }
+
+
+    calculateGhostPiece() {
+        let collide = false;
+        this.ghostRoot.gridX = this.root.gridX;
+        this.ghostRoot.gridY = this.root.gridY;
+
+        while (!collide) {
+            for (let i = 0; i < 4; i++) {
+                let y = this.ghostRoot.gridY + this.relArray[i].relY;
+                let x = this.ghostRoot.gridX + this.relArray[i].relX;
+                if (y >= (rows - 1) || grid.gridArray[x][y + 1].colour != "black") {
+                    collide = true;
+                }
+            }
+            if(!collide){
+                this.ghostRoot.gridY ++;
+            }
+        }
+        this.ghostTrueArray = [];
+        for (let i = 0; i < 4; i++) {
+            let x = this.ghostRoot.gridX + this.relArray[i].relX;
+            let y = this.ghostRoot.gridY + this.relArray[i].relY;
+            this.ghostTrueArray.push({gridX: x, gridY: y});
+        }
     }
 }
 
@@ -416,5 +487,16 @@ function keyUp(e) {
         console.log("spaceu");
         tickDropIncrease = 1;
         spaceDown = false;
+    }
+
+    if (id == 'Control') {
+        distance = 0;
+        while (!checkCollisionBelow(currentShape)) {
+            currentShape.drop();
+            distance ++;
+        }
+        lockInPlace(currentShape);
+        currentShape = getNewShape();
+        score += distance *2;
     }
 }
