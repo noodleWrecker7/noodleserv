@@ -1,6 +1,3 @@
-[submodule "JSSnake"]
-	path = JSSnake
-	url = https://github.com/noodleWrecker7/JSSnake.git
 [submodule "projects/snake"]
 	path = projects/snake
 	url = https://github.com/noodleWrecker7/JSSnake.git
