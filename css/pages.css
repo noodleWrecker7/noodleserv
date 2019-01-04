@@ -7,49 +7,6 @@
     padding-bottom: 20px;
 }
 
-.nav-bar {
-    margin-right: auto;
-    width: 100%;
-    position: fixed;
-    background-color: #e14336;
-}
-
-.nav-button {
-    text-decoration: none;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 12px 24px;
-    display: block;
-    float: left;
-
-}
-
-.nav-home {
-    background-color: white;
-    color: black;
-    text-shadow: 2px 1px lightgrey;
-}
-
-.nav-link {
-    background-color: inherit;
-    color: white;
-    text-shadow: 2px 1px darkred;
-}
-
-.nav-button:hover {
-    text-shadow: none;
-}
-
-.nav-home:hover {
-    background-color: lightgray;
-}
-
-.nav-link:hover {
-    background-color: white;
-    color: black;
-}
 
 .title {
     padding-top: 20px;
