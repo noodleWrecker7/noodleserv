@@ -1,0 +1,3 @@
+[submodule "projects/D2API"]
+	path = projects/D2API
+	url = https://github.com/noodleWrecker7/Destiny2ApiCaller.git
