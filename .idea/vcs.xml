@@ -3,5 +3,9 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/projects/D2API" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/platformer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/pong" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/snake" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/tetris" vcs="Git" />
   </component>
 </project>
