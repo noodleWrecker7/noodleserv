@@ -2,7 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/minesweeper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/platformer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/projects/snake" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/tetris" vcs="Git" />
     <mapping directory="V:\html\projects\pong" vcs="Git" />
   </component>
 </project>
