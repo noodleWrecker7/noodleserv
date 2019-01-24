@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="aaah">
-      <change afterPath="V:/html/projects/hangman" afterDir="false" />
-      <change afterPath="V:/html/projects/hangman/hangman.css" afterDir="false" />
-      <change beforePath="V:/.idea/vcs.xml" beforeDir="false" afterPath="V:/.idea/vcs.xml" afterDir="false" />
       <change beforePath="V:/.idea/workspace.xml" beforeDir="false" afterPath="V:/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="V:/html/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="V:/html/.idea/html.iml" beforeDir="false" />
-      <change beforePath="V:/html/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="V:/html/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="V:/html/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="V:/html/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="V:/html/projects/hangman/hangman.js" beforeDir="false" afterPath="V:/html/projects/hangman/hangman.js" afterDir="false" />
-      <change beforePath="V:/html/projects/hangman/index.html" beforeDir="false" afterPath="V:/html/projects/hangman/index.html" afterDir="false" />
-      <change beforePath="V:/html/projects/pong" beforeDir="false" afterPath="V:/html/projects/pong" afterDir="false" />
-      <change beforePath="V:/html/projects/snake" beforeDir="false" afterPath="V:/html/projects/snake" afterDir="false" />
-      <change beforePath="V:/html/projects/snake/index.html" beforeDir="false" afterPath="V:/html/projects/snake/index.html" afterDir="false" />
-      <change beforePath="V:/html/projects/snake/snake.js" beforeDir="false" afterPath="V:/html/projects/snake/snake.js" afterDir="false" />
     </list>
     <ignored path="V:/.tmp/" />
     <ignored path="V:/temp/" />
@@ -46,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://V:/html/projects/snake/snake.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1288">
+            <state relative-caret-position="362">
               <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
             </state>
           </provider>
@@ -55,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://V:/html/projects/hangman/hangman.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-98">
-              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="161">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -204,6 +190,13 @@
               <item name="projects" type="462c0819:PsiDirectoryNode" />
               <item name="hangman" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="snake" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -279,6 +272,7 @@
       <workItem from="1548091339504" duration="1487000" />
       <workItem from="1548190377711" duration="2574000" />
       <workItem from="1548265409495" duration="1200000" />
+      <workItem from="1548350240516" duration="1204000" />
     </task>
     <task id="LOCAL-00001" summary="aaah">
       <created>1547845053109</created>
@@ -294,16 +288,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547846362459</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="aaah">
+      <created>1548350337200</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548350337200</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13811000" />
+    <option name="totallyTimeSpent" value="15015000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="166" y="99" width="1728" height="858" extended-state="1" />
+    <frame x="108" y="87" width="1728" height="858" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2619904" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.264988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -315,8 +317,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49940047" visible="true" weight="0.32904148" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005995" side_tool="true" visible="true" weight="0.32904148" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -397,13 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://V:/html/projects/snake/snake.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://V:/html/projects/snake/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
@@ -449,10 +444,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://V:/html/projects/snake/snake.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://V:/html/projects/hangman/hangman.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="161">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
