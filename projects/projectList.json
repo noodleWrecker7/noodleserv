@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Hangman",
+        "link": "hangman",
+        "img": "hangman.png",
+        "text":{
+            "blurb": "WIP!",
+            "date": " "
+        }
+    },
+    {
+        "name": "Minesweeper",
+        "link": "minesweeper",
+        "img": "minesweeper.png",
+        "blurb": "The most polished game on here.",
+        "date": "13/1/2019"
+        
+    },
+    {
+        "name": "Tetris",
+        "link": "tetris/#tetrisCanvas",
+        "img": "tetris.png",
+        "date": "23/12/2018",
+        "blurb": "Half-assed attempt at Tetris."
+    }
+]
