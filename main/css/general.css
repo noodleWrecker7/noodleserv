@@ -121,3 +121,18 @@ body {
     background-color: white;
     color: black;
 }
+
+.foot {
+    background-color: grey;
+    display: flex;
+    color: white;
+    margin-top: 10px;
+    float: left;
+    justify-content: center;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.foot.credit {
+    text-align: center;
+}

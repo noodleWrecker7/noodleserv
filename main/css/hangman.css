@@ -18,13 +18,14 @@
     margin: 1px 1px;
     text-align: center;
 }
-.keyButton:before{
+
+.keyButton:before {
     content: "";
     display: block;
     padding-top: 40%;
 }
 
-.keyButton:after{
+.keyButton:after {
     content: "";
     display: block;
     padding-top: 40%;
@@ -35,6 +36,54 @@
     background-color: ghostwhite;
 }
 
+.unused:hover {
+    background-color: #bababf;
+}
+
 .used {
-    background-color: #36393f;
+    background-color: #979BA0;
+}
+
+.used:active, .used:hover, .used:focus {
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+
+}
+
+.gameContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+
+}
+
+.word-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.letter {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 40px;
+    border-bottom: 5px solid black;
+    width: 50%;
+    height: 40px;
+    max-width: 80px;
+    text-align: center;
+}
+
+.missed-letters {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }

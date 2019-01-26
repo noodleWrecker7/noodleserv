@@ -51,7 +51,7 @@
     flex-flow: row nowrap;
     align-items: center;
     /*padding: 20px 250px;*/
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .row {

@@ -11,7 +11,7 @@ if ($_GET['p'] == null || $_GET['p'] < 1) {
     header('Location: ?p=1');
 }
 
-$projectsResponse = file_get_contents('projectList.json');
+$projectsResponse = file_get_contents('../../hidden/projectList.json');
 //echo $response;
 $projectsResponse = json_decode($projectsResponse, true);
 //echo print_r($response, true);
@@ -33,8 +33,7 @@ if ($pageNum > $totalPagesNeeded) {
     <link rel="stylesheet" href="../css/index.css">
 
     <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
-          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/fontawesome.css">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <!--Used from https://fontawesome.com under license https://fontawesome.com/license-->
     <title>Noodle - Projects</title>
@@ -45,6 +44,7 @@ if ($pageNum > $totalPagesNeeded) {
         <div class="links-bar">
             <a href="../" class="nav-home nav-button">Home</a>
             <a href="#" class="nav-link nav-button">Projects</a>
+            <a href="https://paypal.me/noodlewrecker" class="nav-link nav-button">Donate</a>
         </div>
 
         <?php
@@ -56,13 +56,41 @@ if ($pageNum > $totalPagesNeeded) {
         Projects
     </h1>
     <h2 class="sub-heading">
-        I dont know what this is for
+        A collection of everything I've made.
     </h2>
 
 </header>
+<br>
+<?php
+echo "<div class=\"pagination\">";
+$x = $pageNum - 1; // for back
+echo "<a href=\"index.php?p=$x\">&laquo;</a>";
+
+if ($pageNum < 3) {
+    for ($i = 1; $i <= 5; $i++) {
+        if ($i == $pageNum) {
+            echo "<a class=\"selected\" \"href=\"index.php?p=$i\">$i</a>";
+        } else {
+            echo "<a href=\"index.php?p=$i\">$i</a>";
+        }
+    }
+} else {
+    echo "
+        <a href=\"index.php?p=" . ($pageNum - 2) . "\">" . ($pageNum - 2) . "</a>
+        <a href=\"index.php?p=" . ($pageNum - 1) . "\">" . ($pageNum - 1) . "</a>
+        <a class= \"selected\" href=\"index.php?p=" . $pageNum . "\">" . $pageNum . "</a>
+        <a href=\"index.php?p=" . ($pageNum + 1) . "\">" . ($pageNum + 1) . "</a>
+        <a href=\"index.php?p=" . ($pageNum + 2) . "\">" . ($pageNum + 2) . "</a>";
+}
 
 
+$x += 2; // for forward
+echo "<a href=\"index.php?p=$x\">&raquo;</a>";
+
+echo "</div>";
+?>
 <div class="grid">
+
     <?php
     echo "<div class=\"row\">";
 
@@ -110,8 +138,8 @@ if ($pageNum < 3) {
     }
 } else {
     echo "
-        <a href=\"index.php?p=" . $pageNum - 2 . "\">" . $pageNum - 2 . "</a>
-        <a href=\"index.php?p=" . $pageNum - 1 . "\">" . $pageNum - 1 . "</a>
+        <a href=\"index.php?p=" . ($pageNum - 2) . "\">" . ($pageNum - 2) . "</a>
+        <a href=\"index.php?p=" . ($pageNum - 1) . "\">" . ($pageNum - 1) . "</a>
         <a class= \"selected\" href=\"index.php?p=" . $pageNum . "\">" . $pageNum . "</a>
         <a href=\"index.php?p=" . ($pageNum + 1) . "\">" . ($pageNum + 1) . "</a>
         <a href=\"index.php?p=" . ($pageNum + 2) . "\">" . ($pageNum + 2) . "</a>";

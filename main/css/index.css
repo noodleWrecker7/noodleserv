@@ -149,46 +149,7 @@
     margin: 0px;
 }
 
-.foot {
-    display: flex;
-    color: grey;
-    margin-top: 10px;
-    float: left;
-    justify-content: center;
-    width: 100%;
-}
 
-.foot.credit {
-    text-align: center;
-}
 
-.pagination {
-    display: inline-block;
-    justify-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-}
 
-.pagination a {
-    color: black;
-    float: left;
-    padding: 8px 14px;
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 1px;
-    margin: 1px;
-}
-
-.selected {
-    background-color: var(--weird-red);
-    border: 1px solid var(--weird-red) !important;
-    border-radius: 2px;
-}
-
-.pagination a:hover {
-    background-color: darkgray;
-    border: 1px solid darkgray !important;
-    border-radius: 1px;
-}
 
