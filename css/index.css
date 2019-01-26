@@ -177,10 +177,18 @@
     text-decoration: none;
     border: 1px solid white;
     border-radius: 1px;
+    margin: 1px;
+}
+
+.selected {
+    background-color: var(--weird-red);
+    border: 1px solid var(--weird-red) !important;
+    border-radius: 2px;
 }
 
 .pagination a:hover {
-    background-color: var(--weird-red);
-    border: 1px solid var(--weird-red);
+    background-color: darkgray;
+    border: 1px solid darkgray !important;
     border-radius: 1px;
 }
+
