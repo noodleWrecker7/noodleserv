@@ -32,12 +32,10 @@
     <h2 class="sub-heading">
         Yeah I have a website
     </h2>
-    <div class="social-bar">
-        <a href="https://twitter.com/AdamH0461" class="social-link twitter"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="https://github.com/noodleWrecker7" class="social-link github"><i class="fab fa-github"></i> Github</a>
-        <a href="" class="social-link instagram"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="" class="social-link discord"><i class="fab fa-discord"></i> Discord</a>
-    </div>
+    <?php
+    $socialBarResponse = file_get_contents("../hidden/social-bar.html");
+    echo $socialBarResponse;
+    ?>
 </header>
 <div class="main">
     <div class="content-chunk">

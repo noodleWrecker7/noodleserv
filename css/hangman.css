@@ -1,0 +1,40 @@
+.keypad {
+    width: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 120px;
+    justify-content: center;
+}
+
+.keyButton {
+    position: relative;
+    width: 7.3%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 95%;
+    margin: 1px 1px;
+    text-align: center;
+}
+.keyButton:before{
+    content: "";
+    display: block;
+    padding-top: 40%;
+}
+
+.keyButton:after{
+    content: "";
+    display: block;
+    padding-top: 40%;
+}
+
+
+.unused {
+    background-color: ghostwhite;
+}
+
+.used {
+    background-color: #36393f;
+}
