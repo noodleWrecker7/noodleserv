@@ -9,47 +9,52 @@
 
 <url>
   <loc>https://noodlewrecker.xyz/</loc>
-  <lastmod>2019-01-25T21:51:07+00:00</lastmod>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://noodlewrecker.xyz/projects/?p=1</loc>
-  <lastmod>2019-01-26T09:29:05+00:00</lastmod>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://noodlewrecker.xyz/projects/index.php?p=1</loc>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://noodlewrecker.xyz/projects/platforms/</loc>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://noodlewrecker.xyz/projects/hangman/</loc>
-  <lastmod>2019-01-25T22:08:03+00:00</lastmod>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://noodlewrecker.xyz/projects/minesweeper/</loc>
-  <lastmod>2019-01-25T22:08:02+00:00</lastmod>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://noodlewrecker.xyz/projects/tetris/</loc>
-  <lastmod>2019-01-25T22:08:02+00:00</lastmod>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://noodlewrecker.xyz/projects/snake/</loc>
-  <lastmod>2019-01-25T21:53:34+00:00</lastmod>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://noodlewrecker.xyz/projects/pong/</loc>
-  <lastmod>2019-01-25T22:08:03+00:00</lastmod>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://noodlewrecker.xyz/projects/index.php?p=1</loc>
-  <lastmod>2019-01-26T09:29:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://noodlewrecker.xyz/index.html</loc>
-  <lastmod>2019-01-25T21:51:07+00:00</lastmod>
+  <loc>https://noodlewrecker.xyz/projects/hangman/extreme.php</loc>
+  <lastmod>2019-01-27T11:25:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 

@@ -6,6 +6,7 @@
     justify-content: center;
 }
 
+/*noinspection ALL*/
 .keyButton {
     position: relative;
     width: 7.3%;
@@ -19,12 +20,14 @@
     text-align: center;
 }
 
+/*noinspection CssUnusedSymbol*/
 .keyButton:before {
     content: "";
     display: block;
     padding-top: 40%;
 }
 
+/*noinspection CssUnusedSymbol*/
 .keyButton:after {
     content: "";
     display: block;
@@ -32,10 +35,12 @@
 }
 
 
+/*noinspection CssUnusedSymbol*/
 .unused {
     background-color: ghostwhite;
 }
 
+/*noinspection CssUnusedSymbol*/
 .unused:hover {
     background-color: #bababf;
 }
@@ -69,6 +74,7 @@
     padding-bottom: 10px;
 }
 
+/*noinspection CssUnusedSymbol*/
 .letter {
     display: inline-block;
     padding: 5px;

@@ -18,7 +18,7 @@ button {
 button:hover {
     border-bottom-color: darkgray;
     border-right-color: darkgray;
-    border-top-right-radius: 0px;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 

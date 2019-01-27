@@ -1,3 +1,5 @@
+import * as _ from "./underscore";
+
 const wordList = { // is called in translator
     " ": " ", // important
     ".": ".", // idek if this does anything

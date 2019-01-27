@@ -56,7 +56,7 @@ iframe{
     font-size: 14px;
     color: gray;
     font-weight: 400;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .score, .high-score {

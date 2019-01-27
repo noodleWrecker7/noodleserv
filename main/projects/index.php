@@ -108,7 +108,7 @@ echo "</div>";
             echo "
             <a href=\"" . $item['link'] . "\" class=\"item\">
                 <div class=\"picture\">
-                    <img src=\"img/" . $item['img'] . "\">
+                    <img alt=\"Image of the game\" src=\"img/" . $item['img'] . "\">
                 </div>
                 <h3 class=\"item-head\">" . $item['name'] . "</h3>
                 <p class=\"item-text\">" . $item['blurb'] . "</p>

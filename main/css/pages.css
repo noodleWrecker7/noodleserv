@@ -29,7 +29,7 @@
 }
 
 .social-bar {
-    padding: 5px 5px 0px;
+    padding: 5px 5px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,12 +71,6 @@
     float: left;
 }
 
-#linesCleared {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .canvasContainer {
     width: inherit;
     display: flex;
@@ -91,4 +85,18 @@
     flex-flow: column nowrap;
     padding-left: auto;
     padding-right: auto;
+}
+
+.tetrisCanvases {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 0;
+}
+
+#tetrisNextBlock, #tetrisHoldBlock {
+    margin: 10px;
+    height: 165px;
+}
+#tetrisCanvas {
+    margin: 10px;
 }

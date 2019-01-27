@@ -1,10 +1,24 @@
 [
     {
+        "name": "Flappy Bird",
+        "link": "flappybird",
+        "img": "placeholder.png",
+        "blurb": "WIP!",
+        "date": ""
+    },
+    {
+        "name": "Platforms",
+        "link": "platforms",
+        "img": "platforms.png",
+        "blurb": "Dunno what I'm doing with this yet",
+        "date": "27/1/2019"
+    },
+    {
         "name": "Hangman",
         "link": "hangman",
         "img": "hangman.png",
-        "blurb": "WIP!",
-        "date": " "
+        "blurb": "Half these words don't even make sense",
+        "date": "26/1/2019"
     },
     {
         "name": "Minesweeper",
@@ -25,7 +39,7 @@
         "name": "Snake",
         "link": "snake",
         "img": "snake.png",
-        "blurb": "Snek is good game yes? Play now!",
+        "blurb": "It's snake. Eat Apples. Nom nom.",
         "date": "3/11/2018"
     },
     {

@@ -23,7 +23,6 @@
 }
 
 .item {
-    box-sizing: inherit;
     display: block;
     box-sizing: padding-box;
     padding-top: 10px;
@@ -58,8 +57,7 @@ img {
 
 .date {
     float: right;
-    margin: 0;
-    margin-top: auto;
+    margin: auto 0 0;
     font-family: "Montserrat", sans-serif;
     color: #979BA0;
 }
