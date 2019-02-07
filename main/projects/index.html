@@ -1,4 +1,4 @@
-<?php
+<--<?php
 function test_input($data)
 {
     $data = trim($data);
@@ -23,7 +23,7 @@ $totalPagesNeeded = ceil($totalEntries / 8);
 if ($pageNum > $totalPagesNeeded) {
     header('Location: ?p=' . $totalPagesNeeded);
 }
-?>
+?>--!>
 
 <!DOCTYPE html>
 <html lang="en">
