@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="moved to static site" />
+    <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="moved to static site">
+      <change beforePath="V:/.idea/workspace.xml" beforeDir="false" afterPath="V:/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="V:/main/projects/flappybird/flappybird.js" beforeDir="false" afterPath="V:/main/projects/flappybird/flappybird.js" afterDir="false" />
+    </list>
     <ignored path="V:/.tmp/" />
     <ignored path="V:/temp/" />
     <ignored path="V:/tmp/" />
@@ -16,11 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://V:/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+              <caret column="73" selection-start-column="73" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://V:/main/projects/snake/snake.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1288">
+              <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://V:/main/projects/flappybird/flappybird.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -38,7 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getMouse</find>
       <find>this.player.yv</find>
       <find>this.player.xv</find>
       <find>flagImg</find>
@@ -68,6 +88,7 @@
       <find>ai</find>
       <find>high</find>
       <find>3</find>
+      <find>setCookie</find>
     </findStrings>
     <replaceStrings>
       <replace>img</replace>
@@ -87,7 +108,6 @@
         <option value="V:/main/projects/ginger/words.js" />
         <option value="V:/main/projects/ginger/translator.html" />
         <option value="V:/main/projects/runner/index.html" />
-        <option value="V:/main/projects/snake/snake.js" />
         <option value="V:/main/projects/pong/pingpong.js" />
         <option value="V:/main/css/pages.css" />
         <option value="V:/main/projects/tetris/tetris.js" />
@@ -112,7 +132,6 @@
         <option value="V:/main/css/general.css" />
         <option value="V:/main/projects/flappybird/flappybird.css" />
         <option value="V:/main/projects/flappybird/index.php" />
-        <option value="V:/main/projects/flappybird/flappybird.js" />
         <option value="V:/main/projects/index.php" />
         <option value="V:/staging/index.php" />
         <option value="V:/staging/hidden/social-bar.html" />
@@ -131,6 +150,8 @@
         <option value="V:/staging/projects/breaker/index.php" />
         <option value="V:/staging/hidden/render.js" />
         <option value="V:/index.html" />
+        <option value="V:/main/projects/snake/snake.js" />
+        <option value="V:/main/projects/flappybird/flappybird.js" />
       </list>
     </option>
   </component>
@@ -163,63 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="hangman" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="minesweeper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pong" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="snake" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="tetris" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,6 +257,63 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
               <item name="tetris" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="hangman" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="minesweeper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pong" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="snake" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tetris" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -393,7 +414,8 @@
       <workItem from="1549648577000" duration="593000" />
       <workItem from="1549790193209" duration="6630000" />
       <workItem from="1549796852000" duration="1037000" />
-      <workItem from="1549797910249" duration="134000" />
+      <workItem from="1549797910249" duration="806000" />
+      <workItem from="1549831249450" duration="227000" />
     </task>
     <task id="LOCAL-00001" summary="aaah">
       <created>1547845053109</created>
@@ -493,11 +515,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549797963755</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="cookies last a year">
+      <created>1549831345286</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1549831345287</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141879000" />
+    <option name="totallyTimeSpent" value="142778000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,8 +539,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.20255864" />
       <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.18017058" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -610,7 +640,8 @@
     <MESSAGE value="moving from php to js" />
     <MESSAGE value="update redirect" />
     <MESSAGE value="moved to static site" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved to static site" />
+    <MESSAGE value="cookies last a year" />
+    <option name="LAST_COMMIT_MESSAGE" value="cookies last a year" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://V:/main/glype-master/plugins/youtube.com.php" />
@@ -710,13 +741,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://V:/main/projects/minesweeper/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://V:/main/projects/minesweeper/index.php" />
     <entry file="file://V:/main/projects/platforms/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="662">
@@ -734,13 +759,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://V:/main/projects/tetris/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://V:/main/projects/tetris/index.php" />
     <entry file="file://V:/main/css/general.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="746">
@@ -774,20 +793,6 @@
     </entry>
     <entry file="file://V:/main/projects/breaker/index.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://V:/main/projects/flappybird/flappybird.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7751">
-          <caret line="337" column="60" selection-start-line="337" selection-start-column="60" selection-end-line="337" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/projects/snake/snake.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4991">
-          <caret line="217" selection-start-line="217" selection-end-line="227" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://V:/main/projects/index.php" />
     <entry file="file://V:/main/index.php" />
@@ -829,7 +834,21 @@
     <entry file="file://V:/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+          <caret column="73" selection-start-column="73" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/snake/snake.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/flappybird/flappybird.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>

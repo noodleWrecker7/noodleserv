@@ -17,6 +17,7 @@ if (highScore < 1) {
     highScore = 0;
     setCookie("highScore", 0, 365);
 }
+setCookie("highScore", highScore, 365);
 
 var restartBuffer = 0;
 var restartTimer = 20;
