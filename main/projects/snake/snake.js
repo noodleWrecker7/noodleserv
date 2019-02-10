@@ -31,6 +31,12 @@ window.onload = function () {
     initialiseGrid();
     generateApple();
     topScore = getCookie("highScore");
+    if (topScore < 1) {
+        setCookie("highScore", 0, 365);
+
+    }
+    setCookie("highScore", topScore, 365);
+
     setInterval(function () {
         if (!showingEnd) {
             moveEverything();
@@ -138,7 +144,7 @@ function drawEverything() {
         // collide apple
         if (gC.x === apple.x && gC.y === apple.y) {
             tailLength++;
-            score = tailLength -startLength;
+            score = tailLength - startLength;
             generateApple();
         }
 
