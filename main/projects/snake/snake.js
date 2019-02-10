@@ -54,7 +54,7 @@ function reset() {
         xv = 0;
         yv = 0;
         showingEnd = false;
-        setCookie("highScore", topScore, 7);
+        setCookie("highScore", topScore, 365);
         score = 0;
         document.removeEventListener("mousedown", reset);
     }
@@ -64,7 +64,7 @@ function fail() {
     score = tailLength - startLength;
     showingEnd = true;
     document.addEventListener("mousedown", reset);
-    setCookie("highScore", topScore, 7);
+    setCookie("highScore", topScore, 365);
 }
 
 function showEnd() {

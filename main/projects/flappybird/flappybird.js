@@ -15,7 +15,7 @@ let score = 0;
 let highScore = getCookie("highScore");
 if (highScore < 1) {
     highScore = 0;
-    setCookie("highScore", 0, 30);
+    setCookie("highScore", 0, 365);
 }
 
 var restartBuffer = 0;
@@ -168,7 +168,7 @@ function collectPoint() {
     score++;
     if (score > highScore && !aiActivate) {
         highScore = score;
-        setCookie("highScore", highScore, 30);
+        setCookie("highScore", highScore, 365);
     }
 }
 
