@@ -64,28 +64,28 @@ if ($pageNum > $totalPagesNeeded) {
 <?php
 echo "<div class=\"pagination\">";
 $x = $pageNum - 1; // for back
-echo "<a href=\"index.php?p=$x\">&laquo;</a>";
+echo "<a href=\"?p=$x\">&laquo;</a>";
 
 if ($pageNum < 3) {
     for ($i = 1; $i <= 5; $i++) {
         if ($i == $pageNum) {
-            echo "<a class=\"selected\" \"href=\"index.php?p=$i\">$i</a>";
+            echo "<a class=\"selected\" \"href=\"?p=$i\">$i</a>";
         } else {
-            echo "<a href=\"index.php?p=$i\">$i</a>";
+            echo "<a href=\"?p=$i\">$i</a>";
         }
     }
 } else {
     echo "
-        <a href=\"index.php?p=" . ($pageNum - 2) . "\">" . ($pageNum - 2) . "</a>
-        <a href=\"index.php?p=" . ($pageNum - 1) . "\">" . ($pageNum - 1) . "</a>
-        <a class= \"selected\" href=\"index.php?p=" . $pageNum . "\">" . $pageNum . "</a>
-        <a href=\"index.php?p=" . ($pageNum + 1) . "\">" . ($pageNum + 1) . "</a>
-        <a href=\"index.php?p=" . ($pageNum + 2) . "\">" . ($pageNum + 2) . "</a>";
+        <a href=\"?p=" . ($pageNum - 2) . "\">" . ($pageNum - 2) . "</a>
+        <a href=\"?p=" . ($pageNum - 1) . "\">" . ($pageNum - 1) . "</a>
+        <a class= \"selected\" href=\"?p=" . $pageNum . "\">" . $pageNum . "</a>
+        <a href=\"?p=" . ($pageNum + 1) . "\">" . ($pageNum + 1) . "</a>
+        <a href=\"?p=" . ($pageNum + 2) . "\">" . ($pageNum + 2) . "</a>";
 }
 
 
 $x += 2; // for forward
-echo "<a href=\"index.php?p=$x\">&raquo;</a>";
+echo "<a href=\"?p=$x\">&raquo;</a>";
 
 echo "</div>";
 ?>
@@ -126,28 +126,28 @@ echo "</div>";
 <?php
 echo "<div class=\"pagination\">";
 $x = $pageNum - 1; // for back
-echo "<a href=\"index.php?p=$x\">&laquo;</a>";
+echo "<a href=\"?p=$x\">&laquo;</a>";
 
 if ($pageNum < 3) {
     for ($i = 1; $i <= 5; $i++) {
         if ($i == $pageNum) {
-            echo "<a class=\"selected\" \"href=\"index.php?p=$i\">$i</a>";
+            echo "<a class=\"selected\" \"href=\"?p=$i\">$i</a>";
         } else {
-            echo "<a href=\"index.php?p=$i\">$i</a>";
+            echo "<a href=\"?p=$i\">$i</a>";
         }
     }
 } else {
     echo "
-        <a href=\"index.php?p=" . ($pageNum - 2) . "\">" . ($pageNum - 2) . "</a>
-        <a href=\"index.php?p=" . ($pageNum - 1) . "\">" . ($pageNum - 1) . "</a>
-        <a class= \"selected\" href=\"index.php?p=" . $pageNum . "\">" . $pageNum . "</a>
-        <a href=\"index.php?p=" . ($pageNum + 1) . "\">" . ($pageNum + 1) . "</a>
-        <a href=\"index.php?p=" . ($pageNum + 2) . "\">" . ($pageNum + 2) . "</a>";
+        <a href=\"?p=" . ($pageNum - 2) . "\">" . ($pageNum - 2) . "</a>
+        <a href=\"?p=" . ($pageNum - 1) . "\">" . ($pageNum - 1) . "</a>
+        <a class= \"selected\" href=\"?p=" . $pageNum . "\">" . $pageNum . "</a>
+        <a href=\"?p=" . ($pageNum + 1) . "\">" . ($pageNum + 1) . "</a>
+        <a href=\"?p=" . ($pageNum + 2) . "\">" . ($pageNum + 2) . "</a>";
 }
 
 
 $x += 2; // for forward
-echo "<a href=\"index.php?p=$x\">&raquo;</a>";
+echo "<a href=\"index.html?p=$x\">&raquo;</a>";
 
 echo "</div>";
 ?>
