@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="moved to static site" />
+    <ignored path="V:/.tmp/" />
+    <ignored path="V:/temp/" />
+    <ignored path="V:/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>V:/phpp/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://V:/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getMouse</find>
+      <find>this.player.yv</find>
+      <find>this.player.xv</find>
+      <find>flagImg</find>
+      <find>imgBottom</find>
+      <find>Pipe</find>
+      <find>body</find>
+      <find>details</find>
+      <find>title</find>
+      <find>*fps</find>
+      <find>fps</find>
+      <find>this.y</find>
+      <find>checkPlayer</find>
+      <find>flap</find>
+      <find>t</find>
+      <find>fail</find>
+      <find>console</find>
+      <find>score</find>
+      <find>cookie</find>
+      <find>highScore</find>
+      <find>for</find>
+      <find>cvs.width</find>
+      <find>cvs.height</find>
+      <find>ctx.</find>
+      <find>cvs.</find>
+      <find>back</find>
+      <find>player</find>
+      <find>ai</find>
+      <find>high</find>
+      <find>3</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>img</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="V:/" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="V:/main/projects/social-bar.txt" />
+        <option value="V:/main/css/index.css" />
+        <option value="V:/main/css/projectsGrid.css" />
+        <option value="V:/main/index.php" />
+        <option value="V:/main/projects/ginger/words.js" />
+        <option value="V:/main/projects/ginger/translator.html" />
+        <option value="V:/main/projects/runner/index.html" />
+        <option value="V:/main/projects/snake/snake.js" />
+        <option value="V:/main/projects/pong/pingpong.js" />
+        <option value="V:/main/css/pages.css" />
+        <option value="V:/main/projects/tetris/tetris.js" />
+        <option value="V:/main/projects/runner/runner.js" />
+        <option value="V:/main/projects/runner/index.php" />
+        <option value="V:/main/projects/hangman/index.php" />
+        <option value="V:/main/projects/hangman/extreme.php" />
+        <option value="V:/hidden/social-bar.html" />
+        <option value="V:/main/projects/animationframe/index.php" />
+        <option value="V:/main/projects/animationframe/index.html" />
+        <option value="V:/main/projects/animationframe/flappybird.js" />
+        <option value="V:/main/css/hangman.css" />
+        <option value="V:/main/projects/minesweeper/minesweeper.js" />
+        <option value="V:/main/projects/hangman/hangman.js" />
+        <option value="V:/main/projects/hangman/hangmanextreme.js" />
+        <option value="V:/main/projects/platforms/index.php" />
+        <option value="V:/main/projects/pong/index.php" />
+        <option value="V:/main/projects/snake/index.php" />
+        <option value="V:/main/projects/tetris/index.php" />
+        <option value="V:/main/css/minesweeper.css" />
+        <option value="V:/main/projects/minesweeper/index.php" />
+        <option value="V:/main/css/general.css" />
+        <option value="V:/main/projects/flappybird/flappybird.css" />
+        <option value="V:/main/projects/flappybird/index.php" />
+        <option value="V:/main/projects/flappybird/flappybird.js" />
+        <option value="V:/main/projects/index.php" />
+        <option value="V:/staging/index.php" />
+        <option value="V:/staging/hidden/social-bar.html" />
+        <option value="V:/hidden/projectList.json" />
+        <option value="V:/staging/projects/index.php" />
+        <option value="V:/staging/index.html" />
+        <option value="V:/staging/projects/index.html" />
+        <option value="V:/staging/projects/tetris/index.php" />
+        <option value="V:/staging/projects/snake/index.php" />
+        <option value="V:/staging/projects/pong/index.php" />
+        <option value="V:/staging/projects/platforms/index.php" />
+        <option value="V:/staging/projects/minesweeper/index.php" />
+        <option value="V:/staging/projects/hangman/index.php" />
+        <option value="V:/staging/projects/hangman/extreme.php" />
+        <option value="V:/staging/projects/flappybird/index.php" />
+        <option value="V:/staging/projects/breaker/index.php" />
+        <option value="V:/staging/hidden/render.js" />
+        <option value="V:/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="V:/phpp/vendor/athlon1600/php-proxy-plugin-bundle" />
+      <path value="V:/phpp/vendor/athlon1600/php-proxy" />
+      <path value="V:/phpp/vendor/athlon1600/youtube-downloader" />
+      <path value="V:/phpp/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="364" />
+    <option name="y" value="-25" />
+    <option name="width" value="1728" />
+    <option name="height" value="972" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="hangman" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="minesweeper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pong" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="snake" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tetris" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="breaker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="flappybird" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="hangman" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="minesweeper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="platforms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="pong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="snake" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="tetris" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
+    <property name="last_opened_file_path" value="V:/" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="V:\hidden" />
+      <recent name="V:\main\css" />
+      <recent name="V:\html" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="V:\main\projects\breaker" />
+      <recent name="V:\main\projects\animationframe" />
+      <recent name="V:\main\projects\flappybird" />
+      <recent name="V:\main\projects\hangman" />
+      <recent name="V:\main\projects" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Script.index.html">
+    <configuration name="test.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/V/html/test.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="V:/main/projects/flappybird/index.html">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.html" />
+        <item itemvalue="JavaScript Debug.test.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="" />
+      <created>1547843383491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547843383491</updated>
+      <workItem from="1547843385018" duration="2806000" />
+      <workItem from="1547846216638" duration="371000" />
+      <workItem from="1547905373272" duration="4668000" />
+      <workItem from="1548090125290" duration="705000" />
+      <workItem from="1548091339504" duration="1487000" />
+      <workItem from="1548190377711" duration="2574000" />
+      <workItem from="1548265409495" duration="1200000" />
+      <workItem from="1548350240516" duration="2941000" />
+      <workItem from="1548358162857" duration="1807000" />
+      <workItem from="1548446319870" duration="10480000" />
+      <workItem from="1548497456565" duration="3668000" />
+      <workItem from="1548510436447" duration="3039000" />
+      <workItem from="1548513501755" duration="25019000" />
+      <workItem from="1548542270160" duration="3495000" />
+      <workItem from="1548583330836" duration="26270000" />
+      <workItem from="1548693300874" duration="3556000" />
+      <workItem from="1548708818992" duration="1632000" />
+      <workItem from="1548790289322" duration="6400000" />
+      <workItem from="1548873677440" duration="7979000" />
+      <workItem from="1548955403241" duration="5479000" />
+      <workItem from="1549039233909" duration="13998000" />
+      <workItem from="1549128320569" duration="3911000" />
+      <workItem from="1549648577000" duration="593000" />
+      <workItem from="1549790193209" duration="6630000" />
+      <workItem from="1549796852000" duration="1037000" />
+      <workItem from="1549797910249" duration="134000" />
+    </task>
+    <task id="LOCAL-00001" summary="aaah">
+      <created>1547845053109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547845053109</updated>
+    </task>
+    <task id="LOCAL-00002" summary="aaah">
+      <created>1547846362459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547846362459</updated>
+    </task>
+    <task id="LOCAL-00003" summary="aaah">
+      <created>1548350337200</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548350337200</updated>
+    </task>
+    <task id="LOCAL-00004" summary="yeet">
+      <created>1548351513913</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548351513913</updated>
+    </task>
+    <task id="LOCAL-00005" summary="honestly wtf">
+      <created>1548452773205</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1548452773205</updated>
+    </task>
+    <task id="LOCAL-00006" summary="honestly wtf">
+      <created>1548503549711</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548503549711</updated>
+    </task>
+    <task id="LOCAL-00007" summary="made stuff more dynamic, social bar loads with php like projects grid">
+      <created>1548511881186</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1548511881186</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added all sorts of stuff, made hangman, cached fontawesome styles, altered the way some pages are made, made footer cool, actually added some text on home page">
+      <created>1548525197613</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1548525197613</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added all sorts of stuff, made hangman, cached fontawesome styles, altered the way some pages are made, made footer cool, actually added some text on home page">
+      <created>1548525295216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1548525295216</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added all sorts of stuff, made hangman, cached fontawesome styles, altered the way some pages are made, made footer cool, actually added some text on home page">
+      <created>1548591885427</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1548591885427</updated>
+    </task>
+    <task id="LOCAL-00011" summary="moving from php to js">
+      <created>1549797148037</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1549797148037</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update redirect">
+      <created>1549797657204</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1549797657204</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update redirect">
+      <created>1549797733768</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1549797733768</updated>
+    </task>
+    <task id="LOCAL-00014" summary="moved to static site">
+      <created>1549797963755</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1549797963755</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="141879000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.20042644" />
+      <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.18017058" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49840087" weight="0.32841328" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.3296582" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.3296582" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4978678" weight="0.25358325" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.25248072" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.41643453" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.18443497" />
+      <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.18017058" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49840087" weight="0.32855567" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.3296582" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.3296582" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4978678" weight="0.25358325" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.25248072" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.41643453" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="V:/html" />
+      <path value="V:/server/html" />
+      <path value="V:/server/html/projects/minesweeper" />
+      <path value="V:/server/html/projects/pong" />
+      <path value="V:/server/html/projects/snake" />
+      <path value="V:/server/html/projects/tetris" />
+      <path value="V:/html/projects/hangman" />
+      <path value="V:/html/projects/minesweeper" />
+      <path value="V:/html/projects/pong" />
+      <path value="V:/html/projects/snake" />
+      <path value="V:/html/projects/tetris" />
+      <path value="V:/htmlold/projects/hangman" />
+      <path value="V:/htmlold/projects/minesweeper" />
+      <path value="V:/htmlold/projects/pong" />
+      <path value="V:/htmlold/projects/snake" />
+      <path value="V:/htmlold/projects/tetris" />
+      <path value="V:/mainold/projects/hangman" />
+      <path value="V:/mainold/projects/minesweeper" />
+      <path value="V:/mainold/projects/pong" />
+      <path value="V:/mainold/projects/snake" />
+      <path value="V:/mainold/projects/tetris" />
+      <path value="V:/main" />
+      <path value="V:/main/projects/runner" />
+      <path value="V:/mainphp/projects/hangman" />
+      <path value="V:/mainphp/projects/minesweeper" />
+      <path value="V:/mainphp/projects/platforms" />
+      <path value="V:/mainphp/projects/pong" />
+      <path value="V:/mainphp/projects/snake" />
+      <path value="V:/mainphp/projects/tetris" />
+      <path value="V:/staging/projects/hangman" />
+      <path value="V:/staging/projects/minesweeper" />
+      <path value="V:/staging/projects/platforms" />
+      <path value="V:/staging/projects/pong" />
+      <path value="V:/staging/projects/snake" />
+      <path value="V:/staging/projects/tetris" />
+      <path value="V:/main/projects/hangman" />
+      <path value="V:/main/projects/minesweeper" />
+      <path value="V:/main/projects/platforms" />
+      <path value="V:/main/projects/pong" />
+      <path value="V:/main/projects/snake" />
+      <path value="V:/main/projects/tetris" />
+    </ignored-roots>
+    <MESSAGE value="aaah" />
+    <MESSAGE value="yeet" />
+    <MESSAGE value="honestly wtf" />
+    <MESSAGE value="made stuff more dynamic, social bar loads with php like projects grid" />
+    <MESSAGE value="Added all sorts of stuff, made hangman, cached fontawesome styles, altered the way some pages are made, made footer cool, actually added some text on home page" />
+    <MESSAGE value="moving from php to js" />
+    <MESSAGE value="update redirect" />
+    <MESSAGE value="moved to static site" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved to static site" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://V:/main/glype-master/plugins/youtube.com.php" />
+    <entry file="file://V:/main/projects/tetris/tetris.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-759">
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/platforms/platforms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/css/hangman.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/minesweeper/minesweeper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1047">
+          <caret line="208" column="45" selection-start-line="208" selection-start-column="45" selection-end-line="208" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/hangman/words.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="2287" column="1" lean-forward="true" selection-start-line="2287" selection-start-column="1" selection-end-line="2287" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/hangman/hangmanextreme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/hangman/extremewords.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret column="3370039" selection-start-column="3370029" selection-end-column="3370039" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/hangman/extreme.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/animationframe/flappybird.js" />
+    <entry file="file://V:/main/projects/animationframe/index.html" />
+    <entry file="file://V:/main/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="98" column="4" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/hangman/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="54" selection-start-line="54" selection-end-line="56" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/pong/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/css/pages.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/css/minesweeper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/minesweeper/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/platforms/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/snake/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/tetris/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/css/general.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="128" column="21" lean-forward="true" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/glype/includes/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="253" column="10" selection-start-line="253" selection-start-column="5" selection-end-line="253" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/glype/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/flappybird/flappybird.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/breaker/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/main/projects/flappybird/flappybird.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7751">
+          <caret line="337" column="60" selection-start-line="337" selection-start-column="60" selection-end-line="337" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/snake/snake.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4991">
+          <caret line="217" selection-start-line="217" selection-end-line="227" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/index.php" />
+    <entry file="file://V:/main/index.php" />
+    <entry file="file://V:/default.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/main/projects/flappybird/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/hidden/social-bar.html" />
+    <entry file="file://V:/staging/hidden/social-bar.html" />
+    <entry file="file://V:/main/projects/hangman/hangman.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1315">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/hidden/projectList.json" />
+    <entry file="file://V:/staging/hidden/projectList.json" />
+    <entry file="file://V:/staging/projects/tetris/tetris.js" />
+    <entry file="file://V:/staging/projects/tetris/index.php" />
+    <entry file="file://V:/staging/projects/snake/index.php" />
+    <entry file="file://V:/staging/projects/pong/index.php" />
+    <entry file="file://V:/staging/projects/platforms/index.php" />
+    <entry file="file://V:/staging/projects/minesweeper/index.php" />
+    <entry file="file://V:/staging/projects/hangman/index.php" />
+    <entry file="file://V:/staging/projects/hangman/extreme.php" />
+    <entry file="file://V:/staging/projects/flappybird/flappybird.js" />
+    <entry file="file://V:/staging/projects/flappybird/index.php" />
+    <entry file="file://V:/staging/projects/breaker/index.php" />
+    <entry file="file://V:/staging/index.html" />
+    <entry file="file://V:/staging/projects/index.html" />
+    <entry file="file://V:/staging/hidden/render.js" />
+    <entry file="file://V:/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
