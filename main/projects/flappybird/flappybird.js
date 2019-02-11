@@ -431,8 +431,8 @@ var interval = 1000 / fps;
 var delta;
 var calc;
 
-async function globalDraw() {
-    await sleep(4);
+function globalDraw() {
+    //await sleep(4);
     requestAnimationFrame(globalDraw);
 
     now = Date.now();

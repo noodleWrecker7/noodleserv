@@ -85,7 +85,7 @@ window.onload = function () {
     }, 1000 / fps);
 };
 
-function convertNumToShape (num) {
+function convertNumToShape(num) {
     switch (num) {
         case 0:
             t = new Green();
@@ -109,7 +109,7 @@ function convertNumToShape (num) {
             t = new Red();
             break;
         default:
-            console.log("UWU WE HAVE A  7");
+            console.log("UWU WE HAVE A 7");
             break;
     }
     return t;
@@ -133,8 +133,8 @@ function getNewShape() {
     holdCtx.fillStyle = next.colour;
 
     for (let i = 0; i < 4; i++) {
-        x = (1 + next.relArray[i].relX) * (tileWidth + tileGap) +1;
-        y = (1 + next.relArray[i].relY) * (tileWidth + tileGap) +1;
+        x = (1 + next.relArray[i].relX) * (tileWidth + tileGap) + 1;
+        y = (1 + next.relArray[i].relY) * (tileWidth + tileGap) + 1;
 
         holdCtx.fillRect(x, y, tileWidth, tileWidth);
     }
@@ -478,21 +478,20 @@ class Red extends TetrisShape {
 
 function keyPush(e) {
     let id = e.key;
-
-    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', ' '].indexOf(id) > -1) { // if id is in list
+    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', ' ', 'w', 'a', 's', 'd'].indexOf(id) > -1) { // if id is in list
         e.preventDefault(); // stop scroll
     }
-    if (id == 'ArrowUp') {
+    if (id == 'ArrowUp' || id == 'w') {
         currentShape.rotate(1);
     }
-    if (id == 'ArrowDown') {
+    if (id == 'ArrowDown' || id == 's') {
         currentShape.rotate(-1);
     }
 
-    if (id == 'ArrowLeft') {
+    if (id == 'ArrowLeft' || id == 'a') {
         currentShape.moveX(-1)
     }
-    if (id == 'ArrowRight') {
+    if (id == 'ArrowRight' || id == 'd') {
         currentShape.moveX(1)
     }
 
