@@ -42,7 +42,7 @@ window.onload = function () {
         function (evt) {
             let id = evt.which || evt.key;
 
-            if (['ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown'].indexOf(id) > -1) { // if id is in list
+            if (['ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown', 87, 38, 83, 40].indexOf(id) > -1) { // if id is in list
                 evt.preventDefault(); // stop scroll
             }
 

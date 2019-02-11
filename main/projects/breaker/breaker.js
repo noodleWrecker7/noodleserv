@@ -24,8 +24,8 @@ window.onload = function () {
     ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, cvs.width, cvs.height);
     game = new Game();
-    cvs.addEventListener("mousemove", function (evt) {
-        game.mouse
+    cvs.addEventListener("mousemove", function (e) {
+        console.log(e)
     });
     globalDraw();
     //} catch (e) {
