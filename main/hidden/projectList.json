@@ -1,16 +1,23 @@
 [
   {
+    "name": "Tower Defense",
+    "link": "towerdefense",
+    "img": "placeholder.png",
+    "blurb": "This is me testing pixi.js",
+    "date": ""
+  },
+  {
     "name": "Breakout",
     "link": "breaker",
     "img": "placeholder.png",
-    "blurb": "WIP!",
+    "blurb": "This is not finished idk when it will be.",
     "date": ""
   },
   {
     "name": "Flappy Bird",
     "link": "flappybird",
     "img": "flappybird.png",
-    "blurb": "If you get over 65 you can have a fiver!",
+    "blurb": "Flap Flap Flap",
     "date": "1/2/2019"
   },
   {
@@ -38,7 +45,7 @@
     "name": "Tetris",
     "link": "tetris/#tetrisCanvas",
     "img": "tetris.png",
-    "blurb": "Half-assed attempt at Tetris.",
+    "blurb": "shut up adam",
     "date": "23/12/2018"
   },
   {

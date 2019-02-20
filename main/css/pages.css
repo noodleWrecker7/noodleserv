@@ -26,6 +26,9 @@
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 25px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .social-bar {

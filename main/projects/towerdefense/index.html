@@ -1,0 +1,63 @@
+<!--Everything on this page, and other pages on the website, is subject to the copyright of Adam Hodgkinson, it may be freely used, copied, distributed and/or modified, however, full credit must be given
+to me and any derived works should be released under the same license. I am not held liable for any claim, this software is provided as-is and without any warranty.
+
+I do not own any of the following content and is used under their respective licenses:
+    Fontawesome
+    Photonstorm's phaser.js
+
+Hopefully no-body has to read this but I thought id protect my self
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/general.css">
+    <!--<link rel="stylesheet" href="../css/index.css">-->
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="../../css/fontawesome.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
+    <script src="../../hidden/render.js" async></script>
+    <!--Used from https://fontawesome.com under license https://fontawesome.com/license-->
+    <title>Games - Tower Defense</title>
+</head>
+
+<header class="title-box">
+    <div class="nav-bar">
+        <div class="links-bar">
+            <a href="../../" class="nav-home nav-button">Home</a>
+            <a href="../" class="nav-link nav-button">Projects</a>
+            <a href="https://paypal.me/noodlewrecker" class="nav-link nav-button">Donate</a>
+        </div>
+        <div id="socialBar">
+            <script>insertSocialBar("../../hidden/social-bar.html");</script>
+
+        </div>
+    </div>
+
+    <h1 class="title">
+        <del>Tower</del> Pacman Defense
+    </h1>
+    <h2 class="sub-heading" style="font-size: 18px">
+        Okay, so, Pacman, is an idiot. He married a ghost. But did you know that ghosts give birth to MILLIONS of babies? Oh and those babies hate their dad. They're going to kill Pacman. Help him and his buddies out to kill MILLIONS of ghost babies.
+        Dont feel bad they were a waste of oxygen anyway, and technically you're not killing them - Pacman is. You're just the co-murderer.
+        <br>
+        <br>
+        Good Luck!
+    </h2>
+</header>
+
+<body>
+<div class="page-chunk scoresDef" style="background-color: whitesmoke">
+    <p class="subtext"></p>
+</div>
+<div class="page-chunk canvasContainer" id="gameContainer">
+    <script src="resource/js/phaser.min.js" defer></script>
+    <script src="towerdefense.js" defer></script>
+
+</div>
+</body>
+<div class="foot">
+    <p class="credit">Designed by Adam Hodgkinson</p>
+</div>
+</html>

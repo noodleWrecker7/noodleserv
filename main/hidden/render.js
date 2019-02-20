@@ -68,6 +68,9 @@ function loadPages(url) {
     validatePageNum();
     pageNum = $_GET['p'];
     startEntry = (pageNum - 1) * 8;
+    if (startEntry != 0) {
+        startEntry -= 1;
+    }
     let output = "";
     output += "<div class=\"row\">";
     for (let i = 0; i < 8; i++) {
@@ -75,6 +78,9 @@ function loadPages(url) {
             output += "</div> <div class=\"row\">";
         }
         let item = projectList[startEntry + i];
+        if (item == null) {
+            break;
+        }
         output += "<a href=\"" + item.link + "\" class=\"item\">" +
             "<div class=\"picture\">" +
             "<img alt=\"Image of the game\" src=\"img/" + item.img + "\">" +
@@ -99,7 +105,7 @@ function validatePageNum() {
     if (currentPage < 1) {
         goPage(1);
     }
-    if(currentPage == null || currentPage == "undefined") {
+    if (currentPage == null || currentPage == "undefined") {
         goPage(1);
     }
 }

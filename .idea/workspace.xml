@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/projects/breaker/breaker.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/projects/breaker/breaker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/projects/pong/pingpong.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/projects/pong/pingpong.js" afterDir="false" />
+      <change afterPath="V:/main/projects/towerdefense/towerdefense.js" afterDir="false" />
+      <change beforePath="V:/.idea/workspace.xml" beforeDir="false" afterPath="V:/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="V:/main/css/pages.css" beforeDir="false" afterPath="V:/main/css/pages.css" afterDir="false" />
+      <change beforePath="V:/main/hidden/projectList.json" beforeDir="false" afterPath="V:/main/hidden/projectList.json" afterDir="false" />
+      <change beforePath="V:/main/hidden/render.js" beforeDir="false" afterPath="V:/main/hidden/render.js" afterDir="false" />
+      <change beforePath="V:/main/index.html" beforeDir="false" afterPath="V:/main/index.html" afterDir="false" />
+      <change beforePath="V:/main/projects/breaker/breaker.js" beforeDir="false" afterPath="V:/main/projects/breaker/breaker.js" afterDir="false" />
+      <change beforePath="V:/main/projects/index.html" beforeDir="false" afterPath="V:/main/projects/index.html" afterDir="false" />
     </list>
     <ignored path="V:/.tmp/" />
     <ignored path="V:/temp/" />
@@ -22,29 +25,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://V:/main/projects/towerdefense/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://V:/main/css/general.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1242">
+              <caret line="54" column="4" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://V:/main/css/pages.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://V:/main/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-851">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main/projects/breaker/breaker.js">
+        <entry file="file://V:/main/projects/towerdefense/towerdefense.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="459">
+              <caret line="227" column="13" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
+              <folding>
+                <element signature="e#4960#5472#0" />
+                <element signature="e#5497#5683#0" />
+                <element signature="n#!!block;n#turretMenuHide#0;n#Play#0" />
+                <element signature="e#6241#6879#0" />
+                <element signature="n#!!block;n#createTurret#0;n#Play#0" />
+                <element signature="n#Bullet#0" />
+                <element signature="n#!!block;n#lookAtClosestGhost#0;n#Turret#0" />
+                <element signature="n#!!block;n#checkIsOnMap#0;n#Turret#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/projects/pong/pingpong.js">
+        <entry file="file://V:/main/projects/towerdefense/assets/bigSheet.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="44" column="123" lean-forward="true" selection-start-line="44" selection-start-column="123" selection-end-line="44" selection-end-column="123" />
+            <state relative-caret-position="3151">
+              <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/projects/flappybird/flappybird.js">
+        <entry file="file://V:/main/hidden/projectList.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4324">
-              <caret line="206" column="24" lean-forward="true" selection-start-line="206" selection-start-column="24" selection-end-line="206" selection-end-column="24" />
+            <state relative-caret-position="1081">
+              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://V:/main/hidden/render.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1909">
+              <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://V:/main/projects/flappybird/flappybird.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9821">
+              <caret line="427" selection-start-line="427" selection-end-line="428" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -56,35 +126,13 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this.player.xv</find>
-      <find>flagImg</find>
-      <find>imgBottom</find>
-      <find>Pipe</find>
-      <find>body</find>
-      <find>details</find>
-      <find>title</find>
-      <find>*fps</find>
-      <find>fps</find>
-      <find>this.y</find>
-      <find>checkPlayer</find>
-      <find>flap</find>
-      <find>t</find>
-      <find>fail</find>
-      <find>console</find>
-      <find>score</find>
-      <find>cookie</find>
-      <find>highScore</find>
-      <find>for</find>
-      <find>cvs.width</find>
-      <find>cvs.height</find>
-      <find>ctx.</find>
       <find>cvs.</find>
       <find>back</find>
       <find>player</find>
@@ -93,6 +141,28 @@
       <find>3</find>
       <find>setCookie</find>
       <find>floor</find>
+      <find>draw</find>
+      <find>physics</find>
+      <find>game</find>
+      <find>arrayOfTur</find>
+      <find>Geom</find>
+      <find>menu</find>
+      <find>turret</find>
+      <find>bottom</find>
+      <find>add</find>
+      <find>sprite</find>
+      <find>Ghost</find>
+      <find>path</find>
+      <find>createGhost</find>
+      <find>arrayOfT</find>
+      <find>Bullet</find>
+      <find>intersects</find>
+      <find>pop</find>
+      <find>buy</find>
+      <find>price</find>
+      <find>console</find>
+      <find>sub</find>
+      <find>depth</find>
     </findStrings>
     <replaceStrings>
       <replace>img</replace>
@@ -100,18 +170,11 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="V:/" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="V:/main/projects/runner/index.html" />
-        <option value="V:/main/projects/pong/pingpong.js" />
-        <option value="V:/main/css/pages.css" />
-        <option value="V:/main/projects/runner/runner.js" />
-        <option value="V:/main/projects/runner/index.php" />
-        <option value="V:/main/projects/hangman/index.php" />
-        <option value="V:/main/projects/hangman/extreme.php" />
         <option value="V:/hidden/social-bar.html" />
         <option value="V:/main/projects/animationframe/index.php" />
         <option value="V:/main/projects/animationframe/index.html" />
@@ -149,13 +212,20 @@
         <option value="V:/index.html" />
         <option value="V:/main/projects/snake/snake.js" />
         <option value="V:/main/projects/breaker/breaker.js].js" />
-        <option value="V:/main/projects/flappybird/flappybird.js" />
         <option value="V:/main/projects/breaker/index.html" />
         <option value="V:/main/projects/tetris/tetris.js" />
-        <option value="V:/main/hidden/projectList.json" />
         <option value="V:/main/projects/breaker/breaker.js" />
-        <option value="$PROJECT_DIR$/main/projects/pong/pingpong.js" />
-        <option value="$PROJECT_DIR$/main/projects/breaker/breaker.js" />
+        <option value="V:/main/projects/towerdefense/resource/img.js" />
+        <option value="V:/main/projects/flappybird/flappybird.js" />
+        <option value="V:/main/hidden/render.js" />
+        <option value="V:/main/hidden/projectList.json" />
+        <option value="V:/main/projects/towerdefense/assets/leveldata.json" />
+        <option value="V:/main/projects/towerdefense/resource/js/phaser.min.js" />
+        <option value="V:/main/index.html" />
+        <option value="V:/main/projects/index.html" />
+        <option value="V:/main/css/pages.css" />
+        <option value="V:/main/projects/towerdefense/index.html" />
+        <option value="V:/main/projects/towerdefense/towerdefense.js" />
       </list>
     </option>
   </component>
@@ -164,6 +234,11 @@
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="Unnamed" />
+    </order>
   </component>
   <component name="PhpServers">
     <servers />
@@ -177,17 +252,45 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="279" />
-    <option name="y" value="30" />
-    <option name="width" value="1200" />
-    <option name="height" value="796" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -206,39 +309,18 @@
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="breaker" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="flappybird" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pong" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="V:/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -250,20 +332,22 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="V:\hidden" />
-      <recent name="V:\main\css" />
-      <recent name="V:\html" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="V:\main\projects\breaker" />
       <recent name="V:\main\projects\animationframe" />
       <recent name="V:\main\projects\flappybird" />
       <recent name="V:\main\projects\hangman" />
       <recent name="V:\main\projects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="V:\main\projects\towerdefense\assets" />
+      <recent name="V:\main\projects\towerdefense\resource\img" />
+      <recent name="V:\main\projects\towerdefense\resource\js" />
+      <recent name="V:\hidden" />
+      <recent name="V:\main\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -291,6 +375,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.breaker.js" />
+        <item itemvalue="PHP Script.index.html" />
         <item itemvalue="JavaScript Debug.test.php" />
       </list>
     </recent_temporary>
@@ -334,9 +419,15 @@
       <workItem from="1549831249450" duration="526000" />
       <workItem from="1549832025489" duration="434000" />
       <workItem from="1549905398637" duration="344000" />
-      <workItem from="1549910316420" duration="7520000" />
-      <workItem from="1549920264594" duration="142000" />
-      <workItem from="1549920571579" duration="1123000" />
+      <workItem from="1549910316420" duration="8325000" />
+      <workItem from="1550001287121" duration="1731000" />
+      <workItem from="1550081095995" duration="2117000" />
+      <workItem from="1550175162436" duration="1527000" />
+      <workItem from="1550439280330" duration="6316000" />
+      <workItem from="1550482700422" duration="35164000" />
+      <workItem from="1550570013684" duration="24369000" />
+      <workItem from="1550612037395" duration="1602000" />
+      <workItem from="1550653810665" duration="24708000" />
     </task>
     <task id="LOCAL-00001" summary="aaah">
       <created>1547845053109</created>
@@ -457,11 +548,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549831596691</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="breakout exists and somehow i managed to change flappy and tetris">
+      <created>1549918341172</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1549918341172</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152640000" />
+    <option name="totallyTimeSpent" value="249714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,14 +571,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1600" height="870" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.20862398" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.119936034" />
       <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.18017058" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49840087" weight="0.32841328" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49840087" weight="0.32745314" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -489,7 +587,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.3296582" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4978678" weight="0.25358325" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.25248072" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.18963616" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.41643453" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -577,33 +675,55 @@
     <MESSAGE value="moved to static site" />
     <MESSAGE value="cookies last a year" />
     <MESSAGE value="made cookies timeout reset on visit" />
-    <option name="LAST_COMMIT_MESSAGE" value="made cookies timeout reset on visit" />
+    <MESSAGE value="breakout exists and somehow i managed to change flappy and tetris" />
+    <option name="LAST_COMMIT_MESSAGE" value="breakout exists and somehow i managed to change flappy and tetris" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://V:/main/projects/hangman/extremewords.json" />
-    <entry file="file://V:/main/projects/hangman/extreme.html" />
-    <entry file="file://V:/main/projects/animationframe/flappybird.js" />
-    <entry file="file://V:/main/projects/animationframe/index.html" />
-    <entry file="file://V:/main/css/index.css" />
-    <entry file="file://V:/main/projects/hangman/index.html" />
-    <entry file="file://V:/main/projects/pong/index.html" />
-    <entry file="file://V:/main/css/pages.css" />
-    <entry file="file://V:/main/css/minesweeper.css" />
-    <entry file="file://V:/main/projects/minesweeper/index.php" />
-    <entry file="file://V:/main/projects/platforms/index.html" />
-    <entry file="file://V:/main/projects/snake/index.html" />
-    <entry file="file://V:/main/projects/tetris/index.php" />
-    <entry file="file://V:/main/css/general.css" />
-    <entry file="file://V:/glype/includes/settings.php" />
-    <entry file="file://V:/glype/index.php" />
-    <entry file="file://V:/main/projects/flappybird/flappybird.css" />
+    <entry file="file://V:/glype/includes/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="253" column="10" selection-start-line="253" selection-start-column="5" selection-end-line="253" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/glype/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/flappybird/flappybird.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://V:/main/projects/index.php" />
     <entry file="file://V:/main/index.php" />
-    <entry file="file://V:/default.php" />
-    <entry file="file://V:/main/projects/flappybird/index.html" />
+    <entry file="file://V:/default.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/main/projects/flappybird/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://V:/hidden/social-bar.html" />
     <entry file="file://V:/staging/hidden/social-bar.html" />
-    <entry file="file://V:/main/projects/hangman/hangman.js" />
+    <entry file="file://V:/main/projects/hangman/hangman.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1315">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://V:/hidden/projectList.json" />
     <entry file="file://V:/staging/hidden/projectList.json" />
     <entry file="file://V:/staging/projects/tetris/tetris.js" />
@@ -620,34 +740,169 @@
     <entry file="file://V:/staging/index.html" />
     <entry file="file://V:/staging/projects/index.html" />
     <entry file="file://V:/staging/hidden/render.js" />
-    <entry file="file://V:/index.html" />
     <entry file="file://V:/main/projects/tsconfig.json" />
-    <entry file="file://V:/main/projects/flappybird/flappybird.js" />
-    <entry file="file://V:/main/projects/snake/snake.js" />
-    <entry file="file://V:/main/projects/tetris/tetris.js" />
-    <entry file="file://V:/main/hidden/projectList.json" />
-    <entry file="file://V:/main/projects/breaker/index.html" />
-    <entry file="file://V:/main/projects/breaker/breaker.js" />
-    <entry file="file://$PROJECT_DIR$/main/projects/pong/pingpong.js">
+    <entry file="file://V:/main/projects/pong/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="44" column="123" lean-forward="true" selection-start-line="44" selection-start-column="123" selection-end-line="44" selection-end-column="123" />
+        <state relative-caret-position="731">
+          <caret line="50" lean-forward="true" selection-end-line="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/projects/flappybird/flappybird.js">
+    <entry file="file://V:/main/projects/towerdefense/resource/img.js" />
+    <entry file="file://V:/main/projects/towerdefense/resource/imageLocations.json" />
+    <entry file="file://V:/main/projects/breaker/breaker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4324">
-          <caret line="206" column="24" lean-forward="true" selection-start-line="206" selection-start-column="24" selection-end-line="206" selection-end-column="24" />
+        <state relative-caret-position="-4191">
+          <caret line="55" column="125" selection-start-line="55" selection-start-column="125" selection-end-line="55" selection-end-column="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/projects/breaker/breaker.js">
+    <entry file="file://V:/main/projects/breaker/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="791">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
         </state>
       </provider>
     </entry>
+    <entry file="file://V:/main/projects/snake/snake.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/minesweeper/minesweeper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="215" column="44" selection-start-line="215" selection-start-column="44" selection-end-line="215" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/tetris/tetris.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/towerdefense/assets/menuItems.json" />
+    <entry file="file://V:/main/projects/towerdefense/assets/turrets.json" />
+    <entry file="file://V:/main/projects/towerdefense/assets/textureatlas.json" />
+    <entry file="file://V:/main/projects/towerdefense/assets/leveldata.json" />
+    <entry file="file://V:/main/projects/towerdefense/resource/js/phaser.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/main/projects/towerdefense/assets/bigSheet.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3151">
+          <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/hidden/projectList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/hidden/render.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1909">
+          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/flappybird/flappybird.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9821">
+          <caret line="427" selection-start-line="427" selection-end-line="428" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="73" selection-start-column="73" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-851">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/css/general.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/css/pages.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/towerdefense/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/towerdefense/towerdefense.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="227" column="13" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
+          <folding>
+            <element signature="e#4960#5472#0" />
+            <element signature="e#5497#5683#0" />
+            <element signature="n#!!block;n#turretMenuHide#0;n#Play#0" />
+            <element signature="e#6241#6879#0" />
+            <element signature="n#!!block;n#createTurret#0;n#Play#0" />
+            <element signature="n#Bullet#0" />
+            <element signature="n#!!block;n#lookAtClosestGhost#0;n#Turret#0" />
+            <element signature="n#!!block;n#checkIsOnMap#0;n#Turret#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>Unnamed</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="Unnamed" />
+          </order>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
