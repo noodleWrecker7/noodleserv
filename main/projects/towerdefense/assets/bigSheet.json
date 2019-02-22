@@ -1,11 +1,11 @@
 {
 	"textures": [
 		{
-			"image": "bigSheet.png",
+			"image": "bigSheet-0.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 1022,
-				"h": 480
+				"w": 1024,
+				"h": 482
 			},
 			"scale": 1,
 			"frames": [
@@ -14,20 +14,20 @@
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 120,
-						"h": 480
+						"w": 122,
+						"h": 482
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 120,
-						"h": 480
+						"w": 122,
+						"h": 482
 					},
 					"frame": {
 						"x": 0,
 						"y": 0,
-						"w": 120,
-						"h": 480
+						"w": 122,
+						"h": 482
 					},
 					"anchor": {
 						"x": 1,
@@ -49,7 +49,7 @@
 						"h": 393
 					},
 					"frame": {
-						"x": 122,
+						"x": 124,
 						"y": 0,
 						"w": 48,
 						"h": 393
@@ -74,14 +74,14 @@
 						"h": 60
 					},
 					"frame": {
-						"x": 122,
+						"x": 124,
 						"y": 395,
 						"w": 60,
 						"h": 60
 					},
 					"anchor": {
-						"x": 1,
-						"y": 0
+						"x": 0.5,
+						"y": 0.5
 					}
 				},
 				{
@@ -99,7 +99,7 @@
 						"h": 379
 					},
 					"frame": {
-						"x": 172,
+						"x": 174,
 						"y": 0,
 						"w": 48,
 						"h": 379
@@ -124,7 +124,7 @@
 						"h": 120
 					},
 					"frame": {
-						"x": 222,
+						"x": 224,
 						"y": 0,
 						"w": 800,
 						"h": 120
@@ -149,7 +149,7 @@
 						"h": 5
 					},
 					"frame": {
-						"x": 172,
+						"x": 174,
 						"y": 381,
 						"w": 5,
 						"h": 5
@@ -174,7 +174,7 @@
 						"h": 94
 					},
 					"frame": {
-						"x": 184,
+						"x": 186,
 						"y": 381,
 						"w": 94,
 						"h": 94
@@ -199,7 +199,7 @@
 						"h": 218
 					},
 					"frame": {
-						"x": 222,
+						"x": 224,
 						"y": 122,
 						"w": 48,
 						"h": 218
@@ -224,7 +224,7 @@
 						"h": 203
 					},
 					"frame": {
-						"x": 272,
+						"x": 274,
 						"y": 122,
 						"w": 48,
 						"h": 203
@@ -235,27 +235,27 @@
 					}
 				},
 				{
-					"filename": "Map/level 1/4.png",
+					"filename": "Menu Items/startwave.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 203,
-						"h": 48
+						"w": 100,
+						"h": 50
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 203,
-						"h": 48
+						"w": 100,
+						"h": 50
 					},
 					"frame": {
-						"x": 272,
+						"x": 274,
 						"y": 327,
-						"w": 203,
-						"h": 48
+						"w": 100,
+						"h": 50
 					},
 					"anchor": {
-						"x": 0,
+						"x": 0.5,
 						"y": 0
 					}
 				},
@@ -274,8 +274,8 @@
 						"h": 94
 					},
 					"frame": {
-						"x": 280,
-						"y": 377,
+						"x": 282,
+						"y": 379,
 						"w": 94,
 						"h": 94
 					},
@@ -299,8 +299,8 @@
 						"h": 94
 					},
 					"frame": {
-						"x": 376,
-						"y": 377,
+						"x": 324,
+						"y": 122,
 						"w": 90,
 						"h": 94
 					},
@@ -324,10 +324,35 @@
 						"h": 94
 					},
 					"frame": {
-						"x": 468,
-						"y": 377,
+						"x": 324,
+						"y": 218,
 						"w": 90,
 						"h": 94
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Menu Items/turretMenuButtonOpen.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 376,
+						"y": 314,
+						"w": 60,
+						"h": 60
 					},
 					"anchor": {
 						"x": 0.5,
@@ -349,8 +374,8 @@
 						"h": 94
 					},
 					"frame": {
-						"x": 322,
-						"y": 122,
+						"x": 378,
+						"y": 376,
 						"w": 84,
 						"h": 94
 					},
@@ -374,8 +399,8 @@
 						"h": 94
 					},
 					"frame": {
-						"x": 322,
-						"y": 218,
+						"x": 416,
+						"y": 122,
 						"w": 84,
 						"h": 94
 					},
@@ -385,178 +410,28 @@
 					}
 				},
 				{
-					"filename": "Menu Items/turretMenuButtonOpen.png",
+					"filename": "Menu Items/waveongoing.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 60,
-						"h": 60
+						"w": 100,
+						"h": 50
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 60,
-						"h": 60
+						"w": 100,
+						"h": 50
 					},
 					"frame": {
-						"x": 408,
-						"y": 122,
-						"w": 60,
-						"h": 60
-					},
-					"anchor": {
-						"x": 1,
-						"y": 0
-					}
-				},
-				{
-					"filename": "Map/level 1/6.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 176,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 176,
-						"h": 48
-					},
-					"frame": {
-						"x": 408,
-						"y": 184,
-						"w": 176,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "Map/level 1/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 175,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 175,
-						"h": 48
-					},
-					"frame": {
-						"x": 470,
-						"y": 122,
-						"w": 175,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "Map/level 1/0.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 142,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 142,
-						"h": 48
-					},
-					"frame": {
-						"x": 408,
-						"y": 234,
-						"w": 142,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "Map/level 1/8.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 104,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 104,
-						"h": 48
-					},
-					"frame": {
-						"x": 477,
-						"y": 284,
-						"w": 104,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "Menu Items/item0.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 103,
-						"h": 43
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 103,
-						"h": 43
-					},
-					"frame": {
-						"x": 552,
-						"y": 234,
-						"w": 103,
-						"h": 43
+						"x": 416,
+						"y": 218,
+						"w": 100,
+						"h": 50
 					},
 					"anchor": {
 						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "Menu Items/item1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 103,
-						"h": 43
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 103,
-						"h": 43
-					},
-					"frame": {
-						"x": 586,
-						"y": 172,
-						"w": 103,
-						"h": 43
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"y": 0
 					}
 				},
 				{
@@ -574,14 +449,39 @@
 						"h": 42
 					},
 					"frame": {
-						"x": 647,
-						"y": 122,
+						"x": 416,
+						"y": 270,
 						"w": 35,
 						"h": 42
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.5
+					}
+				},
+				{
+					"filename": "Map/level 1/4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 203,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 203,
+						"h": 48
+					},
+					"frame": {
+						"x": 438,
+						"y": 314,
+						"w": 203,
+						"h": 48
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
 					}
 				},
 				{
@@ -599,8 +499,8 @@
 						"h": 42
 					},
 					"frame": {
-						"x": 684,
-						"y": 122,
+						"x": 453,
+						"y": 270,
 						"w": 35,
 						"h": 42
 					},
@@ -624,14 +524,139 @@
 						"h": 42
 					},
 					"frame": {
-						"x": 560,
-						"y": 334,
+						"x": 490,
+						"y": 270,
 						"w": 35,
 						"h": 42
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.5
+					}
+				},
+				{
+					"filename": "Map/level 1/6.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 176,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 176,
+						"h": 48
+					},
+					"frame": {
+						"x": 502,
+						"y": 122,
+						"w": 176,
+						"h": 48
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "Menu Items/item0.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 103,
+						"h": 43
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 103,
+						"h": 43
+					},
+					"frame": {
+						"x": 502,
+						"y": 172,
+						"w": 103,
+						"h": 43
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Map/level 1/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 175,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 175,
+						"h": 48
+					},
+					"frame": {
+						"x": 518,
+						"y": 217,
+						"w": 175,
+						"h": 48
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "Menu Items/item1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 103,
+						"h": 43
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 103,
+						"h": 43
+					},
+					"frame": {
+						"x": 607,
+						"y": 172,
+						"w": 103,
+						"h": 43
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Map/level 1/0.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 48
+					},
+					"frame": {
+						"x": 680,
+						"y": 122,
+						"w": 142,
+						"h": 48
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
 					}
 				},
 				{
@@ -649,8 +674,8 @@
 						"h": 42
 					},
 					"frame": {
-						"x": 583,
-						"y": 279,
+						"x": 527,
+						"y": 267,
 						"w": 35,
 						"h": 42
 					},
@@ -674,8 +699,8 @@
 						"h": 42
 					},
 					"frame": {
-						"x": 560,
-						"y": 378,
+						"x": 564,
+						"y": 267,
 						"w": 35,
 						"h": 42
 					},
@@ -699,14 +724,39 @@
 						"h": 42
 					},
 					"frame": {
-						"x": 560,
-						"y": 422,
+						"x": 601,
+						"y": 267,
 						"w": 35,
 						"h": 42
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.5
+					}
+				},
+				{
+					"filename": "Map/level 1/8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 104,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 104,
+						"h": 48
+					},
+					"frame": {
+						"x": 464,
+						"y": 364,
+						"w": 104,
+						"h": 48
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
 					}
 				}
 			]
@@ -715,6 +765,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:470c7395254b31781ef14705c52a4a70:502531fe85d74bbe7d32d46ba342b3bc:ac4650a1ca49c550e2e17c1f37ec8b02$"
+		"smartupdate": "$TexturePacker:SmartUpdate:6da723dc7518358f844228b6595fd322:ef3f73169f6a635708f9b31282bb3d9d:dd8bced78f23529826655b81b16c2106$"
 	}
 }

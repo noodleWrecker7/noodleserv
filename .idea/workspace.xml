@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="">
-      <change afterPath="V:/main/projects/towerdefense/towerdefense.js" afterDir="false" />
+      <change afterPath="V:/main/projects/towerdefense/assets/waveData.json" afterDir="false" />
       <change beforePath="V:/.idea/workspace.xml" beforeDir="false" afterPath="V:/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="V:/main/css/pages.css" beforeDir="false" afterPath="V:/main/css/pages.css" afterDir="false" />
-      <change beforePath="V:/main/hidden/projectList.json" beforeDir="false" afterPath="V:/main/hidden/projectList.json" afterDir="false" />
-      <change beforePath="V:/main/hidden/render.js" beforeDir="false" afterPath="V:/main/hidden/render.js" afterDir="false" />
-      <change beforePath="V:/main/index.html" beforeDir="false" afterPath="V:/main/index.html" afterDir="false" />
-      <change beforePath="V:/main/projects/breaker/breaker.js" beforeDir="false" afterPath="V:/main/projects/breaker/breaker.js" afterDir="false" />
-      <change beforePath="V:/main/projects/index.html" beforeDir="false" afterPath="V:/main/projects/index.html" afterDir="false" />
+      <change beforePath="V:/main/projects/towerdefense/assets/bigSheet.json" beforeDir="false" afterPath="V:/main/projects/towerdefense/assets/bigSheet.json" afterDir="false" />
+      <change beforePath="V:/main/projects/towerdefense/index.html" beforeDir="false" afterPath="V:/main/projects/towerdefense/index.html" afterDir="false" />
+      <change beforePath="V:/main/projects/towerdefense/towerdefense.js" beforeDir="false" afterPath="V:/main/projects/towerdefense/towerdefense.js" afterDir="false" />
     </list>
     <ignored path="V:/.tmp/" />
     <ignored path="V:/temp/" />
@@ -28,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://V:/main/projects/towerdefense/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+            <state relative-caret-position="644">
+              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -49,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://V:/main/css/pages.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
+            <state relative-caret-position="690">
               <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
             </state>
           </provider>
@@ -58,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://V:/main/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-851">
+            <state relative-caret-position="-1058">
               <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
@@ -67,18 +64,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://V:/main/projects/towerdefense/towerdefense.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="227" column="13" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
+            <state relative-caret-position="363">
+              <caret line="177" selection-start-line="177" selection-end-line="177" />
               <folding>
-                <element signature="e#4960#5472#0" />
-                <element signature="e#5497#5683#0" />
-                <element signature="n#!!block;n#turretMenuHide#0;n#Play#0" />
-                <element signature="e#6241#6879#0" />
-                <element signature="n#!!block;n#createTurret#0;n#Play#0" />
+                <element signature="n#!!block;n#constructor#0;n#Play#0" />
+                <element signature="n#!!block;n#setMap#0;n#Play#0" />
+                <element signature="e#4678#5029#0" />
+                <element signature="e#5189#5305#0" />
+                <element signature="e#5526#5720#0" />
+                <element signature="n#!!block;n#buy#0;n#Play#0" />
+                <element signature="n#!!block;n#spawn#0;n#Play#0" />
+                <element signature="e#6756#6998#0" />
+                <element signature="n#!!block;n#createGhost#0;n#Play#0" />
+                <element signature="n#!!block;n#createBullet#0;n#Play#0" />
                 <element signature="n#Bullet#0" />
-                <element signature="n#!!block;n#lookAtClosestGhost#0;n#Turret#0" />
+                <element signature="n#Turret#0" />
+                <element signature="n#!!block;n#kill#0;n#Turret#0" />
+                <element signature="n#!!block;n#findClosestGhost#0;n#Turret#0" />
+                <element signature="n#!!block;n#findFirstGhost#0;n#Turret#0" />
                 <element signature="n#!!block;n#checkIsOnMap#0;n#Turret#0" />
+                <element signature="n#Ghost#0" />
+                <element signature="n#!!block;n#setTier#0;n#Ghost#0" />
+                <element signature="n#!!block;n#kill#0;n#Ghost#0" />
+                <element signature="n#!!block;n#update#0;n#Ghost#0" />
+                <element signature="e#21454#22173#0" />
+                <element signature="e#22196#22629#0" />
+                <element signature="e#22652#23510#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://V:/main/projects/towerdefense/assets/waveData.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1886">
+              <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -87,7 +108,7 @@
         <entry file="file://V:/main/projects/towerdefense/assets/bigSheet.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3151">
-              <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
+              <caret line="137" column="57" selection-start-line="137" selection-start-column="57" selection-end-line="137" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -133,15 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cvs.</find>
-      <find>back</find>
-      <find>player</find>
-      <find>ai</find>
-      <find>high</find>
-      <find>3</find>
-      <find>setCookie</find>
-      <find>floor</find>
-      <find>draw</find>
       <find>physics</find>
       <find>game</find>
       <find>arrayOfTur</find>
@@ -160,9 +172,18 @@
       <find>pop</find>
       <find>buy</find>
       <find>price</find>
-      <find>console</find>
       <find>sub</find>
+      <find>conso</find>
+      <find>//</find>
+      <find>isSelected</find>
+      <find>GhostId</find>
+      <find>moneyText</find>
       <find>depth</find>
+      <find>console</find>
+      <find>selected</find>
+      <find>selectedTurret</find>
+      <find>selectedTurretId =</find>
+      <find>selectTurret</find>
     </findStrings>
     <replaceStrings>
       <replace>img</replace>
@@ -175,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="V:/hidden/social-bar.html" />
         <option value="V:/main/projects/animationframe/index.php" />
         <option value="V:/main/projects/animationframe/index.html" />
         <option value="V:/main/projects/animationframe/flappybird.js" />
@@ -224,6 +244,7 @@
         <option value="V:/main/index.html" />
         <option value="V:/main/projects/index.html" />
         <option value="V:/main/css/pages.css" />
+        <option value="V:/main/projects/towerdefense/assets/waveData.json" />
         <option value="V:/main/projects/towerdefense/index.html" />
         <option value="V:/main/projects/towerdefense/towerdefense.js" />
       </list>
@@ -252,10 +273,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="766" />
+    <option name="y" value="-22" />
     <option name="width" value="974" />
-    <option name="height" value="1057" />
+    <option name="height" value="1019" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -286,6 +307,21 @@
               <item name="V:" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="towerdefense" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="towerdefense" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -427,7 +463,9 @@
       <workItem from="1550482700422" duration="35164000" />
       <workItem from="1550570013684" duration="24369000" />
       <workItem from="1550612037395" duration="1602000" />
-      <workItem from="1550653810665" duration="24708000" />
+      <workItem from="1550653810665" duration="25184000" />
+      <workItem from="1550746809332" duration="8990000" />
+      <workItem from="1550762442117" duration="14685000" />
     </task>
     <task id="LOCAL-00001" summary="aaah">
       <created>1547845053109</created>
@@ -555,11 +593,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549918341172</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="honestly wtf">
+      <created>1550705080355</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1550705080355</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249714000" />
+    <option name="totallyTimeSpent" value="273865000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,7 +619,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.119936034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.122068234" />
       <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.18017058" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -587,7 +632,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.3296582" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4978678" weight="0.25358325" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.18963616" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.033076074" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.41643453" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -667,7 +712,6 @@
     </ignored-roots>
     <MESSAGE value="aaah" />
     <MESSAGE value="yeet" />
-    <MESSAGE value="honestly wtf" />
     <MESSAGE value="made stuff more dynamic, social bar loads with php like projects grid" />
     <MESSAGE value="Added all sorts of stuff, made hangman, cached fontawesome styles, altered the way some pages are made, made footer cool, actually added some text on home page" />
     <MESSAGE value="moving from php to js" />
@@ -676,16 +720,10 @@
     <MESSAGE value="cookies last a year" />
     <MESSAGE value="made cookies timeout reset on visit" />
     <MESSAGE value="breakout exists and somehow i managed to change flappy and tetris" />
-    <option name="LAST_COMMIT_MESSAGE" value="breakout exists and somehow i managed to change flappy and tetris" />
+    <MESSAGE value="honestly wtf" />
+    <option name="LAST_COMMIT_MESSAGE" value="honestly wtf" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://V:/glype/includes/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="253" column="10" selection-start-line="253" selection-start-column="5" selection-end-line="253" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://V:/glype/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -795,10 +833,38 @@
     <entry file="file://V:/main/projects/towerdefense/resource/js/phaser.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://V:/main/projects/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="73" selection-start-column="73" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/css/general.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/css/pages.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://V:/main/projects/towerdefense/assets/bigSheet.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3151">
-          <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
+          <caret line="137" column="57" selection-start-line="137" selection-start-column="57" selection-end-line="137" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -823,45 +889,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://V:/main/projects/index.html">
+    <entry file="file://V:/main/projects/towerdefense/assets/waveData.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="73" selection-start-column="73" selection-end-column="73" />
+        <state relative-caret-position="1886">
+          <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://V:/main/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-851">
+        <state relative-caret-position="-1058">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/css/general.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/css/pages.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://V:/main/projects/towerdefense/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+        <state relative-caret-position="644">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -870,17 +915,32 @@
     </entry>
     <entry file="file://V:/main/projects/towerdefense/towerdefense.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="227" column="13" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
+        <state relative-caret-position="363">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
           <folding>
-            <element signature="e#4960#5472#0" />
-            <element signature="e#5497#5683#0" />
-            <element signature="n#!!block;n#turretMenuHide#0;n#Play#0" />
-            <element signature="e#6241#6879#0" />
-            <element signature="n#!!block;n#createTurret#0;n#Play#0" />
+            <element signature="n#!!block;n#constructor#0;n#Play#0" />
+            <element signature="n#!!block;n#setMap#0;n#Play#0" />
+            <element signature="e#4678#5029#0" />
+            <element signature="e#5189#5305#0" />
+            <element signature="e#5526#5720#0" />
+            <element signature="n#!!block;n#buy#0;n#Play#0" />
+            <element signature="n#!!block;n#spawn#0;n#Play#0" />
+            <element signature="e#6756#6998#0" />
+            <element signature="n#!!block;n#createGhost#0;n#Play#0" />
+            <element signature="n#!!block;n#createBullet#0;n#Play#0" />
             <element signature="n#Bullet#0" />
-            <element signature="n#!!block;n#lookAtClosestGhost#0;n#Turret#0" />
+            <element signature="n#Turret#0" />
+            <element signature="n#!!block;n#kill#0;n#Turret#0" />
+            <element signature="n#!!block;n#findClosestGhost#0;n#Turret#0" />
+            <element signature="n#!!block;n#findFirstGhost#0;n#Turret#0" />
             <element signature="n#!!block;n#checkIsOnMap#0;n#Turret#0" />
+            <element signature="n#Ghost#0" />
+            <element signature="n#!!block;n#setTier#0;n#Ghost#0" />
+            <element signature="n#!!block;n#kill#0;n#Ghost#0" />
+            <element signature="n#!!block;n#update#0;n#Ghost#0" />
+            <element signature="e#21454#22173#0" />
+            <element signature="e#22196#22629#0" />
+            <element signature="e#22652#23510#0" />
           </folding>
         </state>
       </provider>

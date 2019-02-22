@@ -1,6 +1,7 @@
 var path;
 var pathLength;
 
+
 class Play extends Phaser.Scene {
 
     constructor() {
@@ -21,7 +22,7 @@ class Play extends Phaser.Scene {
             height: 600,
             address: "assets/turretMenu.png"
         };
-        this.selectedTurret = null;
+        this.selectedTurretId = null;
         this.playerStats = {
             money: 0,
             ghostsKilled: 0
@@ -30,7 +31,7 @@ class Play extends Phaser.Scene {
 
     preload() {
         this.load.multiatlas("atlas", "assets/bigSheet.json", "assets");
-
+        this.load.json("waveData", "assets/waveData.json");
     }
 
     setMap(map) {
@@ -44,6 +45,7 @@ class Play extends Phaser.Scene {
 
         for (let i = 0; i < this.mapData.coords.length; i++) {
             let t = this.add.sprite(this.mapData.coords[i].x, this.mapData.coords[i].y, "atlas", this.mapData.path + i + ".png");
+            t.depth = 0;
             this.mapGroup.add(t);
         }
         this.mapGroup.refresh(); // dunno what this does but eh
@@ -61,6 +63,7 @@ class Play extends Phaser.Scene {
     }
 
     create() {
+        WAVE_DATA = this.cache.json.get("waveData");
         let mapChosen = 1; // temporary
         this.setMap(1);
         this.arrayOfMenuItems = [];
@@ -74,27 +77,33 @@ class Play extends Phaser.Scene {
         this.bulletsIdList = [];
 
         this.gameStats = {
-            money: 1000,
+            money: 0,
             ghostsPoppped: 0,
-            spawnChance: 1
+            spawnChance: 1,
+            maxChance: 200,
+            repeats: 1
         };
 
+        this.waveStats = {
+            currentWave: 0,
+            status: 0, // 0 - waiting to start, 1 - in progress, 2- finished/in last chunk
+        };
 
         this.bottom_tab = this.add.image(0, game.config.height - this.bottomTabData.height, "atlas", "Menu Items/bottom-tab.png");
+        this.bottom_tab.depth = 10;
 
-        this.turretMenuButton = this.add.sprite(game.config.width, 0, "atlas", "Menu Items/turretMenuButtonClosed.png");
-        this.turretMenuButton.setInteractive();
-        this.turretMenuButton.on("pointerup", this.handleTurretMenu);
+        /*        this.turretMenuButton = this.add.sprite(game.config.width, 0, "atlas", "Menu Items/turretMenuButtonClosed.png");
+                this.turretMenuButton.setInteractive();
+                this.turretMenuButton.on("pointerup", this.handleTurretMenu);*/
 
         this.turretMenu = this.add.image(game.config.width, 0, "atlas", "Menu Items/turretMenu.png");
-        this.turretMenu.visible = false;
-        this.turretMenu.depth = 2;
+        //this.turretMenu.visible = false;
+        this.turretMenu.depth = 10;
 
-
-        this.createGhost(0, this);
-
-
-        this.enemiesGroup = new Phaser.GameObjects.Group(this);
+        this.startWaveButton = this.add.image(860, 490, "atlas", "Menu Items/startwave.png");
+        this.startWaveButton.depth = 10;
+        this.startWaveButton.on("pointerup", this.startWave, this);
+        this.startWaveButton.setInteractive();
 
 
         this.graphics = this.add.graphics(); // needed to draw turrets and maybe something else idk
@@ -102,33 +111,98 @@ class Play extends Phaser.Scene {
         // DO MENU SHIT
         let startY = 50; // FIRST ITEM CENTER
         let yGap = 50; // GAP BETWEEN CENTERS
+        this.arrayOfMenuText = [];
         for (let i = 0; i < NUMBER_OF_MENU_ITEMS; i++) {
             let temp = this.add.image(game.config.width - this.turretMenu.width / 2, startY + (i * yGap), "atlas", "Menu Items/item" + i + ".png");
-            temp.visible = false;
+            //temp.visible = false;
             temp.setInteractive();
             temp.on("pointerup", function () {
                 this.buy(i);
             }, this); // 'this' is to send context of scene
-            temp.depth = 3;
+            temp.depth = 11;
             this.arrayOfMenuItems.push(temp);
+
+            let item = this.arrayOfMenuItems[i];
+            item.visible = true;
+            this.arrayOfMenuItems[i].setInteractive(true);
+            let t = this.add.text(item.x, item.y, "$" + TURRET_DATA[i].price, {fontFamily: '"Roboto Condensed"'});
+            t.depth = 12;
+            this.arrayOfMenuText.push(t);
         }
 
-        //TODO make this one animation
-        this.anims.create({ // CHANGE IMAGE OF MENU BUTTON
-            key: "turretMenuButtonClosed",
-            frames: [{key: "atlas", frame: "Menu Items/turretMenuButtonClosed.png"}],
-            frameRate: 1,
-            repeat: 0
-        });
-        this.anims.create({
-            key: "turretMenuButtonOpen",
-            frames: [{key: "atlas", frame: "Menu Items/turretMenuButtonOpen.png"}],
-            frameRate: 1,
-            repeat: 0
-        });
-        this.moneyText = this.add.text(50, 500, "$" + this.gameStats.money);
+        this.moneyText = this.add.text(50, 500, "Money: $" + this.gameStats.money);
+        this.moneyText.depth = 11;
+        this.waveNoText = this.add.text(50, 550, "Wave: " + this.waveStats.currentWave);
+        this.waveNoText.depth = 11;
+
+        let escKey = this.input.keyboard.addKey("ESC");
+        escKey.on("down", function () {
+            let id = (this.selectedTurretId);
+            this.selectTurret(null);
+
+            if (!this.turretsMap[id].isPlaced) {
+                this.gameStats.money += this.turretsMap[id].value;
+                this.turretsMap[id].kill();
+                return;
+            }
+            this.turretsMap[id].isSelected = false;
+
+        }, this);
 
 
+        for (let key in TURRET_DATA) {
+            let data = TURRET_DATA[key];
+
+            var frameNames = this.anims.generateFrameNames("atlas", {
+                start: 1, end: 3, zeroPad: 1,
+                prefix: data.imagePath, suffix: '.png'
+            });
+            this.anims.create({
+                key: data.imagePath + "fire",
+                frames: frameNames,
+                frameRate: 45,
+                repeat: 0
+            });
+
+            this.anims.create({
+                key: data.imagePath + "static",
+                frames: [{key: "atlas", frame: data.imagePath + "3.png"}],
+                frameRate: 5,
+                repeat: 0
+            });
+        }
+    }
+
+    selectTurret(id) {
+        this.selectedTurretId = id;
+
+    }
+
+    checkWaveEnd() {
+        if (this.ghostsIdList.length <= 0 && this.waveStats.status == 2) {
+            this.waveStats.status = 0;
+            this.gameStats.money += WAVE_DATA[this.waveStats.currentWave].completeBonus;
+            let winText = this.add.text(300, 275, "Wave " + this.waveStats.currentWave + " complete!");
+            winText.setDisplaySize(250, 40);
+            let timer = this.time.addEvent({
+                delay: 5000,
+                callbackScope: this,
+                callback: function () {
+                    winText.destroy();
+                }
+            });
+            this.waveStats.currentWave++;
+            this.startWaveButton.setFrame("Menu Items/startwave.png")
+        }
+    }
+
+    startWave() {
+        if (this.waveStats.status != 0) {
+            return;
+        }
+        this.loadWave(this.waveStats.currentWave);
+        this.waveStats.status = 1;
+        this.startWaveButton.setFrame("Menu Items/waveongoing.png")
     }
 
     buy(i) { // in context of the scene
@@ -140,61 +214,31 @@ class Play extends Phaser.Scene {
         }
         // TODO if(!isUnlocked){return}
 
-        let price = itemsData[i].price;
+        let price = TURRET_DATA[i].price;
         if (price > this.gameStats.money) {
+
+            this.arrayOfMenuItems[i].tint = 0xf0a0a0;
+            let timeEvent = this.time.addEvent({
+                delay: 500,
+                callback: function () {
+                    this.arrayOfMenuItems[i].clearTint();
+                },
+                callbackScope: this
+            })
             return;
         }
         this.gameStats.money -= price;
 
-        this.selectedTurretId = this.createTurret(i, this);
-        this.turretMenuHide();
-    }
-
-    handleTurretMenu() {
-        let menu = this.scene.turretMenu;
-        if (menu.visible) {
-            this.scene.turretMenuHide();
-        } else {
-            this.scene.turretMenuShow();
-        }
-    }
-
-    turretMenuHide() { // for some reason this is from perspective of the scene when called from event
-        let menu = this.turretMenu;
-        this.turretMenuButton.x = game.config.width;
-        menu.visible = false;
-        this.turretMenuButton.play("turretMenuButtonClosed");
-        for (let i = 0; i < NUMBER_OF_MENU_ITEMS; i++) {
-            this.arrayOfMenuItems[i].visible = false;
-            this.arrayOfMenuItems[i].setInteractive(false);
-            this.arrayOfMenuText[i].destroy();
-        }
-        return;
-    }
-
-    turretMenuShow() {
-        let menu = this.turretMenu;
-        this.turretMenuButton.x = game.config.width - menu.width;
-        menu.visible = true;
-        this.turretMenuButton.play("turretMenuButtonOpen");
-
-        this.arrayOfMenuText = [];
-        for (let i = 0; i < NUMBER_OF_MENU_ITEMS; i++) {
-            let item = this.arrayOfMenuItems[i];
-            item.visible = true;
-            this.arrayOfMenuItems[i].setInteractive(true);
-            let t = this.add.text(item.x, item.y, "$" + itemsData[i].price, {fontFamily: '"Roboto Condensed"'});
-            t.depth = 4;
-            this.arrayOfMenuText.push(t);
-        }
-        return;
+        this.selectTurret(this.createTurret(i));
 
     }
 
     spawn() {
         let m;
-        if (this.gameStats.spawnChance < 2) {
+        if (this.gameStats.spawnChance < 10) {
             m = 2;
+        } else if (this.gameStats.spawnChance < 15) {
+            m = 3;
         } else {
             m = 4;
         }
@@ -205,7 +249,9 @@ class Play extends Phaser.Scene {
             n = 0;
         }
 
-        this.createGhost(Phaser.Math.Between(n, m), this);
+        for (let i = 0; i < this.gameStats.repeats; i++) {
+            this.createGhost(Phaser.Math.Between(n, m), this);
+        }
         this.frameWithoutSpawn = 0;
     }
 
@@ -219,17 +265,23 @@ class Play extends Phaser.Scene {
             }
         }
 
-        this.moneyText.text = "$" + this.gameStats.money;
+        this.moneyText.text = "Money: $" + this.gameStats.money;
+        this.waveNoText.text = "Wave: " + this.waveStats.currentWave;
 
-        let n = Phaser.Math.Between(0, 200);
-        if (n < this.gameStats.spawnChance) {
-            this.spawn();
-            this.gameStats.spawnChance += 0.075;
-        }
-        this.frameWithoutSpawn++;
-        if (this.frameWithoutSpawn > 100) {
-            this.spawn();
-        }
+        /* let n = Phaser.Math.Between(0, this.gameStats.maxChance);
+         if (n < this.gameStats.spawnChance) {
+             this.spawn();
+             this.gameStats.spawnChance += 0.075;
+             if (this.gameStats.spawnChance > this.gameStats.maxChance) {
+                 this.gameStats.maxChance += 100;
+                 this.gameStats.repeats += 1;
+             }
+             console.log(this.gameStats)
+         }
+         this.frameWithoutSpawn++;
+         if (this.frameWithoutSpawn > 100) {
+             this.spawn();
+         }*/
 
 
         for (let i = 0; i < this.turretsIdList.length; i++) {
@@ -244,6 +296,7 @@ class Play extends Phaser.Scene {
             this.bulletsMap[this.bulletsIdList[i]].update(delta);
         }
 
+        this.checkWaveEnd();
     }
 
     createTurret(tier, scene) {
@@ -252,7 +305,9 @@ class Play extends Phaser.Scene {
             id = Phaser.Math.Between(0, Number.MAX_SAFE_INTEGER - 1); // dont really need -1 but OVERCOMPENSATION
         } while (this.turretsIdList.indexOf(id) !== -1);
         this.turretsIdList.push(id);
-        this.turretsMap[id] = new itemsData[tier].class(id, scene);
+        this.turretsMap[id] = new Turret(id, tier, scene);
+        //this.turretsMap[id] = new itemsData[tier].class(id, scene);
+        this.selectTurret(id);
 
         return id;
     }
@@ -268,22 +323,41 @@ class Play extends Phaser.Scene {
         return id;
     }
 
-    createBullet(x, y, angle, scene, ownerId) {
+    createBullet(x, y, angle, scene, ownerId, layers, ghosts) {
         let id;
         do {
             id = Phaser.Math.Between(0, Number.MAX_SAFE_INTEGER - 1); // dont really need -1 but OVERCOMPENSATION
         } while (this.bulletsIdList.indexOf(id) !== -1);
         this.bulletsIdList.push(id);
-        this.bulletsMap[id] = new Bullet(id, x, y, angle, scene, ownerId);
+        this.bulletsMap[id] = new Bullet(id, x, y, angle, scene, ownerId, layers, ghosts);
 
         return id;
+    }
+
+    loadWave(w) {
+        let data = WAVE_DATA[w];
+        for (let i = 0; i < data.ghosts.length; i++) {
+            let timeEvent = this.time.addEvent({
+                delay: data.ghosts[i].timeBefore,
+                callback: function () {
+                    for (let j = 0; j < data.ghosts[i].arrayToSpawn.length; j++) {
+                        let id = this.createGhost(data.ghosts[i].arrayToSpawn[j], this);
+                        this.ghostsMap[id].follower.t -= j * data.ghosts[i].tBetween;
+                    }
+                    if (data.ghosts[i].last) {
+                        this.waveStats.status = 2;
+                    }
+                },
+                callbackScope: this
+            })
+        }
     }
 
 }
 
 class Bullet {
 
-    constructor(id, x, y, angle, scene, ownerId) {
+    constructor(id, x, y, angle, scene, ownerId, layers, ghosts) {
         this.id = id;
         this.sprite = scene.add.sprite(x, y, "atlas", "projectiles/bullet.png");
         this.speed = 2;
@@ -292,8 +366,10 @@ class Bullet {
         this.startY = y;
         this.dx = Math.cos(angle);
         this.dy = Math.sin(angle);
-        this.ownerId = ownerId
+        this.ownerId = ownerId;
         this.range = scene.turretsMap[ownerId].range;
+        this.layers = layers;
+        this.ghosts = ghosts;
     }
 
 
@@ -308,9 +384,12 @@ class Bullet {
             let gCirc = new Phaser.Geom.Circle(g.x, g.y, g.width / 2);
             let bCirc = new Phaser.Geom.Circle(this.sprite.x, this.sprite.y, this.sprite.width / 2);
             if (Phaser.Geom.Intersects.CircleToCircle(gCirc, bCirc)) {
-                this.sprite.scene.ghostsMap[l[i]].pop(1);
+                this.sprite.scene.ghostsMap[l[i]].pop(this.layers);
+                this.ghosts--;
                 this.sprite.scene.turretsMap[this.ownerId].ghostsPopped++;
-                this.kill();
+                if (this.ghosts < 1) {
+                    this.kill();
+                }
                 return;
             }
         }
@@ -328,56 +407,156 @@ class Bullet {
 
 class Turret {
 
-    constructor(id, path, scene) {
+    constructor(id, tier, scene) {
         this.ghostsPopped = 0;
         this.id = id;
+        this.tier = tier;
 
         this.isValid = true;
         this.isPlaced = false;
         this.isSelected = true;
         this.readyToShoot = true;
-        this.shotCooldown = 50; // milliseconds --- should be set in subclass
+
+        let data = TURRET_DATA[this.tier];
+        this.shotCooldown = data.shotCooldown; // milliseconds --- should be set in subclass
         this.lastShot = 0;
 
-        this.sprite = scene.add.sprite(0, 0, "atlas", path + "3.png");
+        this.range = data.range;
+        this.createCircle(this.range);
+
+        this.value = data.price;
+
+        this.layersPerGhost = data.layersPerGhost;
+        this.ghostsPerBullet = data.ghostsPerBullet;
+
+        this.sprite = scene.add.sprite(0, 0, "atlas", data.imagePath + "3.png");
 
         this.sprite.setScale(0.5);
-        var frameNames = scene.anims.generateFrameNames("atlas", {
-            start: 1, end: 3, zeroPad: 1,
-            prefix: path, suffix: '.png'
-        });
-        scene.anims.create({
-            key: path + "fire",
-            frames: frameNames,
-            frameRate: 25,
-            repeat: 0
-        });
 
-        scene.anims.create({
-            key: path + "static",
-            frames: [{key: "atlas", frame: path + "3.png"}],
-            frameRate: 5,
-            repeat: 0
-        });
-        this.sprite.play(path + "fire");
-        this.path = path;
+        this.sprite.play(data.imagePath + "fire");
+        this.path = data.imagePath;
 
         this.sprite.setInteractive();
         this.sprite.on("pointerup", this.place, this);
 
+        this.preference = "first";
+
     }
 
-    findClosestGhost() {
+    kill() {
+        this.sprite.scene.turretsIdList.splice(this.sprite.scene.turretsIdList.indexOf(this.id), 1);
+        delete this.sprite.scene.turretsMap[this.id];
+        this.sprite.destroy();
+    }
+
+    findClosestGhost() { // closest to turret
         let arr = this.sprite.scene.ghostsIdList;
         let gMap = this.sprite.scene.ghostsMap;
 
+        let closestDist = null;
+        let closestId = null;
         for (let i = arr.length - 1; i >= 0; i--) {
             let g = gMap[arr[i]].sprite;
-            let gCirc = new Phaser.Geom.Circle(g.x, g.y, g.width / 2);
-            if (Phaser.Geom.Intersects.CircleToCircle(gCirc, this.circle)) {
-                this.closestGhostId = arr[i];
-                return arr[i];
+
+            let d = Phaser.Math.Distance.Between(this.sprite.x, this.sprite.y, g.x, g.y);
+            if (d < closestDist || closestDist == null) {
+                closestDist = d;
+                closestId = arr[i];
             }
+        }
+        if (closestId == null) {
+            return null;
+        }
+        let g = gMap[closestId].sprite;
+        let gCirc = new Phaser.Geom.Circle(g.x, g.y, g.width / 2);
+        if (Phaser.Geom.Intersects.CircleToCircle(gCirc, this.circle)) {
+            return closestId;
+        }
+        return null;
+    }
+
+    findLastGhost() { // closest to end
+        let arr = this.sprite.scene.ghostsIdList;
+        let gMap = this.sprite.scene.ghostsMap;
+
+        let lowestT = null;
+        let lowestId = null;
+        for (let i = arr.length - 1; i >= 0; i--) {
+            let g = gMap[arr[i]].sprite;
+            if (Phaser.Math.Distance.Between(this.sprite.x, this.sprite.y, g.x, g.y) > this.range + gMap[arr[i]].sprite.width / 2) {
+                continue;
+            }
+
+            let t = gMap[arr[i]].follower.t;
+            if (t < lowestT || lowestT == null) {
+                lowestT = t;
+                lowestId = arr[i];
+            }
+        }
+        if (lowestId == null) {
+            return null;
+        }
+        let g = gMap[lowestId].sprite;
+        let gCirc = new Phaser.Geom.Circle(g.x, g.y, g.width / 2);
+        if (Phaser.Geom.Intersects.CircleToCircle(gCirc, this.circle)) {
+            return lowestId;
+        }
+        return null;
+    }
+
+    findFirstGhost() { // closest to start
+        let arr = this.sprite.scene.ghostsIdList;
+        let gMap = this.sprite.scene.ghostsMap;
+
+        let highestT = null;
+        let highestId = null;
+        for (let i = arr.length - 1; i >= 0; i--) {
+            let g = gMap[arr[i]].sprite;
+            if (Phaser.Math.Distance.Between(this.sprite.x, this.sprite.y, g.x, g.y) > this.range + gMap[arr[i]].sprite.width / 2) {
+                continue;
+            }
+            let t = gMap[arr[i]].follower.t;
+            if (t < highestT || highestT == null) {
+                highestT = t;
+                highestId = arr[i];
+            }
+        }
+        if (highestId == null) {
+            return null;
+        }
+        let g = gMap[highestId].sprite;
+        let gCirc = new Phaser.Geom.Circle(g.x, g.y, g.width / 2);
+        if (Phaser.Geom.Intersects.CircleToCircle(gCirc, this.circle)) {
+            return highestId;
+        }
+        return null;
+    }
+
+    chooseGhost() {
+        let cg = this.sprite.scene.ghostsMap[this.chosenGhostId];
+        if (cg != null && Phaser.Math.Distance.Between(this.sprite.x, this.sprite.y, cg.sprite.x, cg.sprite.y) < this.range) {
+            return this.chosenGhostId
+        }
+
+        switch (this.preference) {
+            case "closest":
+                this.chosenGhostId = this.findClosestGhost();
+                break;
+            case "first":
+                this.chosenGhostId = this.findFirstGhost();
+                break;
+            case "last":
+                this.chosenGhostId = this.findLastGhost();
+                break;
+        }
+        return this.chosenGhostId;
+    }
+
+    checkLocValid() {
+        if (this.checkIsOnMap(this.sprite) || this.collidesTurret(this.sprite) || this.sprite.x + this.sprite.width / 4 > game.config.width - this.sprite.scene.turretMenu.width || this.sprite.y + this.sprite.width / 4 > game.config.height - this.sprite.scene.bottom_tab.height) {
+            return false;
+        } else {
+            return true;
         }
     }
 
@@ -392,11 +571,8 @@ class Turret {
 
             let colour;
 
-            if (this.checkIsOnMap(this.sprite) || this.collidesTurret(this.sprite)) {
-                this.isValid = false;
-            } else {
-                this.isValid = true;
-            }
+            this.isValid = this.checkLocValid();
+
             if (this.isValid) {
                 colour = "0x90f090"
             } else {
@@ -414,10 +590,9 @@ class Turret {
             this.readyToShoot = true;
         }
 
-        this.lookAtClosestGhost();
 
         if (this.readyToShoot) {
-            if (!this.lookAtClosestGhost()) { // if not found
+            if (!this.lookAtGhost()) { // if not found
                 return;
             }
             this.shoot();
@@ -425,34 +600,36 @@ class Turret {
             this.lastShot = time;
             this.readyToShoot = false;
 
+        } else {
+            this.lookAtGhost();
         }
     }
 
     shoot() {
         this.sprite.play(this.path + "fire");
-        this.sprite.scene.createBullet(this.sprite.x, this.sprite.y, this.sprite.rotation, this.sprite.scene, this.id);
-
+        this.sprite.scene.createBullet(this.sprite.x, this.sprite.y, this.sprite.rotation, this.sprite.scene, this.id, this.layersPerGhost, this.ghostsPerBullet);
+        this.chooseGhost();
     }
 
-    lookAtClosestGhost() { // returns true if it found a ghost
+    lookAtGhost() { // returns true if it found a ghost
 
-        let ghost = this.sprite.scene.ghostsMap[this.closestGhostId];
+        let ghost = this.sprite.scene.ghostsMap[this.chosenGhostId];
 
         if (ghost == null) { // if it doesnt exist
-            ghost = this.sprite.scene.ghostsMap[this.findClosestGhost()]; // get a new one
+            ghost = this.sprite.scene.ghostsMap[this.chooseGhost()]; // get a new one
             if (ghost == null) { // if there are no ghosts nearby
                 return false; // return
             }
         }
 
-        let d = Phaser.Math.Distance.Between(this.sprite.x, this.sprite.y, ghost.sprite.x, ghost.sprite.y);
+        //let d = Phaser.Math.Distance.Between(this.sprite.x, this.sprite.y, ghost.sprite.x, ghost.sprite.y);
 
-        if (d > this.range + ghost.sprite.width / 2) { // if the current ghost is out of range
-            ghost = this.sprite.scene.ghostsMap[this.findClosestGhost()]; // get a new one
+        /*if (d > this.range + ghost.sprite.width / 2) { // if the current ghost is out of range
+            ghost = this.sprite.scene.ghostsMap[this.chooseGhost()]; // get a new one
             if (ghost == null) { // if it doesnt exist
                 return false; // get a new one
             }
-        }
+        }*/
 
         let rotation = Phaser.Math.Angle.Between(this.sprite.x, this.sprite.y, ghost.sprite.x, ghost.sprite.y);
 
@@ -461,27 +638,20 @@ class Turret {
         return true;
     }
 
-
     place() {
-        let tSprite = this.sprite;
-        let button = this.sprite.scene.turretMenuButton;
-        if (tSprite.x + tSprite.width > button.x && tSprite.x < button.x + button.width && tSprite.y + tSprite.height > button.y && tSprite.y < button.y + button.height) {
-            return;
-        }
         if (!this.isValid) {
             return;
         }
 
-
         this.isPlaced = true;
-        this.sprite.scene.selectedTurretId = this.id;
+        this.sprite.scene.selectTurret(this.id);
 
         this.sprite.on("pointerup", this.select, this);
     }
 
     select() {
         this.isSelected = true;
-        this.sprite.scene.selectedTurretId = this.id;
+        this.sprite.scene.selectTurret(this.id);
     }
 
     checkIsOnMap(turret) {
@@ -518,27 +688,7 @@ class Turret {
     createCircle(r) {
         this.circle = new Phaser.Geom.Circle(this.x, this.y, r)
     }
-
 }
-
-class YellowPacman extends Turret {
-    constructor(id, scene) {
-        super(id, "turrets/yellow/default/", scene);
-        this.range = 100;
-        this.createCircle(this.range);
-        this.shotCooldown = 200;
-    }
-}
-
-class RedPacman extends Turret {
-    constructor(id, scene) {
-        super(id, "turrets/red/default/", scene);
-        this.range = 200;
-        this.createCircle(this.range);
-        this.shotCooldown = 400;
-    }
-}
-
 
 class Ghost {
 
@@ -550,7 +700,7 @@ class Ghost {
         this.sprite.on("pointerdown", this.pop, this);
 
         this.sprite.setInteractive();
-        this.sprite.depth = this.id;
+        this.sprite.depth = Phaser.Math.Between(1, 9);
 
         this.setTier(this.tier, scene);
 
@@ -589,7 +739,7 @@ class Ghost {
     kill() {
         this.sprite.scene.ghostsIdList.splice(this.sprite.scene.ghostsIdList.indexOf(this.id), 1);
         delete this.sprite.scene.ghostsMap[this.id];
-                this.sprite.destroy();
+        this.sprite.destroy();
     }
 
     update(delta) {
@@ -604,7 +754,6 @@ class Ghost {
 
     }
 
-
     pop(a) {
 
         if (isNaN(a)) {
@@ -612,8 +761,12 @@ class Ghost {
         }
 
         let n = this.tier - a;
-        this.sprite.scene.gameStats.ghostsPoppped += a;
-        this.sprite.scene.gameStats.money += 20;
+        let m = a;
+        if (n < 0) {
+            m = n + a + 1;
+        }
+        this.sprite.scene.gameStats.ghostsPoppped += m;
+        this.sprite.scene.gameStats.money += 5 * m;
         if (this.setTier(n) < 0) {
             this.kill();
             return;
@@ -624,13 +777,7 @@ class Ghost {
 
 }
 
-
 const NUMBER_OF_MENU_ITEMS = 2;
-
-let itemsData = [
-    {price: 100, class: YellowPacman},
-    {price: 250, class: RedPacman}
-];
 
 const MAP_DATA = [
     null,
@@ -663,6 +810,25 @@ const MAP_DATA = [
     }
 ];
 
+const TURRET_DATA = {
+    0: {
+        price: 450,
+        range: 100,
+        shotCooldown: 400,
+        imagePath: "turrets/yellow/default/",
+        layersPerGhost: 1,
+        ghostsPerBullet: 1,
+    },
+    1: {
+        price: 700,
+        range: 200,
+        shotCooldown: 650,
+        imagePath: "turrets/red/default/",
+        layersPerGhost: 1,
+        ghostsPerBullet: 2,
+    }
+};
+
 const GHOST_DATA = {
     tiers: {
         0: {
@@ -672,25 +838,25 @@ const GHOST_DATA = {
             immunities: []
         },
         1: {
-            speed: 145, // pixels per seconds
+            speed: 125, // pixels per seconds
             imagePath: "ghosts/blue.png",
             layerHealth: 1,
             immunities: []
         },
         2: {
-            speed: 190, // pixels per seconds
+            speed: 140, // pixels per seconds
             imagePath: "ghosts/green.png",
             layerHealth: 1,
             immunities: []
         },
         3: {
-            speed: 280, // pixels per seconds
+            speed: 200, // pixels per seconds
             imagePath: "ghosts/lilac.png",
             layerHealth: 1,
             immunities: []
         },
         4: {
-            speed: 350, // pixels per seconds
+            speed: 280, // pixels per seconds
             imagePath: "ghosts/yellow.png",
             layerHealth: 1,
             immunities: []
@@ -705,11 +871,12 @@ const PROJECTILE_DATA = {
     }
 };
 
+var WAVE_DATA;
 
 var config = {
     type: Phaser.AUTO,
     parent: "gameContainer",
-    width: 800,
+    width: 920,
     height: 600,
     scene: [
         Play
@@ -724,5 +891,4 @@ var config = {
 var game;
 window.onload = function () {
     game = new Phaser.Game(config);
-}
-
+};

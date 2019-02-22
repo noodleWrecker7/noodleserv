@@ -1,0 +1,92 @@
+[
+  {
+    "completeBonus": 100,
+
+    "ghosts": [
+      {
+        "timeBefore": 1000,
+        "arrayToSpawn": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "tBetween": 0.050
+      },
+      {
+        "timeBefore": 13000,
+        "arrayToSpawn": [0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+        "tBetween": 0.035,
+        "last": true
+      }
+
+    ]
+  },
+  {
+    "completeBonus": 110,
+
+    "ghosts":
+    [
+      {
+        "timeBefore": 1000,
+        "arrayToSpawn": [0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+        "tBetween": 0.050
+      },
+      {
+        "timeBefore": 7500,
+        "arrayToSpawn": [0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "tBetween": 0.03,
+        "last": true
+      },
+      {
+        "timeBefore": 15000,
+        "arrayToSpawn": [0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "tBetween": 0.03,
+        "last": true
+      }
+    ]
+  },
+  {
+    "completeBonus": 120,
+
+    "ghosts":
+    [
+      {
+        "timeBefore": 1000,
+        "arrayToSpawn": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+        "tBetween": 0.034
+      },
+      {
+        "timeBefore": 7500,
+        "arrayToSpawn": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ,1, 1],
+        "tBetween": 0.03,
+        "last": true
+      },
+      {
+        "timeBefore": 14000,
+        "arrayToSpawn": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "tBetween": 0.025,
+        "last": true
+      }
+    ]
+  },
+  {
+    "completeBonus": 130,
+
+    "ghosts":
+    [
+      {
+        "timeBefore": 1000,
+        "arrayToSpawn": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "tBetween": 0.030
+      },
+      {
+        "timeBefore": 15500,
+        "arrayToSpawn": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "tBetween": 0.035,
+        "last": true
+      },
+      {
+        "timeBefore": 21000,
+        "arrayToSpawn": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "tBetween": 0.03,
+        "last": true
+      }
+    ]
+  }
+]
