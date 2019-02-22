@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="">
+    <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="honestly wtf">
       <change afterPath="V:/main/projects/towerdefense/assets/waveData.json" afterDir="false" />
       <change beforePath="V:/.idea/workspace.xml" beforeDir="false" afterPath="V:/.idea/workspace.xml" afterDir="false" />
       <change beforePath="V:/main/projects/towerdefense/assets/bigSheet.json" beforeDir="false" afterPath="V:/main/projects/towerdefense/assets/bigSheet.json" afterDir="false" />
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://V:/main/projects/towerdefense/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="1058">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -55,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://V:/main/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1058">
+            <state relative-caret-position="184">
               <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
@@ -64,17 +64,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://V:/main/projects/towerdefense/towerdefense.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="177" selection-start-line="177" selection-end-line="177" />
+            <state relative-caret-position="570">
+              <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#Play#0" />
                 <element signature="n#!!block;n#setMap#0;n#Play#0" />
-                <element signature="e#4678#5029#0" />
-                <element signature="e#5189#5305#0" />
-                <element signature="e#5526#5720#0" />
                 <element signature="n#!!block;n#buy#0;n#Play#0" />
                 <element signature="n#!!block;n#spawn#0;n#Play#0" />
-                <element signature="e#6756#6998#0" />
                 <element signature="n#!!block;n#createGhost#0;n#Play#0" />
                 <element signature="n#!!block;n#createBullet#0;n#Play#0" />
                 <element signature="n#Bullet#0" />
@@ -87,9 +83,6 @@
                 <element signature="n#!!block;n#setTier#0;n#Ghost#0" />
                 <element signature="n#!!block;n#kill#0;n#Ghost#0" />
                 <element signature="n#!!block;n#update#0;n#Ghost#0" />
-                <element signature="e#21454#22173#0" />
-                <element signature="e#22196#22629#0" />
-                <element signature="e#22652#23510#0" />
               </folding>
             </state>
           </provider>
@@ -98,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://V:/main/projects/towerdefense/assets/waveData.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1886">
-              <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+            <state relative-caret-position="23">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -244,8 +237,8 @@
         <option value="V:/main/index.html" />
         <option value="V:/main/projects/index.html" />
         <option value="V:/main/css/pages.css" />
-        <option value="V:/main/projects/towerdefense/assets/waveData.json" />
         <option value="V:/main/projects/towerdefense/index.html" />
+        <option value="V:/main/projects/towerdefense/assets/waveData.json" />
         <option value="V:/main/projects/towerdefense/towerdefense.js" />
       </list>
     </option>
@@ -368,7 +361,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -466,6 +459,7 @@
       <workItem from="1550653810665" duration="25184000" />
       <workItem from="1550746809332" duration="8990000" />
       <workItem from="1550762442117" duration="14685000" />
+      <workItem from="1550848755311" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="aaah">
       <created>1547845053109</created>
@@ -604,7 +598,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273865000" />
+    <option name="totallyTimeSpent" value="273976000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -619,7 +613,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.122068234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.12313433" />
       <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.18017058" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -847,6 +841,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://V:/main/projects/towerdefense/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1058">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://V:/main/css/general.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
@@ -858,6 +862,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -891,41 +902,20 @@
     </entry>
     <entry file="file://V:/main/projects/towerdefense/assets/waveData.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1886">
-          <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1058">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/projects/towerdefense/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="23">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://V:/main/projects/towerdefense/towerdefense.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
+        <state relative-caret-position="570">
+          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#Play#0" />
             <element signature="n#!!block;n#setMap#0;n#Play#0" />
-            <element signature="e#4678#5029#0" />
-            <element signature="e#5189#5305#0" />
-            <element signature="e#5526#5720#0" />
             <element signature="n#!!block;n#buy#0;n#Play#0" />
             <element signature="n#!!block;n#spawn#0;n#Play#0" />
-            <element signature="e#6756#6998#0" />
             <element signature="n#!!block;n#createGhost#0;n#Play#0" />
             <element signature="n#!!block;n#createBullet#0;n#Play#0" />
             <element signature="n#Bullet#0" />
@@ -938,9 +928,6 @@
             <element signature="n#!!block;n#setTier#0;n#Ghost#0" />
             <element signature="n#!!block;n#kill#0;n#Ghost#0" />
             <element signature="n#!!block;n#update#0;n#Ghost#0" />
-            <element signature="e#21454#22173#0" />
-            <element signature="e#22196#22629#0" />
-            <element signature="e#22652#23510#0" />
           </folding>
         </state>
       </provider>

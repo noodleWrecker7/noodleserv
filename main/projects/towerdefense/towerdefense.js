@@ -85,7 +85,7 @@ class Play extends Phaser.Scene {
         };
 
         this.waveStats = {
-            currentWave: 0,
+            currentWave: 1,
             status: 0, // 0 - waiting to start, 1 - in progress, 2- finished/in last chunk
         };
 
