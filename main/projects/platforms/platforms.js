@@ -23,6 +23,7 @@ window.onload = function () {
     }, 1000 / fps);
 };
 
+
 class RunnerGame {
     constructor(numOfPlats) {
         this.numberOfPlatforms = numOfPlats;
@@ -62,7 +63,6 @@ class RunnerGame {
         if (this.down && this.player.yv < 2) {
             this.player.yv = 2;
         }
-        console.log(this.player.yv)
         this.player.y += this.player.yv;
         this.player.x += this.player.xv;
 

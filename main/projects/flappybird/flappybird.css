@@ -39,6 +39,7 @@ canvas {
 }
 
 @font-face {
+    font-display: auto;
     font-family: flappy bird;
     src: url(../../webfonts/FB.eot);
     src: url(../../webfonts/FB.eot?#iefix) format("embedded-opentype"),url(../../webfonts/FB.woff) format("woff"),url(/../../webfonts/FB.ttf) format("truetype"),url(/../../webfonts/FB.svg#04b_19regular) format("svg");
