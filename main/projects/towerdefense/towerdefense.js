@@ -8,9 +8,11 @@ class Menu extends Phaser.Scene {
     }
 
     preload() {
+        this.load.image("MainMenu", "resource/MainMenu.png");
     }
 
     create() {
+        this.add.image(0, 0, "MainMenu").setOrigin(0, 0);
         this.input.once("pointerup", function () {
             this.scene.start("Play", {levelChosen: 1})
         }, this)
@@ -30,7 +32,7 @@ class Play extends Phaser.Scene {
         this.bottomTabData = {
             height: 120,
             width: 200,
-            address: "assets/bottom-tab.png"
+            address: "resource/bottom-tab.png"
         };
 
         this.selectedTurretId = null;
@@ -38,8 +40,8 @@ class Play extends Phaser.Scene {
     }
 
     preload() {
-        this.load.multiatlas("atlas", "assets/bigSheet.json", "assets");
-        this.load.json("waveData", "assets/waveData.json");
+        this.load.multiatlas("atlas", "resource/bigSheet.json", "resource");
+        this.load.json("waveData", "resource/waveData.json");
     }
 
     setMap(map) {
@@ -140,7 +142,10 @@ class Play extends Phaser.Scene {
 
         this.moneyText = this.add.text(50, 500, "Money: $" + this.gameStats.money);
         this.moneyText.depth = 11;
-        this.waveNoText = this.add.text(50, 550, "Wave: " + this.waveStats.currentWave);
+
+        this.totalWaveText = " of " + (WAVE_DATA.length-1);
+
+        this.waveNoText = this.add.text(50, 550, "Wave: " + this.waveStats.currentWave + this.totalWaveText);
         this.waveNoText.depth = 11;
 
         let escKey = this.input.keyboard.addKey("ESC");
@@ -279,7 +284,7 @@ class Play extends Phaser.Scene {
         }
 
         this.moneyText.text = "Money: $" + this.gameStats.money;
-        this.waveNoText.text = "Wave: " + this.waveStats.currentWave;
+        this.waveNoText.text = "Wave: " + this.waveStats.currentWave + this.totalWaveText;
 
         /* let n = Phaser.Math.Between(0, this.gameStats.maxChance);
          if (n < this.gameStats.spawnChance) {

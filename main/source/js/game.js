@@ -34,8 +34,8 @@ var map =  [[ 0,-1, 0, 0, 0, 0, 0, 0, 0, 0],
             [ 0, 0, 0, 0, 0, 0, 0,-1, 0, 0]];
 
 function preload() {    
-    this.load.atlas('sprites', 'assets/spritesheet.png', 'assets/spritesheet.json');
-    this.load.image('bullet', 'assets/bullet.png');
+    this.load.atlas('sprites', 'resource/spritesheet.png', 'resource/spritesheet.json');
+    this.load.image('bullet', 'resource/bullet.png');
 }
 
 var Enemy = new Phaser.Class({

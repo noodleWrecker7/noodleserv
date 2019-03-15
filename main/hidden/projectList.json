@@ -1,30 +1,30 @@
 [
   {
-    "name": "Tower Defense",
-    "link": "towerdefense",
+    "name": "Red Nose Runner",
+    "link": "rednoserunner",
     "img": "placeholder.png",
-    "blurb": "This is me testing pixi.js",
+    "blurb": "Endless side-scroller jumper. WIP!",
     "date": ""
   },
   {
-    "name": "Breakout",
-    "link": "breaker",
+    "name": "Tower Defense",
+    "link": "towerdefense",
     "img": "placeholder.png",
-    "blurb": "This is not finished idk when it will be.",
+    "blurb": "This was a test for phaser.js. Nowhere near done, I still have a lot to add.",
     "date": ""
   },
   {
     "name": "Flappy Bird",
     "link": "flappybird",
     "img": "flappybird.png",
-    "blurb": "Flap Flap Flap",
+    "blurb": "Flappy Bird clone.",
     "date": "1/2/2019"
   },
   {
     "name": "Platforms",
     "link": "platforms",
     "img": "platforms.png",
-    "blurb": "Dunno what I'm doing with this yet",
+    "blurb": "Just a little test.",
     "date": "27/1/2019"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Snake",
     "link": "snake",
     "img": "snake.png",
-    "blurb": "It's snake. Eat Apples. Nom nom.",
+    "blurb": "Snake clone.",
     "date": "3/11/2018"
   },
   {

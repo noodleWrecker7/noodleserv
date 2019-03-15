@@ -55,7 +55,7 @@ function insertPagination() {
             "<a href=\"?p=" + (pageNum + 1) + "\">" + (pageNum + 1) + "</a>" +
             "<a href=\"?p=" + (pageNum + 2) + "\">" + (pageNum + 2) + "</a>";
     }
-    x = pageNum + 1;
+    x = parseInt(pageNum) + 1;
     let forwardHTML = "<a href=\"?p=" + x + "\">&raquo;</a>";
     output += forwardHTML;
     document.getElementById("pagination-top").innerHTML = output;
@@ -71,6 +71,7 @@ function loadPages(url) {
     if (startEntry != 0) {
         startEntry -= 1;
     }
+    startEntry *= 8;
     let output = "";
     output += "<div class=\"row\">";
     for (let i = 0; i < 8; i++) {
