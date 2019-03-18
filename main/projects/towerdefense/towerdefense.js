@@ -40,7 +40,7 @@ class Play extends Phaser.Scene {
     }
 
     preload() {
-        this.load.multiatlas("atlas", "assets/bigSheet.json", "resource");
+        this.load.multiatlas("atlas", "assets/bigSheet.json", "assets");
         this.load.json("waveData", "assets/waveData.json");
     }
 
