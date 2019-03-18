@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="">
-      <change afterPath="V:/main/projects/rednoserunner/index.html" afterDir="false" />
-      <change afterPath="V:/main/projects/rednoserunner/rednoserunner.js" afterDir="false" />
       <change beforePath="V:/.idea/workspace.xml" beforeDir="false" afterPath="V:/.idea/workspace.xml" afterDir="false" />
       <change beforePath="V:/main/hidden/projectList.json" beforeDir="false" afterPath="V:/main/hidden/projectList.json" afterDir="false" />
-      <change beforePath="V:/main/hidden/render.js" beforeDir="false" afterPath="V:/main/hidden/render.js" afterDir="false" />
-      <change beforePath="V:/main/projects/index.html" beforeDir="false" afterPath="V:/main/projects/index.html" afterDir="false" />
-      <change beforePath="V:/main/projects/towerdefense/assets/waveData.json" beforeDir="false" afterPath="V:/main/projects/towerdefense/assets/waveData.json" afterDir="false" />
-      <change beforePath="V:/main/projects/towerdefense/towerdefense.js" beforeDir="false" afterPath="V:/main/projects/towerdefense/towerdefense.js" afterDir="false" />
-      <change beforePath="V:/main/source/js/game.js" beforeDir="false" afterPath="V:/main/source/js/game.js" afterDir="false" />
     </list>
     <ignored path="V:/.tmp/" />
     <ignored path="V:/temp/" />
@@ -67,8 +60,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://V:/main/projects/towerdefense/towerdefense.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="733">
-                  <caret line="915" column="2" lean-forward="true" selection-start-line="915" selection-start-column="2" selection-end-line="915" selection-end-column="2" />
+                <state relative-caret-position="17871">
+                  <caret line="915" column="2" selection-start-line="915" selection-start-column="2" selection-end-line="915" selection-end-column="2" />
                   <folding>
                     <element signature="n#!!block;n#setMap#0;n#Play#0" />
                     <element signature="n#!!block;n#buy#0;n#Play#0" />
@@ -87,8 +80,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://V:/main/projects/towerdefense/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-302">
-                  <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+                <state relative-caret-position="23">
+                  <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
                   <folding>
                     <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -104,7 +97,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://V:/main/projects/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1009">
+                <state relative-caret-position="1518">
                   <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
                 </state>
               </provider>
@@ -118,8 +111,8 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://V:/main/projects/rednoserunner/rednoserunner.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="322">
@@ -128,11 +121,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://V:/main/hidden/projectList.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+                <state relative-caret-position="23">
+                  <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -140,12 +133,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://V:/main/hidden/render.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
+                <state relative-caret-position="1679">
                   <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#16#23#1" expanded="true" />
-                    <element signature="e#16#23#1" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -153,7 +142,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://V:/main/projects/rednoserunner/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="494">
+                <state relative-caret-position="1150">
                   <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
                   <folding>
                     <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
@@ -268,9 +257,9 @@
         <option value="V:/main/projects/towerdefense/assets/waveData.json" />
         <option value="V:/main/projects/towerdefense/towerdefense.js" />
         <option value="V:/main/hidden/render.js" />
-        <option value="V:/main/hidden/projectList.json" />
         <option value="V:/main/projects/rednoserunner/index.html" />
         <option value="V:/main/projects/rednoserunner/rednoserunner.js" />
+        <option value="V:/main/hidden/projectList.json" />
       </list>
     </option>
   </component>
@@ -308,6 +297,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,28 +380,6 @@
               <item name="projects" type="462c0819:PsiDirectoryNode" />
               <item name="towerdefense" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -519,7 +508,8 @@
       <workItem from="1550876866588" duration="4142000" />
       <workItem from="1550921352932" duration="3800000" />
       <workItem from="1551003769062" duration="4855000" />
-      <workItem from="1552687730661" duration="3375000" />
+      <workItem from="1552687730661" duration="3428000" />
+      <workItem from="1552736083647" duration="1222000" />
     </task>
     <task id="LOCAL-00001" summary="aaah">
       <created>1547845053109</created>
@@ -661,11 +651,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551006427417</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="idek anymore">
+      <created>1552691146162</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1552691146162</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295186000" />
+    <option name="totallyTimeSpent" value="296461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,7 +677,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.17270789" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.17430703" />
       <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.18017058" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -927,6 +924,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://V:/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://V:/main/projects/platforms/platforms.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -941,27 +945,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://V:/main/projects/snake/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://V:/main/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/hidden/projectList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://V:/main/projects/towerdefense/towerdefense.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="915" column="2" lean-forward="true" selection-start-line="915" selection-start-column="2" selection-end-line="915" selection-end-column="2" />
+        <state relative-caret-position="17871">
+          <caret line="915" column="2" selection-start-line="915" selection-start-column="2" selection-end-line="915" selection-end-column="2" />
           <folding>
             <element signature="n#!!block;n#setMap#0;n#Play#0" />
             <element signature="n#!!block;n#buy#0;n#Play#0" />
@@ -976,40 +963,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://V:/main/projects/snake/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://V:/main/projects/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
+        <state relative-caret-position="1518">
           <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://V:/main/projects/towerdefense/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302">
-          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        <state relative-caret-position="23">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/projects/rednoserunner/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/hidden/render.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-          <folding>
-            <element signature="e#16#23#1" expanded="true" />
-            <element signature="e#16#23#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1018,6 +987,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/hidden/render.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1679">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/rednoserunner/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/hidden/projectList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
         </state>
       </provider>
     </entry>
