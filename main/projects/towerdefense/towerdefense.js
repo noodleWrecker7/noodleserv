@@ -8,7 +8,7 @@ class Menu extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image("MainMenu", "resource/MainMenu.png");
+        this.load.image("MainMenu", "assets/MainMenu.png");
     }
 
     create() {
@@ -40,8 +40,8 @@ class Play extends Phaser.Scene {
     }
 
     preload() {
-        this.load.multiatlas("atlas", "resource/bigSheet.json", "resource");
-        this.load.json("waveData", "resource/waveData.json");
+        this.load.multiatlas("atlas", "assets/bigSheet.json", "assets");
+        this.load.json("waveData", "assets/waveData.json");
     }
 
     setMap(map) {
