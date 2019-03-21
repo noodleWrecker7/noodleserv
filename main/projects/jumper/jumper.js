@@ -1,3 +1,5 @@
+let tick = 0;
+
 class Play extends Phaser.Scene {
     constructor() {
         super({key: "Play", active: true})
@@ -8,28 +10,35 @@ class Play extends Phaser.Scene {
     }
 
     create() {
-        this.player = this.physics.add.sprite(0, 0, "nose").setOrigin(0, 0);
+        this.player = this.physics.add.sprite(24, 24, "nose");
+        this.player.setCollideWorldBounds(true)
+        this.graphics = this.add.graphics();
+        //this.player.add.collider()
+
 
     }
 
-    update() {
+    update(time, delta) {
+        this.graphics.clear();
+
+
+        //this.graphics.fillStyle(0xffffff, 0.8);
+        //this.graphics.fillRect(this.player.x - 24, this.player.y -24, this.player.width, this.player.height)
     }
-
-
 }
 
 let config = {
     type: Phaser.AUTO,
     parent: "gameContainer",
     width: 920,
-    height: 100,
+    height: 150,
     scene: [
         Play
     ],
     physics: {
         default: "arcade",
         arcade: {
-            gravity: {y: 1}
+            gravity: {y: 10}
         }
     },
     pixelArt: true

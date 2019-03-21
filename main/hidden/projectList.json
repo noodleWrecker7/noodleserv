@@ -17,7 +17,7 @@
     "name": "Platforms",
     "link": "platforms",
     "img": "platforms.png",
-    "blurb": "Just a little test.",
+    "blurb": "Tiny little test - doesn't do anything.",
     "date": "27/1/2019"
   },
   {
@@ -38,7 +38,7 @@
     "name": "Tetris",
     "link": "tetris/#tetrisCanvas",
     "img": "tetris.png",
-    "blurb": "shut up adam",
+    "blurb": "Tetris clone.",
     "date": "23/12/2018"
   },
   {
