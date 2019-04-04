@@ -241,7 +241,6 @@ function drawGhostOnGrid(shape) {
     }
 }
 
-
 function checkCollisionBelow(shape) {
     let collide = false;
 
