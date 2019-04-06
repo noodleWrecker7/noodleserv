@@ -1,9 +1,13 @@
+let currentSessionID = getCookie("currentSessionID");
+if(currentSessionID != "" && currentSessionID != null) {
+    window.location.href = "/static/serverlist.html";
+}
+
 var socket = io();
 socket.on('message', function (data) {
     console.log(data);
 })
 
-let currentSessionID = null;
 socket.on('newSessionID', function (data) {
     currentSessionID = data;
     setCookie("currentSessionID", currentSessionID, 1);

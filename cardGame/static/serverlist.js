@@ -1,3 +1,8 @@
+let currentSessionID = getCookie("currentSessionID");
+if (currentSessionID == "") {
+    window.location.href = "../";
+}
+
 var socket = io();
 socket.on('message', function (data) {
     console.log(data);
@@ -12,13 +17,33 @@ socket.on('connect user to game', function (gameId) {
     window.location.href = "/game?gameId=" + gameId;
 })
 
-socket.on('receive game list', function (data) {
-    for (let i = 0; i < data.length; i++) {
-
-    }
+socket.on('logged out', function() {
+    window.location.href = "../";
 })
 
-let currentSessionID = getCookie("currentSessionID");
+socket.on('receive game list', function (data) {
+    let htmlOut = "";
+    for (let i = 0; i < data.length; i++) {
+        console.log(data[i])
+        let lobby = data[i];
+
+        let box = "<div class=\"openGame\">\n" +
+            "            <div class=\"gameInfo\">\n" +
+            "                <h3 class=\"gameTitle\">" + lobby.gameName + "</h3>\n" +
+            "                <p class=\"gameCreator infoChunk\"><b>Creator:</b> " + lobby.creatorName + "</p>\n" +
+            "                <p class=\"playersInGame infoChunk\"><b>Players:</b> " + lobby.numberPlayers + "/9</p>\n" +
+            "            </div>\n" +
+            "            <div class=\"gameButtons\">\n" +
+            "                <button class=\"indButton\" onclick='requestJoinGame("+ lobby.id +")'>Join Game</button>\n" +
+            "            </div>\n" +
+            "        </div>";
+        htmlOut += box;
+    }
+    document.getElementById("openGamesContainer").innerHTML = htmlOut;
+});
+
+
+
 let currentUsername;
 
 window.onload = function () {
@@ -31,15 +56,23 @@ window.onload = function () {
 }
 
 function refreshGameList() {
+    document.getElementById("openGamesContainer").innerHTML = "";
     socket.emit('request game list', currentSessionID);
 }
 
 function createGame() {
-    socket.emit('create game', currentSessionID);
+    let data = {creator: currentSessionID, gameName: null};
+    data.gameName = prompt("Enter Game Name");
+    socket.emit('create game', data);
 }
 
 function requestJoinGame(gameId) {
     socket.emit('request user join game', {gameId: gameId, sessionID: currentSessionID});
+}
+
+function logOut() {
+    setCookie("currentSessionID", "", 1);
+    socket.emit('log out', currentSessionID);
 }
 
 function setCookie(cname, cvalue, exdays) {

@@ -5,8 +5,43 @@
     <title>Title</title>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/game/client.js"></script>
+    <link rel="stylesheet" href="game.css">
 </head>
 <body>
+<div class="main-page">
+    <nav class="top-bar">
+        <button class="top-buttons" onclick="">Leave</button>
+
+        <button class="top-buttons right" onclick="logOut()">Log out</button>
+    </nav>
+    <div class="main-content">
+        <div class="main-game">
+            <div class="top-section"></div>
+            <div class="bottom-section">
+                <div class="player-list">
+                    <h4 class="players-title">Players:</h4>
+                    <div class="list-players">
+                        <div class="player-list-item"><p class="player-list-name">Player</p>
+                            <p class="player-list-points">0</p></div>
+                    </div>
+                </div>
+                <div class="bottom-card-container">
+                    <h4 class="bottom-card-container-title">Your Cards:</h4>
+                    <div class="cards-container">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-box"></div>
+    </div>
+</div>
 
 </body>
 </html>

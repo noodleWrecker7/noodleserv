@@ -30,9 +30,7 @@ server.listen(5000, function () {
 // var connectedSessionIDs = [];
 var connectedSessions = {};
 
-var gamesInProgress = {
-    3: {gameId: 3, players: [], status: 0}
-};
+var gamesInProgress = {};
 
 io.on('connection', function (socket) { // when a connection is recieved
     socket.on('new player', newPlayer);  // if they claim to be a new player
@@ -44,7 +42,15 @@ io.on('connection', function (socket) { // when a connection is recieved
     socket.on('request user join game', userJoinGame)
 
     socket.on('request game list', sendGameList);
+
+    socket.on('log out', logOutUser);
 });
+
+function logOutUser(session) {
+    delete connectedSessions[session];
+    io.sockets.connected[this.id].emit('logged out');
+    console.log("logged out session: " + session)
+}
 
 function sendGameList(sessionID) {
     let gameIds = Object.keys(gamesInProgress);
@@ -55,6 +61,7 @@ function sendGameList(sessionID) {
         tempGame.id = game.gameId;
         tempGame.creatorName = connectedSessions[game.creatorSessionID].username;
         tempGame.numberPlayers = game.players.length;
+        tempGame.gameName = game.gameName;
         returnObject.push(tempGame);
     }
 
@@ -67,28 +74,43 @@ function userJoinGame(data) {
     let userSession = data.sessionID;
 
     let game = gamesInProgress[gameId];
-    if (game.players.length() >= 9) {
+    if (game == null) {
+        return;
+    }
+    if (game.players.length >= 9) {
         return;
     }
     if (game.status != 0) {
         return;
     }
+
+    io.sockets.connected[connectedSessions[userSession].socketID].emit('connect user to game', gameId);
+    for (let i = 0; i < game.players.length; i++) { // prevents user from joining more than once and filling up lobby
+
+        if (gamesInProgress[gameId].players[i].sessionID == userSession) {
+            return;
+        }
+    }
+
     gamesInProgress[gameId].players.push({
         sessionID: userSession,
         username: connectedSessions[userSession].username,
         points: 0
     });
 
-    io.sockets.connected[connectedSessions[userSession].socketID].emit('connect user to game', gameId);
+
 }
 
-function createGame(creator) {
+function createGame(data) {
+    let creator = data.creator;
+    let gameName = data.gameName;
     let gameIds = Object.keys(gamesInProgress);
     let gId = null;
     while (gId == null || gameIds.indexOf(gId) != -1) {
         gId = Math.floor(Math.random() * 1000);
     }
     let game = {
+        gameName: gameName,
         creatorSessionID: creator,
         gameId: gId,
         players: [{sessionID: creator, username: connectedSessions[creator].username, points: 0}],
@@ -120,7 +142,3 @@ function newPlayer(data) {
     // connectedSessionIDs.push(newSessionID);
     connectedSessions[newSessionID] = {sessionID: newSessionID, socketID: this.id, username: data}; // saves to list of session ids
 }
-
-setInterval(function () {
-    io.sockets.emit('message', "hi");
-}, 1000);
