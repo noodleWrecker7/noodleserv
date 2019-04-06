@@ -10,7 +10,7 @@ socket.on('message', function (data) {
 
 socket.on('get username', function (data) {
     currentUsername = data;
-    setCookie("currentUsername", currentUsername, 1);
+    setCookie("currentUsername", currentUsername, 0.2);
 })
 
 socket.on('connect user to game', function (gameId) {
@@ -18,6 +18,12 @@ socket.on('connect user to game', function (gameId) {
 })
 
 socket.on('logged out', function() {
+    window.location.href = "../";
+
+})
+
+socket.on('session not found', function() {
+    setCookie("currentSessionID", "", 0.2);
     window.location.href = "../";
 })
 
@@ -47,11 +53,12 @@ socket.on('receive game list', function (data) {
 let currentUsername;
 
 window.onload = function () {
-    if (currentSessionID == "") {
+    if (currentSessionID == "" || currentSessionID == null) {
         window.location.href = "../";
+        return;
     }
     socket.emit('return player', currentSessionID);
-    setCookie("currentSessionID", currentSessionID, 1);
+    setCookie("currentSessionID", currentSessionID, 0.2);
     refreshGameList();
 }
 
@@ -71,7 +78,7 @@ function requestJoinGame(gameId) {
 }
 
 function logOut() {
-    setCookie("currentSessionID", "", 1);
+    setCookie("currentSessionID", "", 0.2);
     socket.emit('log out', currentSessionID);
 }
 

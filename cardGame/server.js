@@ -1,5 +1,6 @@
 // Config
 const MAX_PLAYERS = 9;
+const ID_LENGTH = 12;
 
 // Dependencies
 var express = require('express');
@@ -46,8 +47,37 @@ io.on('connection', function (socket) { // when a connection is recieved
     socket.on('log out', logOutUser);
 });
 
+function removePlayerFromGame(gameId, session) {
+
+    for (let j = 0; j < gamesInProgress[gameId].players.length; j++) {
+        if (gamesInProgress[gameId].players[j].sessionID == session) {
+            delete gamesInProgress[gameId].players[j];
+            if (gamesInProgress[gameId].players.length < 1) {
+                delete gamesInProgress[gameId];
+                console.log("Game '" + gameId + "' deleted");
+            }
+        }
+    }
+    console.log("game '" + gameId + "' removed by '" + session + "'");
+    console.log(Object.keys(gamesInProgress).length + " games remaining")
+}
+
 function logOutUser(session) {
     delete connectedSessions[session];
+    let gameIds = Object.keys(gamesInProgress);
+    for (let i = 0; i < gameIds.length; i++) { // for each game in progress
+        if (gamesInProgress[gameIds[i]].creatorSessionID == session) {
+            delete gamesInProgress[gameIds[i]];
+            console.log("Creator in game '"+gameIds[i]+"' left. Deleting.");
+            continue;
+        }
+        for (let j = 0; j < gamesInProgress[gameIds[i]].players.length; j++) { // for each player in that game
+            if (gamesInProgress[gameIds[i]].players[j].sessionID == session) { // if that player is the one logging out
+                removePlayerFromGame(gamesInProgress[gameIds[i]].gameId, session); // remove them from the game
+            }
+        }
+    }
+
     io.sockets.connected[this.id].emit('logged out');
     console.log("logged out session: " + session)
 }
@@ -65,8 +95,10 @@ function sendGameList(sessionID) {
         returnObject.push(tempGame);
     }
 
+    if (connectedSessions[sessionID] == null) {
+        return;
+    }
     io.sockets.connected[connectedSessions[sessionID].socketID].emit('receive game list', returnObject);
-
 }
 
 function userJoinGame(data) {
@@ -109,6 +141,8 @@ function createGame(data) {
     while (gId == null || gameIds.indexOf(gId) != -1) {
         gId = Math.floor(Math.random() * 1000);
     }
+    console.log("game '" + gameName + "' created by session '" + creator + "'");
+    console.log("Current session: " + connectedSessions[creator]);
     let game = {
         gameName: gameName,
         creatorSessionID: creator,
@@ -124,6 +158,7 @@ function createGame(data) {
 function returningPlayer(data) {
     let returnSessionID = data; // gets the session id given by client
     if (connectedSessions[returnSessionID] == null) {
+        io.sockets.connected[this.id].emit('session not found');
         return;
     }
     connectedSessions[returnSessionID].socketID = this.id; // updates the sessions socket id
@@ -136,9 +171,19 @@ function newPlayer(data) {
     let newSessionID = null;
     let sessionIds = Object.keys(connectedSessions);
     while (newSessionID == null || sessionIds.indexOf(newSessionID) != -1) { // to make sure its unique
-        newSessionID = Math.floor(Math.random() * 1000); // generates serverid
+        newSessionID = makeid(ID_LENGTH); // generates server-session id
     }
     io.sockets.connected[this.id].emit('newSessionID', newSessionID); // sends the client its id
     // connectedSessionIDs.push(newSessionID);
     connectedSessions[newSessionID] = {sessionID: newSessionID, socketID: this.id, username: data}; // saves to list of session ids
+}
+
+function makeid(length) {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (var i = 0; i < length; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
 }

@@ -10,14 +10,14 @@ socket.on('message', function (data) {
 
 socket.on('newSessionID', function (data) {
     currentSessionID = data;
-    setCookie("currentSessionID", currentSessionID, 1);
+    setCookie("currentSessionID", currentSessionID, 0.2);
 })
 
 function connect(form) {
     let name = htmlEscape(form.username.value);
     socket.emit('new player', name);
     console.log(name);
-    setCookie("currentUsername", name, 1);
+    setCookie("currentUsername", name, 0.2);
 
     window.location.href = "/static/serverlist.html";
 }
