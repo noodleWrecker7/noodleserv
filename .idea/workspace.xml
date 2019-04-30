@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="" />
+    <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="test purposes">
+      <change beforePath="V:/.idea/workspace.xml" beforeDir="false" afterPath="V:/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="V:/.tmp/" />
     <ignored path="V:/temp/" />
     <ignored path="V:/tmp/" />
@@ -21,8 +23,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://V:/cardGame/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+                <state relative-caret-position="299">
+                  <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
                   <folding>
                     <element signature="e#659#996#0" />
                     <element signature="e#1027#1364#0" />
@@ -132,8 +134,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://V:/cardGame/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+                <state relative-caret-position="552">
+                  <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -479,7 +481,7 @@
       <workItem from="1555540179909" duration="4000" />
       <workItem from="1555610779496" duration="9628000" />
       <workItem from="1556398915756" duration="1112000" />
-      <workItem from="1556644565191" duration="2092000" />
+      <workItem from="1556644565191" duration="2459000" />
     </task>
     <task id="LOCAL-00001" summary="aaah">
       <created>1547845053109</created>
@@ -684,11 +686,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556651481464</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="test purposes">
+      <created>1556651757556</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1556651757556</updated>
+    </task>
+    <task id="LOCAL-00031" summary="test purposes">
+      <created>1556651809650</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1556651809650</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="404182000" />
+    <option name="totallyTimeSpent" value="404549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -789,7 +805,8 @@
     <MESSAGE value="made server list and games joinable, creating actual game now" />
     <MESSAGE value="wooooooah lots of thingies" />
     <MESSAGE value="not using cardGame repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="not using cardGame repo" />
+    <MESSAGE value="test purposes" />
+    <option name="LAST_COMMIT_MESSAGE" value="test purposes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://V:/main/projects/breaker/index.html">
@@ -1067,32 +1084,6 @@
     <entry file="file://V:/cardGame/app.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://V:/cardGame/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="e#659#996#0" />
-            <element signature="e#1027#1364#0" />
-            <element signature="e#3995#4700#0" />
-            <element signature="e#4744#5024#0" />
-            <element signature="e#5053#5321#0" />
-            <element signature="e#6112#6619#0" />
-            <element signature="e#6652#6922#0" />
-            <element signature="e#6954#7093#0" />
-            <element signature="e#7125#7264#0" />
-            <element signature="e#9913#10537#0" />
-            <element signature="e#10567#10889#0" />
-            <element signature="e#10938#11903#0" />
-            <element signature="e#11942#12696#0" />
-            <element signature="e#12731#13418#0" />
-            <element signature="e#13448#13984#0" />
-            <element signature="e#15015#15632#0" />
-            <element signature="e#16714#16764#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://V:/cardGame/game/client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="786">
@@ -1115,10 +1106,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://V:/cardGame/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="e#659#996#0" />
+            <element signature="e#1027#1364#0" />
+            <element signature="e#3995#4700#0" />
+            <element signature="e#4744#5024#0" />
+            <element signature="e#5053#5321#0" />
+            <element signature="e#6112#6619#0" />
+            <element signature="e#6652#6922#0" />
+            <element signature="e#6954#7093#0" />
+            <element signature="e#7125#7264#0" />
+            <element signature="e#9913#10537#0" />
+            <element signature="e#10567#10889#0" />
+            <element signature="e#10938#11903#0" />
+            <element signature="e#11942#12696#0" />
+            <element signature="e#12731#13418#0" />
+            <element signature="e#13448#13984#0" />
+            <element signature="e#15015#15632#0" />
+            <element signature="e#16714#16764#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://V:/cardGame/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        <state relative-caret-position="552">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
         </state>
       </provider>
     </entry>
