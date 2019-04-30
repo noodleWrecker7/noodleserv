@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/game/client.js"></script>
+    <script src="client.js"></script>
     <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body>
-<div class="main-page">
-    <nav class="top-bar">
-        <button class="top-buttons" onclick="">Leave</button>
+<body id="body">
 
+<div class="main-page">
+    <nav class="top-bar" id="top-bar">
+        <button class="top-buttons" onclick="leaveGame();">Leave</button>
+        <!--<button class="top-buttons" onclick="">Start Game</button>-->
+
+        <div class="push-right"></div>
+
+        <!--<button class="top-buttons" onclick="showGameConfig();">Game Config</button>-->
         <button class="top-buttons right" onclick="logOut()">Log out</button>
     </nav>
     <div class="main-content">
         <div class="main-game">
             <div class="top-section">
                 <div class="black-card-section">
-                    <div class="black-card"></div>
-                    <button class="confirm-card-choice">Confirm Selection</button>
+                    <div class="black-card"><p class="black-card-text">&#f521;This is das schwarz card text _____ es ist long _____ ja.</p></div>
+                    <button onclick="confirmCardChoice()" class="confirm-card-choice">Confirm Selection</button>
                 </div>
                 <div class="other-player-cards-section">
+                   <div class="other-card"><p class="white-card-text">This is a white card it should be a shorter message.</p>
+                    </div>
                     <div class="other-card"></div>
                     <div class="other-card"></div>
                     <div class="other-card"></div>
@@ -30,32 +38,31 @@
                     <div class="other-card"></div>
                     <div class="other-card"></div>
                     <div class="other-card"></div>
-                    <div class="other-card"></div>
+
                 </div>
             </div>
             <div class="bottom-section">
                 <div class="player-list">
                     <h4 class="players-title">Players:</h4>
-                    <div class="list-players">
+                    <div class="list-players" id="list-of-players">
                         <div class="player-list-item"><p class="player-list-name">Player</p>
                             <p class="player-list-points">0</p></div>
                     </div>
                 </div>
                 <div class="bottom-card-container">
+                    <div class="czar-notice"><div class="czar-notice-box">TODO THIS</div></div>
                     <h4 class="bottom-card-container-title">Your Cards:</h4>
-                    <div class="cards-container">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
+                    <div id="cards-container" class="cards-container">
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="chat-box"></div>
+        <div class="chat-box" id="chat-box">
+            <!--<p class="chat-message">[12:13:37] This is a test message</p>
+            <p class="chat-message">[12:13:37] This is another test message</p>
+            <p class="chat-message">[15:32:56] At a different time this message is</p>-->
+        </div>
     </div>
 </div>
 

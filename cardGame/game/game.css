@@ -28,16 +28,17 @@ body {
 
 .top-buttons {
     margin-left: 1%;
-    background-color: buttonface;
-    border: 2px solid buttonface;
-    border-radius: 5px;
+
     height: 50%;
 
 }
 
 .right {
-    margin-left: auto;
     margin-right: 1%;
+}
+
+.push-right {
+    margin-left: auto;
 }
 
 .main-content {
@@ -48,10 +49,21 @@ body {
 .chat-box {
     float: right;
     width: 8%;
-    background-color: red;
+    background-color: white;
     height: 100%;
     box-sizing: border-box;
-    border-left: 2px solid grey;
+    border-left: 1px solid grey;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: auto;
+    align-items: flex-start;
+}
+
+.chat-message {
+    padding: 2%;
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .main-game {
@@ -62,7 +74,8 @@ body {
 
 .top-section {
     height: 50%;
-    border: 2px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
     box-sizing: border-box;
     width: 100%;
 }
@@ -82,12 +95,34 @@ body {
 }
 
 .black-card {
-    height: 55%;
+    height: auto;
     width: 77%;
-    background-color: #3c3c3c;
+    background-color: #212121;
     border: 2px solid white;
     border-radius: 15px;
+    position: relative;
 }
+
+.black-card:before {
+    content: "";
+    display: block;
+    padding-top: 140%;
+}
+
+.black-card-text {
+    position: absolute;
+    top: 0;
+    padding: 5%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: larger;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    color: white;
+}
+
 .confirm-card-choice {
     margin-left: auto;
     margin-right: auto;
@@ -102,22 +137,49 @@ body {
     box-sizing: border-box;
     background-color: white;
     height: 100%;
-    float:right;
+    float: right;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
 }
 
 .other-card {
-    width: 10%;
-    height: 50%;
+    width: 12%;
+    height: auto;
     border: 2px solid black;
-    border-radius: 15px;
+    border-radius: 10px;
+    margin: 0.5%;
+    position: relative;
+}
+
+.other-card:before {
+    content: "";
+    display: block;
+    padding-top: 120%;
+}
+
+.white-card-text {
+    position: absolute;
+    top: 0;
+    padding: 5%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    font-size: larger;
+    transition: all .2s ease-in-out;
+}
+.white-card-text:hover {
+    font-size: x-large;
 }
 
 .bottom-section {
     height: 50%;
-    border-top: 2px solid grey;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
     box-sizing: border-box;
 }
 
@@ -125,10 +187,11 @@ body {
     background-color: white;
     height: 100%;
     box-sizing: border-box;
-    width: 7%;
+    width: 10%;
     display: inline-block;
     float: left;
-    border: 2px solid grey;
+    border-right: 1px solid grey;
+
 }
 
 .players-title {
@@ -170,11 +233,11 @@ body {
 .bottom-card-container {
     background-color: white;
     height: 100%;
-    width: 93%;
+    width: 90%;
     box-sizing: border-box;
     display: inline-block;
     float: left;
-    border: 2px solid grey;
+    border-left: 1px solid grey;
 }
 
 .bottom-card-container-title {
@@ -195,12 +258,111 @@ body {
     padding-right: 2%;
     box-sizing: border-box;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
+/*
 .card {
     width: 12.5%;
-    height: 68%;
+    height: 63%;
     border: 2px solid black;
     border-radius: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
+}*/
+
+.card {
+    width: 11%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 1%;
+    position: relative;
+    background-color: white;
+    transition: all .2s ease-in-out;
+    padding: 0;
+}
+
+.card:before {
+    content: "";
+    display: block;
+    padding-top: 118%;
+}
+
+.card:active, .card:focus {
+    background-color: white;
+    border-color: lightblue;
+}
+
+.card:hover {
+    background-color: white;
+    border-color: lightblue;
+    width: 18%;
+    transform: scale(0.9);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0); /* fall back colour*/
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    width: 25%;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.modal-box {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.config-label {
+    margin: 1%;
+}
+
+.close {
+    color: #3c3c3c;
+    float: right;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: buttonface;
+    border: 2px solid buttonface;
+    border-radius: 5px;
+}
+button:hover, button:active {
+    border-top-color: #4a4a4a;
+    border-left-color: #4a4a4a;
+    background-color: #979BA0;
+}
+
+*.focus {
+    outline: 0;
+}
+
+.czar-notice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
 }

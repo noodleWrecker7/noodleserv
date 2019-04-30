@@ -2,15 +2,615 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee3f3f9-c230-41b1-807a-cfda9faf24c9" name="Default Changelist" comment="">
+      <change beforePath="V:/.idea/vcs.xml" beforeDir="false" afterPath="V:/.idea/vcs.xml" afterDir="false" />
       <change beforePath="V:/.idea/workspace.xml" beforeDir="false" afterPath="V:/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="V:/main/hidden/projectList.json" beforeDir="false" afterPath="V:/main/hidden/projectList.json" afterDir="false" />
-      <change beforePath="V:/main/hidden/social-bar.html" beforeDir="false" afterPath="V:/main/hidden/social-bar.html" afterDir="false" />
-      <change beforePath="V:/main/projects/platforms/index.html" beforeDir="false" afterPath="V:/main/projects/platforms/index.html" afterDir="false" />
-      <change beforePath="V:/main/projects/rednoserunner/index.html" beforeDir="false" afterPath="V:/main/projects/jumper/index.html" afterDir="false" />
-      <change beforePath="V:/main/projects/rednoserunner/rednoserunner.js" beforeDir="false" afterPath="V:/main/projects/jumper/jumper.js" afterDir="false" />
-      <change beforePath="V:/main/projects/rednoserunner/resource/nose.png" beforeDir="false" afterPath="V:/main/projects/jumper/resource/nose.png" afterDir="false" />
-      <change beforePath="V:/main/projects/rednoserunner/resource/phaser.min.js" beforeDir="false" afterPath="V:/main/projects/jumper/resource/phaser.min.js" afterDir="false" />
-      <change beforePath="V:/main/projects/towerdefense/index.html" beforeDir="false" afterPath="V:/main/projects/towerdefense/index.html" afterDir="false" />
+      <change beforePath="V:/cardGame/cards.json" beforeDir="false" />
+      <change beforePath="V:/cardGame/game/client.js" beforeDir="false" afterPath="V:/cardGame/game/client.js" afterDir="false" />
+      <change beforePath="V:/cardGame/game/game.css" beforeDir="false" afterPath="V:/cardGame/game/game.css" afterDir="false" />
+      <change beforePath="V:/cardGame/game/index.html" beforeDir="false" afterPath="V:/cardGame/game/index.html" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/.bin/mime" beforeDir="false" afterPath="V:/cardGame/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/accepts/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/accepts/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/accepts/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/accepts/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/accepts/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/accepts/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/accepts/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/accepts/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/accepts/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/accepts/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/after/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/after/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/after/.travis.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/after/.travis.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/after/LICENCE" beforeDir="false" afterPath="V:/cardGame/node_modules/after/LICENCE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/after/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/after/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/after/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/after/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/after/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/after/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/after/test/after-test.js" beforeDir="false" afterPath="V:/cardGame/node_modules/after/test/after-test.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/array-flatten/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/array-flatten/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/array-flatten/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/array-flatten/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/array-flatten/array-flatten.js" beforeDir="false" afterPath="V:/cardGame/node_modules/array-flatten/array-flatten.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/array-flatten/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/array-flatten/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/arraybuffer.slice/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/arraybuffer.slice/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/arraybuffer.slice/LICENCE" beforeDir="false" afterPath="V:/cardGame/node_modules/arraybuffer.slice/LICENCE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/arraybuffer.slice/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/arraybuffer.slice/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/arraybuffer.slice/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/arraybuffer.slice/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/arraybuffer.slice/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/arraybuffer.slice/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/arraybuffer.slice/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/arraybuffer.slice/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/arraybuffer.slice/test/slice-buffer.js" beforeDir="false" afterPath="V:/cardGame/node_modules/arraybuffer.slice/test/slice-buffer.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/.travis.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/.travis.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.html" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.html" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.js.html" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.js.html" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/base.css" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/base.css" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/index.html" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/prettify.css" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/prettify.css" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/prettify.js" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/prettify.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/sorter.js" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/coverage/lcov-report/sorter.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/coverage/lcov.info" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/coverage/lcov.info" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/async-limiter/readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/async-limiter/readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/backo2/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/backo2/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/backo2/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/backo2/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/backo2/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/backo2/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/backo2/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/backo2/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/backo2/component.json" beforeDir="false" afterPath="V:/cardGame/node_modules/backo2/component.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/backo2/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/backo2/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/backo2/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/backo2/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/backo2/test/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/backo2/test/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64-arraybuffer/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/base64-arraybuffer/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64-arraybuffer/.travis.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/base64-arraybuffer/.travis.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64-arraybuffer/LICENSE-MIT" beforeDir="false" afterPath="V:/cardGame/node_modules/base64-arraybuffer/LICENSE-MIT" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64-arraybuffer/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/base64-arraybuffer/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64-arraybuffer/lib/base64-arraybuffer.js" beforeDir="false" afterPath="V:/cardGame/node_modules/base64-arraybuffer/lib/base64-arraybuffer.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64-arraybuffer/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/base64-arraybuffer/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64id/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/base64id/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64id/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/base64id/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64id/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/base64id/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64id/lib/base64id.js" beforeDir="false" afterPath="V:/cardGame/node_modules/base64id/lib/base64id.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/base64id/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/base64id/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/better-assert/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/better-assert/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/better-assert/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/better-assert/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/better-assert/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/better-assert/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/better-assert/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/better-assert/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/better-assert/example.js" beforeDir="false" afterPath="V:/cardGame/node_modules/better-assert/example.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/better-assert/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/better-assert/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/better-assert/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/better-assert/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/blob/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="V:/cardGame/node_modules/blob/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/blob/.idea/workspace.xml" beforeDir="false" afterPath="V:/cardGame/node_modules/blob/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/blob/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/blob/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/lib/read.js" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/lib/read.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/lib/types/json.js" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/lib/types/json.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/lib/types/raw.js" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/lib/types/raw.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/lib/types/text.js" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/lib/types/text.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/lib/types/urlencoded.js" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/lib/types/urlencoded.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/body-parser/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/body-parser/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/bytes/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/bytes/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/bytes/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/bytes/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/bytes/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/bytes/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/bytes/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/bytes/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/bytes/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/bytes/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/callsite/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/callsite/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/callsite/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/callsite/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/callsite/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/callsite/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/callsite/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/callsite/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/callsite/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/callsite/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/callsite/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/callsite/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-bind/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/component-bind/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-bind/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/component-bind/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-bind/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/component-bind/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-bind/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/component-bind/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-bind/component.json" beforeDir="false" afterPath="V:/cardGame/node_modules/component-bind/component.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-bind/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/component-bind/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-bind/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/component-bind/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-emitter/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/component-emitter/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-inherit/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/component-inherit/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-inherit/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/component-inherit/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-inherit/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/component-inherit/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-inherit/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/component-inherit/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-inherit/component.json" beforeDir="false" afterPath="V:/cardGame/node_modules/component-inherit/component.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-inherit/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/component-inherit/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-inherit/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/component-inherit/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/component-inherit/test/inherit.js" beforeDir="false" afterPath="V:/cardGame/node_modules/component-inherit/test/inherit.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-disposition/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/content-disposition/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-disposition/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/content-disposition/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-disposition/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/content-disposition/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-disposition/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/content-disposition/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-disposition/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/content-disposition/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-type/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/content-type/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-type/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/content-type/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-type/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/content-type/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-type/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/content-type/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/content-type/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/content-type/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie-signature/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie-signature/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie-signature/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie-signature/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie-signature/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie-signature/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie-signature/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie-signature/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie-signature/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie-signature/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/cookie/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/cookie/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/.coveralls.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/.coveralls.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/.eslintrc" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/.eslintrc" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/.travis.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/.travis.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/CHANGELOG.md" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/component.json" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/component.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/karma.conf.js" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/karma.conf.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/src/browser.js" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/src/debug.js" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/src/debug.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/src/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/src/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/src/inspector-log.js" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/src/inspector-log.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/debug/src/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/debug/src/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/depd/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/depd/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/depd/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/depd/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/depd/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/depd/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/depd/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/depd/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/depd/lib/browser/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/depd/lib/browser/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/depd/lib/compat/callsite-tostring.js" beforeDir="false" afterPath="V:/cardGame/node_modules/depd/lib/compat/callsite-tostring.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/depd/lib/compat/event-listener-count.js" beforeDir="false" afterPath="V:/cardGame/node_modules/depd/lib/compat/event-listener-count.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/depd/lib/compat/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/depd/lib/compat/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/depd/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/depd/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/destroy/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/destroy/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/destroy/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/destroy/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/destroy/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/destroy/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/destroy/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/destroy/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ee-first/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/ee-first/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ee-first/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/ee-first/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ee-first/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ee-first/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ee-first/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/ee-first/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/encodeurl/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/encodeurl/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/encodeurl/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/encodeurl/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/encodeurl/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/encodeurl/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/encodeurl/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/encodeurl/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/encodeurl/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/encodeurl/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/engine.io.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/engine.io.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/lib/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/lib/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/lib/socket.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/lib/socket.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/lib/transport.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/lib/transport.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/lib/transports/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/lib/transports/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/lib/transports/polling-jsonp.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/lib/transports/polling-jsonp.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/lib/transports/polling-xhr.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/lib/transports/polling-xhr.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/lib/transports/polling.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/lib/transports/polling.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/lib/transports/websocket.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/lib/transports/websocket.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/lib/xmlhttprequest.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/lib/xmlhttprequest.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/.coveralls.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/.coveralls.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/.eslintrc" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/.eslintrc" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/.travis.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/.travis.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/CHANGELOG.md" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/karma.conf.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/karma.conf.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/src/browser.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/src/debug.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/src/debug.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/src/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/src/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/src/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/node_modules/debug/src/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-client/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-client/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-parser/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-parser/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-parser/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-parser/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-parser/lib/browser.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-parser/lib/browser.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-parser/lib/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-parser/lib/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-parser/lib/keys.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-parser/lib/keys.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-parser/lib/utf8.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-parser/lib/utf8.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io-parser/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io-parser/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/lib/engine.io.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/lib/engine.io.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/lib/server.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/lib/server.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/lib/socket.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/lib/socket.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/lib/transport.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/lib/transport.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/lib/transports/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/lib/transports/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/lib/transports/polling-jsonp.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/lib/transports/polling-jsonp.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/lib/transports/polling-xhr.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/lib/transports/polling-xhr.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/lib/transports/polling.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/lib/transports/polling.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/lib/transports/websocket.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/lib/transports/websocket.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/.coveralls.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/.coveralls.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/.eslintrc" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/.eslintrc" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/.travis.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/.travis.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/CHANGELOG.md" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/karma.conf.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/karma.conf.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/src/browser.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/src/debug.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/src/debug.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/src/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/src/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/node_modules/debug/src/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/node_modules/debug/src/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/engine.io/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/engine.io/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/escape-html/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/escape-html/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/escape-html/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/escape-html/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/escape-html/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/escape-html/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/escape-html/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/escape-html/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/etag/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/etag/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/etag/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/etag/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/etag/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/etag/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/etag/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/etag/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/etag/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/etag/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/express/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/express/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/express/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/application.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/application.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/express.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/express.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/middleware/init.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/middleware/init.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/middleware/query.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/middleware/query.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/request.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/request.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/response.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/response.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/router/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/router/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/router/layer.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/router/layer.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/router/route.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/router/route.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/utils.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/utils.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/lib/view.js" beforeDir="false" afterPath="V:/cardGame/node_modules/express/lib/view.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/express/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/express/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/finalhandler/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/finalhandler/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/finalhandler/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/finalhandler/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/finalhandler/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/finalhandler/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/finalhandler/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/finalhandler/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/finalhandler/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/finalhandler/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/forwarded/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/forwarded/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/forwarded/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/forwarded/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/forwarded/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/forwarded/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/forwarded/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/forwarded/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/forwarded/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/forwarded/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/fresh/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/fresh/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/fresh/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/fresh/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/fresh/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/fresh/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/fresh/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/fresh/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/fresh/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/fresh/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-binary2/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/has-binary2/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-binary2/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/has-binary2/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-binary2/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/has-binary2/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-binary2/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/has-binary2/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-binary2/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/has-binary2/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-cors/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/has-cors/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-cors/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/has-cors/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-cors/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/has-cors/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-cors/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/has-cors/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-cors/component.json" beforeDir="false" afterPath="V:/cardGame/node_modules/has-cors/component.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-cors/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/has-cors/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-cors/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/has-cors/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/has-cors/test.js" beforeDir="false" afterPath="V:/cardGame/node_modules/has-cors/test.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/http-errors/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/http-errors/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/http-errors/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/http-errors/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/http-errors/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/http-errors/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/http-errors/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/http-errors/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/http-errors/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/http-errors/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/.travis.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/.travis.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/Changelog.md" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/Changelog.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/dbcs-codec.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/dbcs-data.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/dbcs-data.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/internal.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/sbcs-codec.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/sbcs-data-generated.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/sbcs-data-generated.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/sbcs-data.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/tables/big5-added.json" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/tables/big5-added.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/tables/cp936.json" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/tables/cp936.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/tables/cp949.json" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/tables/cp949.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/tables/cp950.json" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/tables/cp950.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/tables/eucjp.json" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/tables/eucjp.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/tables/gbk-added.json" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/tables/gbk-added.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/tables/shiftjis.json" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/tables/shiftjis.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/utf16.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/encodings/utf7.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/lib/bom-handling.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/lib/bom-handling.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/lib/extend-node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/lib/extend-node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/lib/index.d.ts" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/lib/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/lib/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/lib/streams.js" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/lib/streams.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/iconv-lite/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/iconv-lite/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/indexof/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/indexof/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/indexof/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/indexof/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/indexof/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/indexof/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/indexof/component.json" beforeDir="false" afterPath="V:/cardGame/node_modules/indexof/component.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/indexof/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/indexof/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/indexof/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/indexof/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/inherits/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/inherits/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/inherits/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/inherits/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/inherits/inherits.js" beforeDir="false" afterPath="V:/cardGame/node_modules/inherits/inherits.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/inherits/inherits_browser.js" beforeDir="false" afterPath="V:/cardGame/node_modules/inherits/inherits_browser.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/inherits/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/inherits/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ipaddr.js/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/ipaddr.js/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ipaddr.js/lib/ipaddr.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ipaddr.js/lib/ipaddr.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ipaddr.js/lib/ipaddr.js.d.ts" beforeDir="false" afterPath="V:/cardGame/node_modules/ipaddr.js/lib/ipaddr.js.d.ts" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ipaddr.js/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/ipaddr.js/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/isarray/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/isarray/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/isarray/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/isarray/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/isarray/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/isarray/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/media-typer/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/media-typer/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/media-typer/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/media-typer/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/media-typer/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/media-typer/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/media-typer/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/media-typer/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/media-typer/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/media-typer/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/merge-descriptors/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/merge-descriptors/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/merge-descriptors/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/merge-descriptors/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/merge-descriptors/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/merge-descriptors/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/merge-descriptors/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/merge-descriptors/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/merge-descriptors/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/merge-descriptors/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/methods/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/methods/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/methods/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/methods/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/methods/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/methods/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/methods/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/methods/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/methods/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/methods/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-db/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-db/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-db/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-db/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-db/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-db/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-db/db.json" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-db/db.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-db/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-db/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-db/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-db/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-types/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-types/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-types/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-types/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-types/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-types/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-types/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-types/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime-types/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/mime-types/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/mime/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/mime/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime/build/build.js" beforeDir="false" afterPath="V:/cardGame/node_modules/mime/build/build.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime/build/test.js" beforeDir="false" afterPath="V:/cardGame/node_modules/mime/build/test.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime/cli.js" beforeDir="false" afterPath="V:/cardGame/node_modules/mime/cli.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime/mime.js" beforeDir="false" afterPath="V:/cardGame/node_modules/mime/mime.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/mime/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/mime/types.json" beforeDir="false" afterPath="V:/cardGame/node_modules/mime/types.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ms/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ms/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ms/license.md" beforeDir="false" afterPath="V:/cardGame/node_modules/ms/license.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ms/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ms/readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/ms/readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/negotiator/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/negotiator/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/negotiator/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/negotiator/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/negotiator/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/negotiator/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/negotiator/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/negotiator/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/negotiator/lib/charset.js" beforeDir="false" afterPath="V:/cardGame/node_modules/negotiator/lib/charset.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/negotiator/lib/encoding.js" beforeDir="false" afterPath="V:/cardGame/node_modules/negotiator/lib/encoding.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/negotiator/lib/language.js" beforeDir="false" afterPath="V:/cardGame/node_modules/negotiator/lib/language.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/negotiator/lib/mediaType.js" beforeDir="false" afterPath="V:/cardGame/node_modules/negotiator/lib/mediaType.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/negotiator/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/negotiator/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/object-component/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/object-component/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/object-component/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/object-component/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/object-component/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/object-component/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/object-component/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/object-component/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/object-component/component.json" beforeDir="false" afterPath="V:/cardGame/node_modules/object-component/component.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/object-component/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/object-component/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/object-component/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/object-component/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/object-component/test/object.js" beforeDir="false" afterPath="V:/cardGame/node_modules/object-component/test/object.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/on-finished/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/on-finished/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/on-finished/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/on-finished/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/on-finished/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/on-finished/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/on-finished/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/on-finished/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/on-finished/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/on-finished/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/parseqs/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/parseqs/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/parseuri/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/parseuri/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/parseurl/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/parseurl/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/parseurl/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/parseurl/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/parseurl/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/parseurl/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/parseurl/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/parseurl/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/parseurl/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/parseurl/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/path-to-regexp/History.md" beforeDir="false" afterPath="V:/cardGame/node_modules/path-to-regexp/History.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/path-to-regexp/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/path-to-regexp/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/path-to-regexp/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/path-to-regexp/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/path-to-regexp/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/path-to-regexp/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/path-to-regexp/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/path-to-regexp/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/proxy-addr/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/proxy-addr/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/proxy-addr/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/proxy-addr/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/proxy-addr/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/proxy-addr/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/proxy-addr/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/proxy-addr/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/proxy-addr/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/proxy-addr/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/.editorconfig" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/.editorconfig" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/.eslintignore" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/.eslintignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/.eslintrc" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/.eslintrc" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/CHANGELOG.md" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/CHANGELOG.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/dist/qs.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/dist/qs.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/lib/formats.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/lib/formats.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/lib/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/lib/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/lib/parse.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/lib/parse.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/lib/stringify.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/lib/stringify.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/lib/utils.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/lib/utils.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/test/.eslintrc" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/test/.eslintrc" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/test/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/test/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/test/parse.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/test/parse.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/test/stringify.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/test/stringify.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/qs/test/utils.js" beforeDir="false" afterPath="V:/cardGame/node_modules/qs/test/utils.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/range-parser/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/range-parser/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/range-parser/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/range-parser/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/range-parser/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/range-parser/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/range-parser/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/range-parser/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/range-parser/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/range-parser/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/raw-body/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/raw-body/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/raw-body/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/raw-body/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/raw-body/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/raw-body/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/raw-body/index.d.ts" beforeDir="false" afterPath="V:/cardGame/node_modules/raw-body/index.d.ts" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/raw-body/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/raw-body/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/raw-body/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/raw-body/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safe-buffer/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/safe-buffer/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safe-buffer/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/safe-buffer/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safe-buffer/index.d.ts" beforeDir="false" afterPath="V:/cardGame/node_modules/safe-buffer/index.d.ts" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safe-buffer/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/safe-buffer/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safe-buffer/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/safe-buffer/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safer-buffer/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/safer-buffer/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safer-buffer/Porting-Buffer.md" beforeDir="false" afterPath="V:/cardGame/node_modules/safer-buffer/Porting-Buffer.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safer-buffer/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/safer-buffer/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safer-buffer/dangerous.js" beforeDir="false" afterPath="V:/cardGame/node_modules/safer-buffer/dangerous.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safer-buffer/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/safer-buffer/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safer-buffer/safer.js" beforeDir="false" afterPath="V:/cardGame/node_modules/safer-buffer/safer.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/safer-buffer/tests.js" beforeDir="false" afterPath="V:/cardGame/node_modules/safer-buffer/tests.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/send/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/send/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/send/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/send/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/send/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/send/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/send/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/send/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/send/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/send/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/serve-static/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/serve-static/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/serve-static/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/serve-static/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/serve-static/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/serve-static/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/serve-static/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/serve-static/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/serve-static/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/serve-static/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/setprototypeof/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/setprototypeof/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/setprototypeof/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/setprototypeof/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/setprototypeof/index.d.ts" beforeDir="false" afterPath="V:/cardGame/node_modules/setprototypeof/index.d.ts" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/setprototypeof/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/setprototypeof/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/setprototypeof/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/setprototypeof/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-adapter/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-adapter/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-adapter/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-adapter/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-adapter/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-adapter/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-adapter/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-adapter/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-adapter/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-adapter/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/dist/socket.io.dev.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/dist/socket.io.dev.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/dist/socket.io.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/dist/socket.io.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/dist/socket.io.slim.dev.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/dist/socket.io.slim.dev.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/dist/socket.io.slim.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/dist/socket.io.slim.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/lib/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/lib/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/lib/manager.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/lib/manager.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/lib/on.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/lib/on.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/lib/socket.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/lib/socket.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/lib/url.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/lib/url.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/.coveralls.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/.coveralls.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/.eslintrc" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/.eslintrc" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/.travis.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/.travis.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/CHANGELOG.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/karma.conf.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/karma.conf.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/src/browser.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/src/debug.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/src/debug.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/src/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/src/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/src/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/node_modules/debug/src/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-client/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-client/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/binary.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/binary.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/is-buffer.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/is-buffer.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/.coveralls.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/.coveralls.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/.eslintrc" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/.eslintrc" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/.travis.yml" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/.travis.yml" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/CHANGELOG.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/Makefile" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/Makefile" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/karma.conf.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/karma.conf.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/src/browser.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/src/debug.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/src/debug.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/src/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/src/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/src/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/node_modules/debug/src/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io-parser/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io-parser/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/Readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/Readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/lib/client.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/lib/client.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/lib/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/lib/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/lib/namespace.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/lib/namespace.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/lib/parent-namespace.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/lib/parent-namespace.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/lib/socket.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/lib/socket.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/debug/CHANGELOG.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/debug/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/debug/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/debug/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/debug/dist/debug.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/debug/dist/debug.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/debug/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/debug/src/browser.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/debug/src/common.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/debug/src/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/debug/src/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/debug/src/node.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/debug/src/node.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/ms/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/ms/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/ms/license.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/ms/license.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/ms/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/node_modules/ms/readme.md" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/node_modules/ms/readme.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/socket.io/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/socket.io/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/statuses/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/statuses/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/statuses/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/statuses/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/statuses/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/statuses/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/statuses/codes.json" beforeDir="false" afterPath="V:/cardGame/node_modules/statuses/codes.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/statuses/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/statuses/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/statuses/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/statuses/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/to-array/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/to-array/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/to-array/LICENCE" beforeDir="false" afterPath="V:/cardGame/node_modules/to-array/LICENCE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/to-array/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/to-array/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/to-array/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/to-array/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/to-array/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/to-array/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/type-is/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/type-is/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/type-is/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/type-is/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/type-is/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/type-is/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/type-is/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/type-is/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/type-is/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/type-is/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/unpipe/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/unpipe/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/unpipe/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/unpipe/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/unpipe/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/unpipe/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/unpipe/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/unpipe/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/unpipe/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/unpipe/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/utils-merge/.npmignore" beforeDir="false" afterPath="V:/cardGame/node_modules/utils-merge/.npmignore" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/utils-merge/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/utils-merge/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/utils-merge/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/utils-merge/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/utils-merge/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/utils-merge/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/utils-merge/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/utils-merge/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/vary/HISTORY.md" beforeDir="false" afterPath="V:/cardGame/node_modules/vary/HISTORY.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/vary/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/vary/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/vary/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/vary/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/vary/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/vary/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/vary/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/vary/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/browser.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/browser.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/buffer-util.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/buffer-util.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/constants.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/constants.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/event-target.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/event-target.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/extension.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/extension.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/permessage-deflate.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/permessage-deflate.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/receiver.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/receiver.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/sender.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/sender.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/validation.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/validation.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/websocket-server.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/websocket-server.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/lib/websocket.js" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/lib/websocket.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/ws/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/ws/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/autotest.watchr" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/autotest.watchr" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/example/demo.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/example/demo.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/lib/XMLHttpRequest.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-constants.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-constants.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-events.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-events.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-exceptions.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-exceptions.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-headers.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-headers.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-redirect-302.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-redirect-302.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-redirect-303.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-redirect-303.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-redirect-307.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-redirect-307.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-request-methods.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-request-methods.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-request-protocols.js" beforeDir="false" afterPath="V:/cardGame/node_modules/xmlhttprequest-ssl/tests/test-request-protocols.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/yeast/LICENSE" beforeDir="false" afterPath="V:/cardGame/node_modules/yeast/LICENSE" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/yeast/README.md" beforeDir="false" afterPath="V:/cardGame/node_modules/yeast/README.md" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/yeast/index.js" beforeDir="false" afterPath="V:/cardGame/node_modules/yeast/index.js" afterDir="false" />
+      <change beforePath="V:/cardGame/node_modules/yeast/package.json" beforeDir="false" afterPath="V:/cardGame/node_modules/yeast/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/package.json" beforeDir="false" afterPath="V:/cardGame/package.json" afterDir="false" />
+      <change beforePath="V:/cardGame/server.js" beforeDir="false" afterPath="V:/cardGame/server.js" afterDir="false" />
+      <change beforePath="V:/cardGame/static/landing.js" beforeDir="false" afterPath="V:/cardGame/static/landing.js" afterDir="false" />
+      <change beforePath="V:/cardGame/static/serverlist.html" beforeDir="false" afterPath="V:/cardGame/static/serverlist.html" afterDir="false" />
+      <change beforePath="V:/cardGame/static/serverlist.js" beforeDir="false" afterPath="V:/cardGame/static/serverlist.js" afterDir="false" />
     </list>
     <ignored path="V:/.tmp/" />
     <ignored path="V:/temp/" />
@@ -25,142 +625,125 @@
     <pharConfigPath>V:/phpp/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47893715">
+    <splitter split-orientation="horizontal" split-proportion="0.5018821">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/css/projectsGrid.css">
+            <entry file="file://V:/cardGame/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1127">
-                  <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="552">
-                  <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="61" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/projects/platforms/platforms.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="25" selection-start-line="25" selection-end-line="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/projects/towerdefense/assets/waveData.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+                <state relative-caret-position="3289">
+                  <caret line="208" column="37" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#659#996#0" />
+                    <element signature="e#1027#1364#0" />
+                    <element signature="e#3995#4700#0" />
+                    <element signature="e#4744#5024#0" />
+                    <element signature="e#5053#5321#0" />
+                    <element signature="e#6112#6619#0" />
+                    <element signature="e#6652#6922#0" />
+                    <element signature="e#6954#7093#0" />
+                    <element signature="e#7125#7264#0" />
+                    <element signature="e#9913#10537#0" />
+                    <element signature="e#10567#10889#0" />
+                    <element signature="e#10938#11903#0" />
+                    <element signature="e#11942#12696#0" />
+                    <element signature="e#12731#13418#0" />
+                    <element signature="e#13448#13984#0" />
+                    <element signature="e#15015#15632#0" />
+                    <element signature="e#16714#16764#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://V:/main/projects/towerdefense/towerdefense.js">
+            <entry file="file://V:/cardGame/game/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="692">
-                  <caret line="293" column="6" selection-start-line="293" selection-start-column="6" selection-end-line="293" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/projects/towerdefense/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="989">
-                  <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+                <state relative-caret-position="574">
+                  <caret line="52" column="83" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
                   <folding>
-                    <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/projects/snake/index.html">
+            <entry file="file://V:/cardGame/static/css/landing.css">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/projects/index.html">
+            <entry file="file://V:/cardGame/static/css/serverlist.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1518">
-                  <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+                <state relative-caret-position="506">
+                  <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/projects/jumper/jumper.js">
+            <entry file="file://V:/cardGame/static/landing.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://V:/cardGame/static/serverlist.js">
               <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://V:/main/css/index.css">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://V:/cardGame/static/serverlist.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="69">
+                  <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/projects/jumper/jumper.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="529">
-                  <caret line="23" selection-start-line="23" selection-end-line="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://V:/main/hidden/projectList.json">
+            <entry file="file://V:/cardGame/game/client.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/projects/platforms/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="713">
-                  <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/hidden/social-bar.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="69">
-                  <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/hidden/render.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1679">
-                  <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://V:/main/projects/jumper/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="874">
-                  <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+                <state relative-caret-position="303">
+                  <caret line="75" column="2" lean-forward="true" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
                   <folding>
-                    <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#!!block;n#startGame#0" />
+                    <element signature="n#!!block;n#hideModal#0" />
+                    <element signature="n#!!block;n#insertModalContent#0" />
+                    <element signature="e#107#114#1" expanded="true" />
+                    <element signature="n#!!block;n#kickPlayer#0" />
+                    <element signature="n#!!block;n#addModal#0" />
+                    <element signature="n#!!block;n#addCreatorOptions#0" />
+                    <element signature="n#!!block;n#showGameConfig#0" />
+                    <element signature="n#!!block;n#updatePlayersList#0" />
+                    <element signature="n#!!block;n#leaveGame#0" />
+                    <element signature="n#!!block;n#logOut#0" />
+                    <element signature="n#!!block;n#setCookie#0" />
+                    <element signature="n#!!block;n#getCookie#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://V:/cardGame/game/game.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="769">
+                  <caret line="366" column="36" selection-start-line="366" selection-start-column="36" selection-end-line="366" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -172,36 +755,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="tsconfig.json" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>intersects</find>
-      <find>pop</find>
-      <find>buy</find>
-      <find>price</find>
-      <find>sub</find>
-      <find>conso</find>
-      <find>//</find>
-      <find>isSelected</find>
-      <find>GhostId</find>
-      <find>moneyText</find>
-      <find>depth</find>
-      <find>console</find>
-      <find>selected</find>
-      <find>selectedTurret</find>
-      <find>selectedTurretId =</find>
-      <find>selectTurret</find>
-      <find>font-face</find>
-      <find>font-size</find>
-      <find>font</find>
-      <find>loadWave</find>
-      <find>bottom_tab.depth</find>
       <find>purge_submit</find>
       <find>L(</find>
       <find>function L(</find>
@@ -211,6 +773,27 @@
       <find>checkIS</find>
       <find>wave</find>
       <find>waveNoText</find>
+      <find>cons</find>
+      <find>request game list</find>
+      <find>get username</find>
+      <find>delete</find>
+      <find>console.log</find>
+      <find>buttonface</find>
+      <find>full</find>
+      <find>modal</find>
+      <find>close-</find>
+      <find>black</find>
+      <find>hover</find>
+      <find>white</find>
+      <find>button</find>
+      <find>log</find>
+      <find>choose</find>
+      <find>state</find>
+      <find>status</find>
+      <find>date.</find>
+      <find>Date()</find>
+      <find>temp</find>
+      <find>logOut</find>
     </findStrings>
     <replaceStrings>
       <replace>img</replace>
@@ -218,28 +801,11 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="V:/" />
+    <option name="RECENT_GIT_ROOT_PATH" value="V:/cardGame" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="V:/main/projects/snake/index.php" />
-        <option value="V:/main/projects/tetris/index.php" />
-        <option value="V:/main/css/minesweeper.css" />
-        <option value="V:/main/projects/minesweeper/index.php" />
-        <option value="V:/main/css/general.css" />
-        <option value="V:/main/projects/flappybird/index.php" />
-        <option value="V:/main/projects/index.php" />
-        <option value="V:/staging/index.php" />
-        <option value="V:/staging/hidden/social-bar.html" />
-        <option value="V:/hidden/projectList.json" />
-        <option value="V:/staging/projects/index.php" />
-        <option value="V:/staging/index.html" />
-        <option value="V:/staging/projects/index.html" />
-        <option value="V:/staging/projects/tetris/index.php" />
-        <option value="V:/staging/projects/snake/index.php" />
-        <option value="V:/staging/projects/pong/index.php" />
-        <option value="V:/staging/projects/platforms/index.php" />
         <option value="V:/staging/projects/minesweeper/index.php" />
         <option value="V:/staging/projects/hangman/index.php" />
         <option value="V:/staging/projects/hangman/extreme.php" />
@@ -250,7 +816,6 @@
         <option value="V:/main/projects/snake/snake.js" />
         <option value="V:/main/projects/breaker/breaker.js].js" />
         <option value="V:/main/projects/breaker/index.html" />
-        <option value="V:/main/projects/tetris/tetris.js" />
         <option value="V:/main/projects/breaker/breaker.js" />
         <option value="V:/main/projects/towerdefense/resource/img.js" />
         <option value="V:/main/projects/flappybird/flappybird.js" />
@@ -265,7 +830,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
         <option value="V:/main/projects/towerdefense/assets/waveData.json" />
         <option value="V:/main/projects/towerdefense/towerdefense.js" />
-        <option value="V:/main/hidden/render.js" />
         <option value="V:/main/projects/rednoserunner/index.html" />
         <option value="V:/main/projects/rednoserunner/rednoserunner.js" />
         <option value="V:/main/projects/platforms/index.html" />
@@ -273,7 +837,26 @@
         <option value="V:/main/projects/towerdefense/index.html" />
         <option value="V:/main/projects/jumper/index.html" />
         <option value="V:/main/projects/jumper/jumper.js" />
+        <option value="V:/main/hidden/render.js" />
+        <option value="V:/main/projects/tetris/tetris.js" />
+        <option value="V:/main/projects/CardsAgainstHumanity/server.js" />
+        <option value="V:/cardGame/static/client.js" />
+        <option value="V:/cardGame/static/css/landing.css" />
+        <option value="V:/cardGame/static/index.html" />
+        <option value="V:/cardGame/static/css/serverlist.js" />
+        <option value="V:/cardGame/static/game/client.js" />
+        <option value="V:/cardGame/static/game/index.html" />
+        <option value="V:/cardGame/index.html" />
+        <option value="V:/cardGame/static/css/serverlist.css" />
         <option value="V:/main/hidden/projectList.json" />
+        <option value="V:/main/cheaty.html" />
+        <option value="V:/cardGame/static/landing.js" />
+        <option value="V:/cardGame/static/serverlist.html" />
+        <option value="V:/cardGame/static/serverlist.js" />
+        <option value="V:/cardGame/server.js" />
+        <option value="V:/cardGame/game/index.html" />
+        <option value="V:/cardGame/game/game.css" />
+        <option value="V:/cardGame/game/client.js" />
       </list>
     </option>
   </component>
@@ -300,10 +883,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="766" />
-    <option name="y" value="-22" />
-    <option name="width" value="974" />
-    <option name="height" value="1019" />
+    <option name="x" value="455" />
+    <option name="y" value="-17" />
+    <option name="width" value="1172" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -311,71 +894,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="V" type="b2602c69:ProjectViewProjectNode" />
-              <item name="V:" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="V" type="b2602c69:ProjectViewProjectNode" />
-              <item name="V:" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="V" type="b2602c69:ProjectViewProjectNode" />
-              <item name="V:" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="hidden" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="V" type="b2602c69:ProjectViewProjectNode" />
-              <item name="V:" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="V" type="b2602c69:ProjectViewProjectNode" />
-              <item name="V:" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="jumper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="V" type="b2602c69:ProjectViewProjectNode" />
-              <item name="V:" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="platforms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="V" type="b2602c69:ProjectViewProjectNode" />
-              <item name="V:" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="towerdefense" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="V" type="b2602c69:ProjectViewProjectNode" />
-              <item name="V:" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="towerdefense" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="V" type="b2602c69:ProjectViewProjectNode" />
-              <item name="V:" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="towerdefense" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -393,6 +911,46 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="cardGame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="cardGame" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="cardGame" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="cardGame" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="V" type="b2602c69:ProjectViewProjectNode" />
+              <item name="V:" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -417,15 +975,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="V:\cardGame" />
+      <recent name="V:\cardGame\static" />
+      <recent name="V:\cardGame\static\game" />
       <recent name="V:\main\projects\rednoserunner\assets" />
       <recent name="V:\main\projects\towerdefense\assets" />
-      <recent name="V:\main\projects\towerdefense\resource\img" />
-      <recent name="V:\main\projects\towerdefense\resource\js" />
-      <recent name="V:\hidden" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="V:\main\projects\breaker" />
@@ -525,7 +1083,22 @@
       <workItem from="1552736083647" duration="1222000" />
       <workItem from="1552935347335" duration="693000" />
       <workItem from="1553018143832" duration="3599000" />
-      <workItem from="1553198609963" duration="19000" />
+      <workItem from="1553198609963" duration="1449000" />
+      <workItem from="1554406733538" duration="2949000" />
+      <workItem from="1554472070585" duration="15152000" />
+      <workItem from="1554496820174" duration="7102000" />
+      <workItem from="1554544550558" duration="14488000" />
+      <workItem from="1554574909544" duration="6149000" />
+      <workItem from="1554632608056" duration="26057000" />
+      <workItem from="1554722827891" duration="5052000" />
+      <workItem from="1554810245898" duration="438000" />
+      <workItem from="1554906669913" duration="1678000" />
+      <workItem from="1555019743637" duration="2217000" />
+      <workItem from="1555353905917" duration="4582000" />
+      <workItem from="1555445654845" duration="3280000" />
+      <workItem from="1555540179909" duration="4000" />
+      <workItem from="1555610779496" duration="9628000" />
+      <workItem from="1556398915756" duration="1112000" />
     </task>
     <task id="LOCAL-00001" summary="aaah">
       <created>1547845053109</created>
@@ -681,11 +1254,39 @@
       <option name="project" value="LOCAL" />
       <updated>1552935372648</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="little bit of polish">
+      <created>1553198667534</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1553198667534</updated>
+    </task>
+    <task id="LOCAL-00024" summary="starting cards against humanity">
+      <created>1554412869083</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1554412869083</updated>
+    </task>
+    <task id="LOCAL-00025" summary="made server list and games joinable, creating actual game now">
+      <created>1554558996013</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1554558996013</updated>
+    </task>
+    <task id="LOCAL-00026" summary="wooooooah lots of thingies">
+      <created>1555358446049</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1555358446050</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="300772000" />
+    <option name="totallyTimeSpent" value="402090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,7 +1301,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.17910448" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.15191898" />
       <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.18017058" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -721,28 +1322,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944875" visible="true" weight="0.18443497" />
-      <window_info id="Structure" order="1" sideWeight="0.5005513" side_tool="true" weight="0.18017058" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49840087" weight="0.32855567" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.3296582" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.3296582" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4978678" weight="0.25358325" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.25248072" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.41643453" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -803,33 +1382,13 @@
     <MESSAGE value="breakout exists and somehow i managed to change flappy and tetris" />
     <MESSAGE value="honestly wtf" />
     <MESSAGE value="idek anymore" />
-    <option name="LAST_COMMIT_MESSAGE" value="idek anymore" />
+    <MESSAGE value="little bit of polish" />
+    <MESSAGE value="starting cards against humanity" />
+    <MESSAGE value="made server list and games joinable, creating actual game now" />
+    <MESSAGE value="wooooooah lots of thingies" />
+    <option name="LAST_COMMIT_MESSAGE" value="wooooooah lots of thingies" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://V:/staging/projects/tetris/tetris.js" />
-    <entry file="file://V:/staging/projects/tetris/index.php" />
-    <entry file="file://V:/staging/projects/snake/index.php" />
-    <entry file="file://V:/staging/projects/pong/index.php" />
-    <entry file="file://V:/staging/projects/platforms/index.php" />
-    <entry file="file://V:/staging/projects/minesweeper/index.php" />
-    <entry file="file://V:/staging/projects/hangman/index.php" />
-    <entry file="file://V:/staging/projects/hangman/extreme.php" />
-    <entry file="file://V:/staging/projects/flappybird/flappybird.js" />
-    <entry file="file://V:/staging/projects/flappybird/index.php" />
-    <entry file="file://V:/staging/projects/breaker/index.php" />
-    <entry file="file://V:/staging/index.html" />
-    <entry file="file://V:/staging/projects/index.html" />
-    <entry file="file://V:/staging/hidden/render.js" />
-    <entry file="file://V:/main/projects/tsconfig.json" />
-    <entry file="file://V:/main/projects/pong/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="50" lean-forward="true" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/projects/towerdefense/resource/img.js" />
-    <entry file="file://V:/main/projects/towerdefense/resource/imageLocations.json" />
     <entry file="file://V:/main/projects/breaker/breaker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4191">
@@ -844,27 +1403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://V:/main/projects/snake/snake.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://V:/main/projects/minesweeper/minesweeper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="791">
           <caret line="215" column="44" selection-start-line="215" selection-start-column="44" selection-end-line="215" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/projects/tetris/tetris.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,13 +1459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://V:/main/css/fontawesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115345">
-          <caret line="5015" column="10" selection-start-line="5015" selection-start-column="1" selection-end-line="5015" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://V:/main/css/hangman.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -938,34 +1473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://V:/main/css/projectsGrid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/projects/platforms/platforms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/projects/towerdefense/assets/waveData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://V:/main/projects/towerdefense/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="989">
@@ -973,16 +1480,6 @@
           <folding>
             <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://V:/main/projects/snake/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://V:/main/projects/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -994,9 +1491,19 @@
       </provider>
     </entry>
     <entry file="file://V:/main/projects/jumper/jumper.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/main/projects/towerdefense/assets/waveData.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="161">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/platforms/platforms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -1014,16 +1521,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://V:/main/hidden/render.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1679">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://V:/main/projects/jumper/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
+        <state relative-caret-position="800">
           <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
@@ -1031,10 +1531,195 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://V:/main/projects/CardsAgainstHumanity/server.js" />
+    <entry file="file://V:/main/projects/snake/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/main/projects/tetris/tetris.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#2578#3147#0" />
+            <element signature="e#3172#3886#0" />
+            <element signature="e#3904#4005#0" />
+            <element signature="e#4033#4167#0" />
+            <element signature="e#4194#4806#0" />
+            <element signature="e#4833#5435#0" />
+            <element signature="e#5469#6077#0" />
+            <element signature="e#6111#6423#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/snake/snake.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="223" selection-start-line="223" selection-end-line="233" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/hangman/extreme.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621" />
+      </provider>
+    </entry>
+    <entry file="file://V:/main/projects/minesweeper/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-626" />
+      </provider>
+    </entry>
     <entry file="file://V:/main/hidden/projectList.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        <state relative-caret-position="115">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/cheaty.html" />
+    <entry file="file://V:/main/hidden/render.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/css/projectsGrid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1127">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/cardGame/white.json" />
+    <entry file="file://V:/main/projects/hangman/hangman.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/cardGame/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/cardGame/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/main/css/fontawesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="5015" column="10" selection-start-line="5015" selection-start-column="1" selection-end-line="5015" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/cardGame/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3289">
+          <caret line="208" column="37" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="37" />
+          <folding>
+            <element signature="e#659#996#0" />
+            <element signature="e#1027#1364#0" />
+            <element signature="e#3995#4700#0" />
+            <element signature="e#4744#5024#0" />
+            <element signature="e#5053#5321#0" />
+            <element signature="e#6112#6619#0" />
+            <element signature="e#6652#6922#0" />
+            <element signature="e#6954#7093#0" />
+            <element signature="e#7125#7264#0" />
+            <element signature="e#9913#10537#0" />
+            <element signature="e#10567#10889#0" />
+            <element signature="e#10938#11903#0" />
+            <element signature="e#11942#12696#0" />
+            <element signature="e#12731#13418#0" />
+            <element signature="e#13448#13984#0" />
+            <element signature="e#15015#15632#0" />
+            <element signature="e#16714#16764#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/cardGame/static/css/landing.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/cardGame/static/css/serverlist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/cardGame/static/landing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/cardGame/static/serverlist.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/main/css/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://V:/cardGame/static/serverlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/cardGame/game/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="52" column="83" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/cardGame/game/game.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="366" column="36" selection-start-line="366" selection-start-column="36" selection-end-line="366" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://V:/cardGame/game/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="75" column="2" lean-forward="true" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!block;n#startGame#0" />
+            <element signature="n#!!block;n#hideModal#0" />
+            <element signature="n#!!block;n#insertModalContent#0" />
+            <element signature="e#107#114#1" expanded="true" />
+            <element signature="n#!!block;n#kickPlayer#0" />
+            <element signature="n#!!block;n#addModal#0" />
+            <element signature="n#!!block;n#addCreatorOptions#0" />
+            <element signature="n#!!block;n#showGameConfig#0" />
+            <element signature="n#!!block;n#updatePlayersList#0" />
+            <element signature="n#!!block;n#leaveGame#0" />
+            <element signature="n#!!block;n#logOut#0" />
+            <element signature="n#!!block;n#setCookie#0" />
+            <element signature="n#!!block;n#getCookie#0" />
+          </folding>
         </state>
       </provider>
     </entry>
