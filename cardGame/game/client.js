@@ -61,7 +61,7 @@ socket.on('receive full game state', function (data) {
     }
 })
 
-socket.on('receive cards', function (data) {
+socket.on('receive bottom cards', function (data) {
     cardsData = data;
     updateBottomCards();
 })
@@ -79,7 +79,9 @@ socket.on("client is czar", activateCzarMode)
 
 function activateCzarMode(data) {
     //todo show the czar notice thing
+    document.getElementById("czar-notice").style.display = "block";
     //todo change what client must do
+
 }
 
 function updateBottomCards() {
