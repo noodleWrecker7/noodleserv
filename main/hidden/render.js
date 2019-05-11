@@ -69,10 +69,10 @@ function loadPages(url) {
     validatePageNum();
     pageNum = $_GET['p'];
     startEntry = (pageNum - 1) * 8;
-    if (startEntry != 0) {
+    /*if (startEntry != 0) {
         startEntry -= 1;
-    }
-    startEntry *= 8;
+    }*/
+    //startEntry *= 8;
     let output = "";
     output += "<div class=\"row\">";
     for (let i = 0; i < 8; i++) {
