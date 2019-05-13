@@ -28,6 +28,7 @@ class HangmanGame {
         let n = Math.floor(Math.random() * wordsList.length);
         this.chosenWord = wordsList[n];
         this.chosenWord = this.chosenWord.replace(" ", "");
+        this.chosenWord = this.chosenWord.toLowerCase();
         this.wordDiscoveredArray = [];
         for (let i = 0; i < this.chosenWord.length; i++) {
             this.wordDiscoveredArray.push(" ");

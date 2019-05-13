@@ -12,7 +12,7 @@ for (var i = 0; i < parts.length; i++) {
 const GAME_ID = $_GET['gameId'];
 
 var gameState = {};
-
+var bottomCardsData;
 var selectedCardNo;
 
 
@@ -60,9 +60,12 @@ socket.on('receive full game state', function (data) {
         addCreatorOptions();
     }
 })
-
+// todo display top cards
+// todo display black card
+// todo click top cards
+// todo czar notice
 socket.on('receive bottom cards', function (data) {
-    cardsData = data;
+    bottomCardsData = data;
     updateBottomCards();
 })
 
@@ -86,13 +89,13 @@ function activateCzarMode(data) {
 
 function updateBottomCards() {
     let text = "";
-    for (var i = 0; i < cardsData.length; i++) {
-        text += '<button id="card-' + i + '" class="card" onclick="selectCard(this);"><p class="white-card-text">' + cardsData[i].cardText + '</p></button>';
+    for (var i = 0; i < bottomCardsData.length; i++) {
+        text += '<button id="card-' + i + '" class="card" onclick="selectCard(this);"><p class="white-card-text">' + bottomCardsData[i].cardText + '</p></button>';
     }
     document.getElementById("cards-container").innerHTML = text;
 }
 
-function confirmCardChoice () {
+function confirmCardChoice() {
     socket.emit("choose card", {session: currentSessionID, gameId: gameState.gameId, cardIndex: selectedCardNo});
 }
 
