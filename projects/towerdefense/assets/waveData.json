@@ -1,0 +1,81 @@
+[
+  null,
+  {
+    "completeBonus": 110,
+    "ghosts": [
+      {
+        "timeBefore": 1000,
+        "tier": 0,
+        "amount": 10,
+        "tBetween": 0.04
+      }
+    ]
+  },
+  {
+    "completeBonus": 120,
+    "ghosts": [
+      {
+        "timeBefore": 1000,
+        "tier": 0,
+        "amount": 15,
+        "tBetween": 0.038
+      }
+    ]
+  },
+  {
+    "completeBonus": 130,
+    "ghosts": [
+      {
+        "timeBefore": 1000,
+        "tier": 0,
+        "amount": 40,
+        "tBetween": 0.02
+      }
+    ]
+  },
+  {
+    "completeBonus": 140,
+    "ghosts": [
+      {
+        "timeBefore": 1000,
+        "tier": 0,
+        "amount": 20,
+        "tBetween": 0.02
+      },
+      {
+        "timeBefore": 10000,
+        "tier": 1,
+        "amount": 5,
+        "tBetween": 0.02
+      }
+    ]
+  },
+  {
+    "completeBonus": 150,
+    "ghosts": [
+      {
+        "timeBefore": 1000,
+        "tier": 0,
+        "amount": 20,
+        "tBetween": 0.017
+      },
+      {
+        "timeBefore": 10000,
+        "tier": 1,
+        "amount": 10,
+        "tBetween": 0.02
+      }
+    ]
+  },
+  {
+    "completeBonus": 160,
+    "ghosts": [
+      {
+        "timeBefore": 1000,
+        "tier": 2,
+        "amount": 5,
+        "tBetween": 0.025
+      }
+    ]
+  }
+]

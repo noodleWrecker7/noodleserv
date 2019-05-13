@@ -1,0 +1,69 @@
+<!--Everything on this page, and other pages on the website, is subject to the copyright of Adam Hodgkinson, it may be freely used, copied, distributed and/or modified, however, full credit must be given
+to me and any derived works should be released under the same license. I am not held liable for any claim, this software is provided as-is and without any warranty.
+
+I do not own any of the following content and is used under their respective licenses:
+    Fontawesome
+    Photonstorm's phaser.js
+
+Hopefully no-body has to read this but I thought id protect my self
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/projectsGrid.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+    <script src="../hidden/render.js"></script>
+
+    <!--<script>validatePageNum();</script>   called in insertsocialbar-->
+    <!--Used from https://fontawesome.com under license https://fontawesome.com/license-->
+    <title>Noodle - Projects</title>
+</head>
+
+<header class="title-box">
+    <nav class="nav-bar">
+        <div class="links-bar">
+            <a href="../" class="nav-home nav-button">Home</a>
+            <a href="#" class="nav-link nav-button">Projects</a>
+            <a href="https://paypal.me/noodlewrecker" class="nav-link nav-button">Donate</a>
+        </div>
+
+        <div id="socialBar">
+            <script>insertSocialBar("../hidden/social-bar.html");</script>
+
+        </div>
+    </nav>
+    <h1 class="title">
+        Projects
+    </h1>
+    <h2 class="sub-heading">
+        A collection of everything I've made.
+<br><br>
+Most of these won't work on IE, try Chrome or something modern.
+    </h2>
+
+</header>
+<br>
+
+<div class="pagination" id="pagination-top">
+
+</div>
+
+<div class="grid" id="grid">
+    <script>loadPages("../hidden/projectList.json");</script>
+</div>
+
+<div class="pagination" id="pagination-bottom">
+
+</div>
+<script>insertPagination();</script>
+
+<div class="foot">
+    <p class="credit">Designed by Adam Hodgkinson</p>
+</div>
+</html>
