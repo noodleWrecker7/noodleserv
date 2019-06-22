@@ -156,8 +156,8 @@ class Game {
     }
 
     checkBallIsGoingToCollide() {
-        let newX = this.ball.x + this.ball.xv * calc;
-        let newY = this.ball.y + this.ball.yv * calc;
+        let newX = this.ball.x// + this.ball.xv * calc;
+        let newY = this.ball.y// + this.ball.yv * calc;
         let w = this.brickWidth;
         let h = this.brickHeight;
         let bR = this.ball.radius;
@@ -165,13 +165,21 @@ class Game {
         for (let c = 0; c < this.cols; c++) {
             for (let r = 0; r < this.rows; r++) {
                 let b = this.bricksArray[c][r];
+                let changed = false;
                 if (newX + bR > b.x && newX - bR < b.x + w && this.ball.y + bR > b.y && this.ball.y - bR < b.y + h) {
-                    this.ball.xv = -this.ball.xv;
+                   // this.ball.xv = -this.ball.xv;
+                    this.ball.x -= this.ball.xv * calc;
+                    console.log("x change")
+                    changed = true;
                 }
                 if (newY + bR > b.y && newY - bR < b.y + h && this.ball.x + bR > b.x && this.ball.x - bR < b.x + w) {
-                    this.ball.yv = -this.ball.yv;
+
+                    this.ball.y -= this.ball.yv * calc;
+                    //this.ball.yv = -this.ball.yv;
+                    console.log("y change")
+                    changed = true;
                 }
-                if (newX + bR > b.x && newX - bR < b.x + w && newY + bR > b.y && newY - bR < b.y + h) {
+                if (!changed && newX + bR > b.x && newX - bR < b.x + w && newY + bR > b.y && newY - bR < b.y + h) {
                     this.ball.yv = -this.ball.yv;
                     this.ball.xv = -this.ball.xv;
                 }
