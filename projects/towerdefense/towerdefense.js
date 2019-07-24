@@ -87,7 +87,7 @@ class Play extends Phaser.Scene {
         this.bulletsIdList = [];
 
         this.gameStats = {
-            money: 0,
+            money: 69696969,
             ghostsPoppped: 0,
             spawnChance: 1,
             maxChance: 200,
