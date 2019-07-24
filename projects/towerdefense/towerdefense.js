@@ -375,6 +375,7 @@ class Play extends Phaser.Scene {
 class Bullet {
 
     constructor(id, x, y, angle, scene, ownerId, layers, ghosts) {
+        console.log("new Bullet")
         this.id = id;
         this.sprite = scene.add.sprite(x, y, "atlas", "projectiles/bullet.png");
         this.speed = PROJECTILE_DATA.bullet1.speed;
