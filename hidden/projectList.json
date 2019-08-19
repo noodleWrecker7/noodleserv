@@ -1,5 +1,12 @@
 [
   {
+    "name": "Controlify",
+    "link": "http://controlify.noodlewrecker.xyz",
+    "img": "placeholder.png",
+    "blurb": "A small JS app to control Spotify using web API.",
+    "date": "19/8/2019"
+  },
+  {
     "name": "Cards Against Humanity",
     "link": "http://cards.noodlewrecker.xyz",
     "img": "placeholder.png",
