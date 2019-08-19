@@ -87,7 +87,7 @@ class Play extends Phaser.Scene {
         this.bulletsIdList = [];
 
         this.gameStats = {
-            money: 0,
+            money: 69696969,
             ghostsPoppped: 0,
             spawnChance: 1,
             maxChance: 200,
@@ -375,6 +375,7 @@ class Play extends Phaser.Scene {
 class Bullet {
 
     constructor(id, x, y, angle, scene, ownerId, layers, ghosts) {
+        console.log("new Bullet")
         this.id = id;
         this.sprite = scene.add.sprite(x, y, "atlas", "projectiles/bullet.png");
         this.speed = PROJECTILE_DATA.bullet1.speed;
