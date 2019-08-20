@@ -1,3 +1,9 @@
+/*******************************************************************************
+ * Copyright (c) 2019.
+ * Developed by Adam Hodgkinson
+ * Last modified 19/08/2019, 15:33
+ ******************************************************************************/
+
 cvs = document.getElementById("gameCanvas");
 ctx = cvs.getContext("2d");
 var cWidth = cvs.width;
@@ -148,7 +154,6 @@ function drawEndScreen() {
 
 function drawFBText(text, x, y) {
 
-
     let textWidth = ctx.measureText(text).width;
     ctx.fillStyle = 'black';
     ctx.fillRect(x - 4, y - 30, textWidth + 5, 34);
@@ -172,7 +177,6 @@ function collectPoint() {
         setCookie("highScore", highScore, 365);
     }
 }
-
 
 function checkPlayerCollidePipe() {
     let p;
@@ -243,18 +247,17 @@ function startGame() {
     player.jump();
 }
 
-
 class Player {
 
     constructor() {
         this.width = 57;
         this.height = 40;
-        this.gravity = 1490; // this.gravity = 2.2 * 30;
-        this.jumpSpeed = 485; // this.jumpSpeed = 19 * 30;
-        this.maxFall = 630; // this.maxFall = 21 * 30;
+        this.gravity = 43; // this.gravity = 2.2 * 30;
+        this.jumpSpeed = 6 * fps; // this.jumpSpeed = 19 * 30;
+        this.maxFall = 21 * fps; // this.maxFall = 21 * 30;
         this.imgCounter = 0;
         this.bobCounter = 1;
-        this.bobChange = +1;
+        this.bobChange = +1 *fps;
         this.bobSpeed = 0;
         this.bobLength = 12;
         this.x = 200;
@@ -279,8 +282,8 @@ class Player {
     }
 
     bob() {
-        this.bobCounter += this.bobChange;
-        this.bobSpeed += 0.15;
+        this.bobCounter += this.bobChange * calc;
+        this.bobSpeed += 0.15 * fps * calc;
         if (this.bobCounter <= 0) {
             this.bobChange = +1;
             this.bobSpeed = 0;
@@ -289,7 +292,7 @@ class Player {
             this.bobChange = -1;
             this.bobSpeed = 0;
         }
-        this.y += this.bobChange * this.bobSpeed;
+        this.y += this.bobChange * this.bobSpeed * calc;
 
     }
 
@@ -301,7 +304,7 @@ class Player {
     update() {
         if (playing) {
             this.flap();
-            this.yv += this.gravity * calc;
+            this.yv += this.gravity;
 
         } else if (waiting) {
             this.bob();
@@ -361,7 +364,7 @@ class Pipe {
         this.imgTop = new Image();
         this.imgBottom.src = "img/pipe-bottom.png";
         this.imgTop.src = "img/pipe-top.png";
-        this.pipeSpeed = 150;
+        this.pipeSpeed = 2.5 * fps;
         this.width = 86;
         this.iTopHeight = 496;
     }
@@ -392,7 +395,6 @@ class Pipe {
     }
 }
 
-
 class Ground {
 
     constructor() {
@@ -404,7 +406,7 @@ class Ground {
             ground.y = cHeight - this.height
         };
         this.relativeX = 0;
-        this.groundSpeed = 170;
+        this.groundSpeed = 2.8 * fps;
         this.iWidth = 23;
         this.iHeight = 80;
     }
@@ -424,7 +426,7 @@ class Ground {
     }
 }
 
-var fps = 45;
+var fps = 100;
 var now;
 var then = Date.now();
 var interval = 1000 / fps;
@@ -456,6 +458,7 @@ function globalDraw() {
 
         // ... Code for Drawing the Frame ...
         calc = delta / 1000;
+        console.log("delta " + delta)
         tick();
     }
 }
