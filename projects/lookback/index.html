@@ -1,0 +1,29 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright (c) 2019. 
+  ~ Developed by Adam Hodgkinson
+  ~ Last modified 19/08/2019, 14:57
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="game.js?ModPagespeed=standby" defer></script>
+    <link rel="stylesheet" href="lookback.css?ModPagespeed=standby">
+</head>
+<body>
+<div id="game-info">
+    <p>This game was supposed to only show you your previous attempt at solving the level, however, that proved too difficult to complete so it just shows you both your current position (in green) and your ghost (in red)</p>
+</div>
+<p id="time-display">Time elapsed: 00</p>
+<p id="time-limit-display">Time limit: 0</p>
+<p id="fps-counter"></p>
+<div id="canvasContainer">
+    <div id="message-box"><p id="message">Press any key to begin</p></div>
+    <canvas id="backgroundCanvas" width="900" height="600"></canvas>
+    <canvas id="gameCanvas" width="900" height="600"></canvas>
+</div>
+</body>
+<footer style="margin-top: 630px;">Copyright (c) 2019. Designed and Created by Adam Hodgkinson</footer>
+</html>

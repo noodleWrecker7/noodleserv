@@ -1,5 +1,12 @@
 [
   {
+    "name": "Lookback",
+    "link": "lookback",
+    "img": "lookback.png",
+    "blurb": "Small JS game, to test advanced an collision detection.",
+    "date": "26/8/2019"
+  },
+  {
     "name": "Controlify",
     "link": "http://controlify.noodlewrecker.xyz",
     "img": "controlify.png",

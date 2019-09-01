@@ -1,0 +1,49 @@
+/*******************************************************************************
+ * Copyright (c) 2019.
+ * Developed by Adam Hodgkinson
+ * Last modified 20/08/2019, 21:15
+ ******************************************************************************/
+
+#canvasContainer {
+    width: 900px;
+    height: 600px;
+}
+
+#message-box {
+    margin-left: 2px;
+    width: 900px;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+#message {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin: 0;
+    margin-top: 20%;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: larger;
+
+}
+
+#backgroundCanvas {
+    border: 2px solid black;
+    position: absolute
+}
+
+#gameCanvas {
+    border: 2px solid black;
+    position: absolute;
+    z-index: 2
+}
+
+#game-info {
+    width: 30%;
+}
