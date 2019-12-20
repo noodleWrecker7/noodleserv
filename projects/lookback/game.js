@@ -1,10 +1,10 @@
 /*******************************************************************************
  * Copyright (c) 2019.
  * Developed by Adam Hodgkinson
- * Last modified 20/08/2019, 22:07
+ * Last modified 15/11/2019, 18:06
  ******************************************************************************/
 
-var debug = true;
+var debug = false;
 
 var offScreenCanvas;
 var offScreenContext;
@@ -21,7 +21,7 @@ const PLAYER_FRICTION = .9;
 class Game {
 
     constructor() {
-        console.log("play")
+        console.log("play");
         this.preload();
         this.create();
         this.startTime = 0;
@@ -107,11 +107,8 @@ class Game {
         if (GAME.startTime == 0) {
             GAME.start();
         }
-        if (GAME.attemptFailed) {
-            GAME.reset();
-            return;
-        }
-        if (GAME.attemptSucceeded) window.location.search = "level=" + (GAME.level + 1)
+
+
         let id = e.code;
         switch (id) {
             case "ArrowUp":
@@ -134,8 +131,16 @@ class Game {
     }
 
     handleKeyUp(e) {
+        if (GAME.attemptSucceeded) window.location.search = "level=" + (GAME.level + 1)
+        if (GAME.attemptFailed) {
+            GAME.reset();
+            return;
+        }
         let id = e.code;
         switch (id) {
+            case "KeyR":
+                GAME.fail();
+                break;
             case "ArrowUp":
             case "KeyW":
                 GAME.player.upPressed = false;
