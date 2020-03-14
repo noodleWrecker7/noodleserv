@@ -1,5 +1,13 @@
 [
   {
+    "name": "Jet Fighter",
+    "link": "jet-fighter",
+    "img": "placeholder.png",
+    "blurb": "Basic recreation of Jet Fighter",
+    "date": "",
+    "repo": "https://github.com/noodleWrecker7/jet-fighter"
+  },
+  {
     "name": "Lookback",
     "link": "lookback",
     "img": "lookback.png",
