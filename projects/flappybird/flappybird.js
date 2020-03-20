@@ -386,7 +386,7 @@ class Pipe {
     }
 
     randomY() {
-        let min = 58;
+        let min = 100;
         let max = (cHeight - ground.img.height) - this.vGap - 30;
 
         let y = Math.floor(Math.random() * (max - min)) + min;
