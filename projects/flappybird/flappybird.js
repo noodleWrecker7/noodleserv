@@ -339,7 +339,7 @@ class Player {
 function generatePipes() {
     arrayOfPipes = [];
     for (let i = 0; i < 2; i++) {
-        arrayOfPipes[i] = new Pipe((cWidth + 800) + (i * 285));
+        arrayOfPipes[i] = new Pipe((cWidth + 1000) + (i * 285));
     }
 }
 
