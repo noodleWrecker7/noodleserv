@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2020.
  * Developed by Adam Hodgkinson
- * Last modified 3/4/4 19:21
+ * Last modified 3/4/4 19:45
  *
  * Everything on this page, and other pages on the website, is subject to the copyright of Adam Hodgkinson, it may be freely used, copied, distributed and/or modified, however, full credit must be given
  * to me and any derived works should be released under the same license. I am not held liable for any claim, this software is provided as-is and without any warranty.
@@ -16,18 +16,17 @@ let expiryTimer;
 var userID;
 
 document.addEventListener('DOMContentLoaded', () => {
-    window.focus();
 
     if (window.location.hash) {
         const hash = parseHash(window.location.hash);
         if (hash['access_token'] && hash['expires_in']) {
-            if (hash['access_token'] == localStorage.getItem(LOCAL_ACCESS_TOKEN_KEY)) {
-                if (localStorage.getItem(LOCAL_ACCESS_TOKEN_EXPIRY_KEY) > Date.now()) {
+            if (hash['access_token'] == getCookie(LOCAL_ACCESS_TOKEN_KEY)) {
+                if (getCookie(LOCAL_ACCESS_TOKEN_EXPIRY_KEY) > Date.now()) {
                     directToLogin();
                 }
             } else {
-                localStorage.setItem(LOCAL_ACCESS_TOKEN_KEY, hash['access_token']);
-                localStorage.setItem(LOCAL_ACCESS_TOKEN_EXPIRY_KEY, Date.now() + 990 * parseInt(hash['expires_in']));
+                setCookie(LOCAL_ACCESS_TOKEN_KEY, hash['access_token'], 0.2);
+                setCookie(LOCAL_ACCESS_TOKEN_EXPIRY_KEY, Date.now() + 990 * parseInt(hash['expires_in']), 0.2);
             }
 
             makeCall("GET", "https://api.spotify.com/v1/me").then(value => {
@@ -103,14 +102,14 @@ async function copyLikedSongsToPlaylist() {
     }
 
     document.getElementById("finish-text").innerText = "Your liked songs have been copied to a playlist 'My Liked Songs'"
-    document.getElementById("copyButton").outerHTML = "<button id=\"copyButton\">Copy Liked songs to a playlist</button>";
+    document.getElementById("copyButton").outerHTML = "<button id=\"copyButton\" style=\"font-size: xx-large\">Copy Liked songs to a playlist</button>";
 }
 
 function directToLogin() {
     fetch('spotifyRedirectURI')// gets uri from file to redirect to
         .then(e => e.json())
         .then(data => {
-            window.location = data.redirectUri; // sends to spotify auth uri
+            window.location.href = data.redirectUri; // sends to spotify auth uri
         }).catch(error => {
         alert("Failed to begin authentication with Spotify");
         console.log(error);
@@ -134,7 +133,7 @@ async function makeCall(method, url, body, headers) {
     return new Promise((resolve, reject) => {
         const req = new XMLHttpRequest();
         req.open(method, url);
-        req.setRequestHeader("Authorization", "Bearer " + localStorage.getItem(LOCAL_ACCESS_TOKEN_KEY));
+        req.setRequestHeader("Authorization", "Bearer " + getCookie(LOCAL_ACCESS_TOKEN_KEY));
         if (headers) {
             for (let i = 0; i < headers.length; i++) {
                 req.setRequestHeader(headers[i].name, headers[i].value);
@@ -144,4 +143,16 @@ async function makeCall(method, url, body, headers) {
         req.onerror = () => reject(req.statusText);
         req.send(body);
     })
+}
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/projects/spotifyJobs";
+}
+
+function getCookie(a) {
+    const b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b ? b.pop() : '';
 }
