@@ -339,7 +339,7 @@ class Player {
 function generatePipes() {
     arrayOfPipes = [];
     for (let i = 0; i < 2; i++) {
-        arrayOfPipes[i] = new Pipe((cWidth + 500) + (i * 285));
+        arrayOfPipes[i] = new Pipe((cWidth + 1000) + (i * 285));
     }
 }
 
@@ -386,7 +386,7 @@ class Pipe {
     }
 
     randomY() {
-        let min = 58;
+        let min = 100;
         let max = (cHeight - ground.img.height) - this.vGap - 30;
 
         let y = Math.floor(Math.random() * (max - min)) + min;
