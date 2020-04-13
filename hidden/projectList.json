@@ -1,5 +1,13 @@
 [
   {
+    "name": "Covid-19 Stacks",
+    "link": "https:://covid.noodlewrecker.me",
+    "img": "Grass_Block.png",
+    "blurb": "Covid-19 Statistic represented as the universal measurement of Minecraft stacks",
+    "date": "13/4/2020",
+    "repo": "https://github.com/noodleWrecker7/Covid-19-Stacks"
+  },
+  {
     "name": "Jet Fighter",
     "link": "jet-fighter",
     "img": "placeholder.png",
