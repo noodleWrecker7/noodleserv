@@ -1,5 +1,13 @@
 [
   {
+    "name": "Space Invaders",
+    "link": "SpaceInvaders",
+    "img": "placeholder.png",
+    "blurb": "Space Invaders clone",
+    "date": "10/6/2020",
+    "repo": "https://github.com/noodleWrecker7/SpaceInvaders"
+  },
+  {
     "name": "Covid-19 Stacks",
     "link": "https://covid.noodlewrecker.me",
     "img": "Grass_Block.png",
