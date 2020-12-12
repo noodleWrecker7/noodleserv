@@ -1,4 +1,12 @@
 [
+	{
+    "name": "MCU Checklist",
+    "link": "https://lists.noodlewrecker.me",
+    "img": "mcu-checklist.png",
+    "blurb": "A list of the MCU for you to keep track",
+    "date": "11/12/2020",
+    "repo": "https://github.com/noodleWrecker7/Cinematic-Checklist/"
+  },
   {
     "name": "Space Invaders",
     "link": "SpaceInvaders",
