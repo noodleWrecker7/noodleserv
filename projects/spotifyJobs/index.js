@@ -1,7 +1,7 @@
 /*
- * Copyright (c) 2020.
+ * Copyright (c) 2021.
  * Developed by Adam Hodgkinson
- * Last modified 3/4/4 19:45
+ * Last modified 27/1/1 14:16
  *
  * Everything on this page, and other pages on the website, is subject to the copyright of Adam Hodgkinson, it may be freely used, copied, distributed and/or modified, however, full credit must be given
  * to me and any derived works should be released under the same license. I am not held liable for any claim, this software is provided as-is and without any warranty.
@@ -59,7 +59,7 @@ async function copyLikedSongsToPlaylist() {
             nextUrl = data.next;
             console.log(data)
             for (let i = 0; i < data.items.length; i++) {
-                if (data.items[i].name == "My Liked Songs" && data.items[i].description == "Playlist of Liked Songs, Powered by Adam Hodgkinson at https:&#x2F;&#x2F;noodlewrecker.me&#x2F;projects&#x2F;spotifyJobs") {
+                if (data.items[i].name == "My Liked Songs" && data.items[i].description == "Playlist of Liked Songs, Powered by Adam Hodgkinson at https:&#x2F;&#x2F;noodlewrecker.net&#x2F;projects&#x2F;spotifyJobs") {
                     playlistId = data.items[i].id;
                     nextUrl = false;
                     break;
@@ -71,7 +71,7 @@ async function copyLikedSongsToPlaylist() {
     if (!playlistId) {
         await makeCall("POST", "https://api.spotify.com/v1/users/" + userID + "/playlists", JSON.stringify({
             name: "My Liked Songs",
-            description: "Playlist of Liked Songs, Powered by Adam Hodgkinson at https://noodlewrecker.me/projects/spotifyJobs"
+            description: "Playlist of Liked Songs, Powered by Adam Hodgkinson at https://noodlewrecker.net/projects/spotifyJobs"
         }), [{name: "Content-Type", value: "application/json"}]).then(value => {
             let data = JSON.parse(value);
             playlistId = data.id;

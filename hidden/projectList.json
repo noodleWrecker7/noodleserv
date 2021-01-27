@@ -1,7 +1,7 @@
 [
 	{
     "name": "MCU Checklist",
-    "link": "https://lists.noodlewrecker.me",
+    "link": "https://lists.noodlewrecker.net",
     "img": "mcu-checklist.png",
     "blurb": "A list of the MCU for you to keep track",
     "date": "11/12/2020",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Covid-19 Stacks",
-    "link": "https://covid.noodlewrecker.me",
+    "link": "https://covid.noodlewrecker.net",
     "img": "Grass_Block.png",
     "blurb": "Covid-19 Statistic represented as the universal measurement of Minecraft stacks",
     "date": "13/4/2020",
